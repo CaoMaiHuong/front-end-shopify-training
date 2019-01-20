@@ -1,0 +1,116 @@
+@font-face{
+    src: url(../fonts/CopperplateSSiBold.ttf);
+    font-family: Copperplate;
+}
+body {
+    font-family: poppins sans-serif;
+}
+.header__nav{
+    font-family: poppins;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+.nav__logo{
+    float: left;
+}
+.nav__logo img{
+    max-height: 28px;
+}
+.menu__list{
+    margin-bottom: 0px;
+}
+ul.menu__list li{
+    display: inline; 
+    margin-left: 25px;
+    margin-right: 25px;  
+}
+ul.menu__list li a { 
+    color: black; 
+    font-weight: bold;
+    font-size: 16px; 
+}
+.nav__setting{
+    float: right;
+}
+.nav__setting__search{
+    display: inline;
+   
+
+}
+.nav__setting__cart{
+    display: inline;
+    margin-left: 30px;
+}
+.nav__setting__menu{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 24px;
+}
+.label__list{
+    margin-bottom: 0px;
+}
+.service__item{
+    background-color: rgb(243,245,247);
+    padding: 40px;
+    margin-right: -5px;
+    margin-left:-5px;
+}
+
+.service__item__icon{
+    float: left;
+}
+.service__item__icon img{
+    margin-top: 4px;
+}
+.service__item__content{
+    font-family: poppins;
+    margin-left: 81px;
+}
+.service__item__content__title h6{
+    font-size: 16px;
+    font-weight: bold;
+}
+.service__item__content__description p {
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.space{
+    height: 80px;
+}
+
+.section__intro{
+    text-align: center;
+}
+.section-title h3{
+    font-family: poppins;
+    font-size: 27px;
+    font-weight: bold;
+}
+.section-description p{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-style: italic;  
+    color: rgb(106,106,106);       
+}
+.lastest-collection__item__image{
+
+}
+.lastest-collection__item__image img{
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+.lastest-collection__intro{
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 5;
+    bottom: 48px;
+    display: table;
+    width: 400px;
+    height: 400px;
+    padding: 15px;
+    font-size: 16px;
+
+}
