@@ -2,8 +2,13 @@
     src: url(../fonts/CopperplateSSiBold.ttf);
     font-family: Copperplate;
 }
-body {
-    font-family: poppins sans-serif;
+body{
+    font-family: 'Poppins', serif;
+}
+
+.header__nav,.section-service,.section-best-selling, .section-featured{
+    margin-left: -35px;
+    margin-right: -35px;
 }
 .header__nav{
     font-family: poppins;
@@ -28,33 +33,45 @@ ul.menu__list li a {
     color: black; 
     font-weight: bold;
     font-size: 16px; 
+    text-decoration:none; 
 }
+ul.menu__list li a:hover {
+    color: rgb(254,79,24);
+} 
 .nav__setting{
     float: right;
+    margin-bottom: 2px;
+}
+.nav__setting a{
+    color: black;
+}
+.nav__setting a:hover{
+    text-decoration: none;
+    color: rgb(254,79,24);
 }
 .nav__setting__search{
     display: inline;
-   
-
 }
 .nav__setting__cart{
     display: inline;
     margin-left: 30px;
 }
+
 .nav__setting__menu{
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    line-height: 24px;
+    display: inline;
+    margin-left: 30px;
 }
 .label__list{
     margin-bottom: 0px;
 }
+
 .service__item{
     background-color: rgb(243,245,247);
-    padding: 40px;
     margin-right: -5px;
     margin-left:-5px;
+    height: 150%;
+    padding: 45px;
+
 }
 
 .service__item__icon{
@@ -64,8 +81,9 @@ ul.menu__list li a {
     margin-top: 4px;
 }
 .service__item__content{
+    float: left;
     font-family: poppins;
-    margin-left: 81px;
+    padding-left: 20px;
 }
 .service__item__content__title h6{
     font-size: 16px;
@@ -93,24 +111,207 @@ ul.menu__list li a {
     font-style: italic;  
     color: rgb(106,106,106);       
 }
+
+.lastest-collection{
+  position: relative;
+}
+.lastest-collection__list{
+   position: relative;
+}
 .lastest-collection__item__image{
+    margin-left: -5px;
+    margin-right: -5px; 
+    padding-bottom: 20px;
 
 }
 .lastest-collection__item__image img{
     width: 100%;
-    position: relative;
-    z-index: 2;
 }
-.lastest-collection__intro{
-    border: 1px solid;
-    border-radius: 50%;
+.lastest-collection__box{
+    top: 20%;
     position: absolute;
-    z-index: 5;
-    bottom: 48px;
-    display: table;
-    width: 400px;
-    height: 400px;
-    padding: 15px;
-    font-size: 16px;
-
+    width: 100%;
 }
+.lastest-collection__box__item{
+    background-color: #fff;
+    border: 1px ;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.lastest-collection__box__content{
+    text-align: center;
+    padding-top: 20%;
+    margin-bottom: 20%;
+}
+.content__logo img {
+    max-height: 27px;
+}
+.content__title{
+    font-size: 20px;
+    font-family: poppins;
+    font-weight: bold;
+}
+.content__save{
+    font-size: 30px;
+    font-family: poppins;
+    font-weight: bold;
+}
+.content__save span{
+    color: rgb(254,79,24);
+}
+.content__desc{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 15px;
+}
+.content__button a{
+    border: 1px solid;
+    font-family: poppins;
+    width: 100%;
+    background-color: rgb(254,79,54);
+    border-color: rgb(254,79,54);
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: bold; 
+    font-size: 14px; 
+}
+.content__button a:hover{
+    text-decoration: none;
+}
+.newsletter{
+    background-color: rgb(255,194,174);
+    font-family: poppins;
+    padding: 50px 0px;
+    position: relative;
+}
+.newsletter__info{
+    display: inline;
+    margin-top: 10px;
+    line-height: 50px;
+}
+.newsletter__info__signup{
+    display: inline;
+    font-size: 17px;
+    font-weight: bold;
+    padding-right: 17px;
+    position: relative;
+}
+.newsletter__info__signup__image{
+    position: absolute;
+    top: -55px;
+}
+
+.newsletter__info__text{
+    display: inline;
+    border-left: 2px solid rgb(220,174,159);
+    font-size: 14px;
+    padding-left: 17px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+}
+.newsletter__form input{
+    border: none;
+    height: 50px;
+}
+#search{
+    width: 380px;
+    padding: 0px;
+    font-size: 13px;
+    padding-left: 20px;
+}
+#submit{
+    width: 148px;
+    background-color: rgb(254,79,24);
+    padding: 0px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 8px;
+    border-bottom: 2px solid rgb(221,53,0);
+}
+.item__image{
+    padding-right: -15px;
+}
+.item__image img{
+    width: 100%;
+}
+.section-footer{
+    font-family: poppins;
+}
+.top__list__title{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.top__list__logo img{
+    width: 150px;
+    height: 30px;
+}
+ul { list-style-type: none; }
+.top__list__item{
+    font-size: 14px;
+}
+.top__list__item__content{
+    margin-bottom: 20px;
+}
+.item__contact{
+    margin-bottom: 10px;
+}
+.item__contact i{
+    color:rgb(254,79,24);
+    padding-right: 8px;
+}
+.top__list__item ul{
+    padding-left: 0px;
+}
+.top__list__item li{
+    margin-bottom: 10px;
+}
+.top__list__item a{
+    color: rgb(108,108,108);
+}
+.top__list__item a:hover{
+    text-decoration:none; 
+    color: rgb(254,79,24);
+}
+.item__image img{
+    width: 84px;
+    height: 84px;
+}
+
+.footer__bottom__left{
+    float: left;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.footer__bottom__left span{
+    color: rgb(254,79,24);
+}
+.footer__bottom__left a:hover{
+    text-decoration:none; 
+}
+.footer__bottom__right{
+    float: right;
+    font-size: 13px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+}
+.footer__bottom__right ul{
+    margin-bottom: 0px;
+}
+.footer__bottom__right li{
+    display: inline;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.footer__bottom__right a{
+    color: rgb(136,136,136);
+    text-decoration:none; 
+}
+.footer__bottom__right a:hover{
+    color: rgb(254,79,24);
+}
+
