@@ -6,10 +6,12 @@
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="http://kenwheeler.github.io/slick/slick/slick-theme.css"/>
     </head>
     <body>
-        <div class="container">
-            <section class="section-header">
+        <section class="section-header">
+            <div class="container">
                 <div class="header__nav navbar">
                     <div class="nav__logo">
                         <a href="#">
@@ -18,43 +20,459 @@
                     </div>
                     <div class="nav__menu">
                         <ul class="menu__list">
-                            <li class="menu__item"><a href="#" class="menu__link">HOME</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">STORE</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">FEATURES</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">BLOG</a></li>
-                            <li class="menu__item"><a href="#" class="menu__link">PAGES</a></li> 
-                            <li class="menu__item"><a href="#" class="menu__link">CONTACT</a></li>
+                            <li class="menu__item">
+                                <div class="dropdown">
+                                    <div class="dropbtn menu__title">HOME</div>
+                                    <div class="dropdown-content home">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Home 1</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Home 2</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Home 3</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Home 4</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Home 5</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Home 6</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__title">STORE</a>
+                            </li>
+                            <li class="menu__item">
+                                <div class="dropdown">
+                                    <div class="dropbtn menu__title">FEATURES</div>
+                                        <div class="features">
+                                            <div class="dropdown-content">   
+                                                <div class="features__top">
+                                                    <div class="features__top__list">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="features__top__list__item">
+                                                                    <div class="features__item__title">
+                                                                        FURNITURE
+                                                                    </div>
+                                                                    <div class="features__item__list">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="">Chairs And Shelves</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Outdoor Furniture</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Entryway Furniture</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Office Furniture</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Dining Tables</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Office Chairs</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="features__top__list__item">
+                                                                    <div class="features__item__title">
+                                                                        WORKSPACE
+                                                                    </div>
+                                                                    <div class="features__item__list">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="">Desk Work</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Office Space</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Arm Chairs</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Relax Table</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Long Table</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Accessories</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="features__top__list__item">
+                                                                    <div class="features__item__title">
+                                                                        DECORATION
+                                                                    </div>
+                                                                    <div class="features__item__list">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="">Wall Clock</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Office Space</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Arm Chairs</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Relax Table</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Long Table</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Accessories</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="features__top__list__item">
+                                                                    <div class="features__item__title">
+                                                                        WORKSPACE
+                                                                    </div>
+                                                                    <div class="features__item__list">
+                                                                        <ul>
+                                                                            <li>
+                                                                                <a href="">Desk Work</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Office Space</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Arm Chairs</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Relax Table</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Long Table</a>
+                                                                            </li>
+                                                                            <li>
+                                                                                <a href="">Accessories</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="features__bottom">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <div class="features__bottom__image" >
+                                                                <a href="">
+                                                                    <img src ="images/features-1.png">
+                                                                    <div class="image__content">
+                                                                        <div class="image__content">
+                                                                            <div class="image__content__name">
+                                                                                WOOD CABINETS
+                                                                            </div>
+                                                                            <div class="image__content__price">
+                                                                                Sale Off 50%
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <div class="features__bottom__image">
+                                                                <a href="">
+                                                                    <img src ="images/features-2.png">
+                                                                    <div class="image__content">
+                                                                        <div class="image__content__name">
+                                                                            LOUGNE CHAIR
+                                                                        </div>
+                                                                        <div class="image__content__price">
+                                                                            Only From $99.00
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            <li class="menu__item">
+                                <div class="dropdown">
+                                    <div class="dropbtn menu__title">BLOG</div>
+                                    <div class="dropdown-content blog">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Blog Slidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blog Categories</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blog Single Post</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blog Archives</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blog Tags</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <div class="dropdown">
+                                    <div class="dropbtn menu__title">PAGES</div>
+                                    <div class="dropdown-content pages">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Typography</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Inforgraphic</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Our Store</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Search Page</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Compare Page</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Offline Page</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Our Office</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">404 Page</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li class="menu__item"><a href="#" class="menu__title">CONTACT</a></li>
                         </ul>          
                     </div>
                     <div class="nav__setting">
                         <div class="nav__setting__search">
-                            <a href="#" >
-                                <i class="fas fa-search"></i>
-                            </a>
+                            <div class="dropdown" >
+                                <div class="dropbtn"><i class="fas fa-search"></i></div>
+                                <div class="dropdown-content" >
+                                <input type="text" placeholder="Search everything here">
+                                </div>
+                              </div>
                         </div>
                         <div class="nav__setting__cart">
-                            <a href="#" >
-                                <i class="fa fa-shopping-bag"></i>
-                            </a>
+                            <div class="dropdown">
+                                <div class="dropbtn"><i class="fa fa-shopping-bag"></i></div>
+                                <div class="dropdown-content">
+                                    <div class="cart__list">
+                                      <div class="cart__product">
+                                            <ul class="cart__product__list">
+                                                <li class="cart__product__item">
+                                                    <div class="cart__item__image">
+                                                        <img src="images/cart-1.png"/>
+                                                    </div>
+                                                    <div class="cart__item__content">
+                                                        <div class=" content cart__item__title">
+                                                            Hicamus Venenatis Eleifend
+                                                        </div>
+                                                        <div class="content cart__item__price">
+                                                            $107.00
+                                                        </div>
+                                                        <div class="content cart__item__quantity">
+                                                            x1
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <br>
+                                            <ul class="cart__product__list">
+                                                <li class="cart__product__item">
+                                                    <div class="cart__item__image">
+                                                        <img src="images/cart-2.png"/>
+                                                    </div>
+                                                    <div class="cart__item__content">
+                                                        <div class="content cart__item__title">
+                                                            Convallis Venenatis Metus
+                                                        </div>
+                                                        <div class="content cart__item__price">
+                                                            $124.00
+                                                        </div>
+                                                        <div class="content cart__item__quantity">
+                                                            x1
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <br>
+                                        </div>
+                                        <div class="cart__payment">
+                                            <ul class="payment__list">
+                                                <li>
+                                                    <div class="payment__title">
+                                                        Shipping:
+                                                    </div>
+                                                    <div class="payment__price">
+                                                        $0.00
+                                                    </div>
+                                                </li>
+                                                <br>
+                                                <li>
+                                                    <div class="payment__title">
+                                                        Subtotal:
+                                                    </div>
+                                                    <div class="payment__price">
+                                                        $231.00
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="cart__button">
+                                            <button class="btn btn-primary">CHECK OUT</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="nav__setting__menu">
-                            <a href="#" >
-                                <i class="fas fa-bars"></i>
-                            </a>
+                            <div class="dropdown">
+                                <div class="dropbtn"><i class="fas fa-bars"></i></div>
+                                <div class="dropdown-content">
+                                    <div class="menu">
+                                        <div class="menu__top">
+                                        <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="menu__top__currency">
+                                                        <div class="menu__top__title">
+                                                            CURRENTCY:
+                                                        </div>
+                                                        <div class="menu__top__list">
+                                                            <ul>
+                                                                <li><a href="">USD</a></li>
+                                                                <li><a href="">EUR</a></li>
+                                                                <li><a href="">GBP</a></li>
+                                                                <li><a href="">JPY</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="menu__top__language">
+                                                        <div class="menu__top__title">
+                                                            LANGUAGE:
+                                                        </div>
+                                                        <div class="menu__top__list">
+                                                            <ul>
+                                                                <li><a href="">English</a></li>
+                                                                <li><a href="">German</a></li>
+                                                                <li><a href="">Japanese</a></li>
+                                                                <li><a href="">French</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="menu__bottom">
+                                            <div class="menu__bottom__list">
+                                                <div class="menu__bottom__list__item">
+                                                    <span>
+                                                    <a href=""><i class="fas fa-unlock-alt"></i>LOGIN / SIGN UP</a>
+                                                    </span>
+                                                </div>
+                                                <div class="menu__bottom__list__item">
+                                                    <span>
+                                                    <a href=""><i class="far fa-user"></i>MY ACCOUNT</a>
+                                                    </span>
+                                                </div>
+                                                <div class="menu__bottom__list__item">
+                                                    <span>
+                                                    <a href=""><i class="far fa-heart"></i>MY WISHLIST</a>
+                                                    </span>
+                                                </div>
+                                                <div class="menu__bottom__list__item">
+                                                    <span>
+                                                    <a href=""><i class="fa fa-shopping-bag"></i>MY CART</a>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
-                        
                     </div>
                 </div>
-                <div class="header__slider">
-                    
+            </div>
+            <div class="header__slider">
+                <div class="slider" id="single_item">
+                    <div>
+                        <img src="images/header-slider.png" >
+                        <div class="slider__content-1">
+                            <div class="content-1">
+                                New Arrivals
+                            </div>
+                            <div class="content-2">
+                                MAKE MORE WONDERFUL
+                            </div>
+                            <div class="content-3">
+                                Creative Design Everyone Wants From ERADO Store
+                            </div>
+                            <button class="btn btn-primary">SHOP NOW</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="images/header-slider.png">
+                        <div class="slider__content-2">
+                            <div class="content-1">
+                                New Arrivals
+                            </div>
+                            <div class="content-2">
+                                MAKE MORE WONDERFUL
+                            </div>
+                            <div class="content-3">
+                                Creative Design Everyone Wants From ERADO Store
+                            </div>
+                            <button class="btn btn-primary">SHOP NOW</button>
+                        </div>
+                    </div>
                 </div>
-            </section>
+            </div>
+        </section>
+            
 <!----------->
+        <div class="container">
+            <div class="space"></div>
             <section class="section-service">
                 <div class="service__list">
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 ">
+                        <div class="col-lg-4 col-md-4">
                             <div class="service__item">
                                 <div class="service__item__icon">
                                     <img src="images/service-1.png">
@@ -113,65 +531,238 @@
                         <p>Include all items updated are the most customer choice of the week!</p>
                     </div>
                 </div>
+                <br>
                 <div class="best-selling__list">
-                    <div class="row">
-                        <div class="best-selling__item">
-                            <div class="best-selling__item__image">
-
+                    <div class="slider" id="best-selling_item">
+                        <div class="products__item">
+                            <div class="products__item__image" >
+                                <a href="#">
+                                    <img src="images/best-selling-1.png" alt="" data-src="images/best-selling-1.png">
+                                </a>
+                                <ul class="products__item__image__bottom">
+                                    <li class="bottom__item active" data-src="images/best-selling-1.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-2.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="best-selling__item__info">
-                                <div class="best-selling__item__name">
-
+                            <div class="products__item__info">
+                                <div class="products__item__name">
+                                    <a href="#">Convallis Venenatis Metus</a>
                                 </div>
-                                <div class="best-selling__item__type">
-
+                                <div class="products__item__type">
+                                    <a href="#">Essentials</a>
                                 </div>
-                                <div class="best-selling__item__price">
-
+                                <div class="products__item__price">
+                                    $124.00
                                 </div>
+                            </div>
+                            <div class="products__item__add">
+                                <span>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item__image">
+                                <a href="#">
+                                    <img src="images/best-selling-2.png" alt="">
+                                </a>
+                                <ul class="products__item__image__bottom">
+                                    <li class="bottom__item active" data-src="images/best-selling-2.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-4.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="products__item__info">
+                                <div class="products__item__name">
+                                    <a href="#">Quisque Elementum Posuere</a>
+                                </div>
+                                <div class="products__item__type">
+                                    <a href="#">Decor</a>
+                                </div>
+                                <div class="products__item__price">
+                                    $169.00
+                                </div>
+                            </div>
+                            <div class="products__item__add">
+                                <span>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item__image">
+                                <a href="#">
+                                    <img src="images/best-selling-3.png" alt="">
+                                </a>
+                                <ul class="products__item__image__bottom">
+                                    <li class="bottom__item active" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-4.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-2.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="products__item__info">
+                                <div class="products__item__name">
+                                    <a href="#">Lorem Ipsum Lodor Amet</a>
+                                </div>
+                                <div class="products__item__type">
+                                    <a href="#">Furniture</a>
+                                </div>
+                                <div class="products__item__price">
+                                    $119.00
+                                </div>
+                            </div>
+                            <div class="products__item__add">
+                                <span>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item__image">
+                                <a href="#">
+                                    <img src="images/best-selling-4.png">
+                                </a>
+                                <ul class="products__item__image__bottom">
+                                    <li class="bottom__item active" data-src="images/best-selling-4.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-2.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="products__item__info">
+                                <div class="products__item__name">
+                                    <a href="#">Hicamus Venenatis Eleifend</a>
+                                </div>
+                                <div class="products__item__type">
+                                    <a href="#">Essentials</a>
+                                </div>
+                                <div class="products__item__price">
+                                    $107.00
+                                </div>
+                            </div>
+                            <div class="products__item__add">
+                                <span>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item__image">
+                                <a href="#">
+                                    <img src="images/best-selling-2.png" alt="">
+                                </a>
+                                <ul class="products__item__image__bottom">
+                                    <li class="bottom__item active" data-src="images/best-selling-2.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-4.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="products__item__info">
+                                <div class="products__item__name">
+                                    <a href="#">Quisque Elementum Posuere</a>
+                                </div>
+                                <div class="products__item__type">
+                                    <a href="#">Decor</a>
+                                </div>
+                                <div class="products__item__price">
+                                    $169.00
+                                </div>
+                            </div>
+                            <div class="products__item__add">
+                                <span>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="lastest-collection">
-                    <div class="lastest-collection__list">
+                <div class="latest-collection">
+                    <div class="latest-collection__list">
                         <div class="row">
                             <div class="col-md-6">
-                                <div class="lastest-collection__item" id="1">
-                                    <div class="lastest-collection__item__image">
-                                        <img src="images/latest-1.png">
+                                <div class="latest-collection__item" id="1">
+                                    <div class="latest-collection__item__image">
+                                        <a href="#">
+                                            <img src="images/latest-1.png">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="lastest-collection__item" id="2">
-                                    <div class="lastest-collection__item__image">
-                                        <img src="images/latest-2.png">
+                                <div class="latest-collection__item" id="2">
+                                    <div class="latest-collection__item__image">
+                                        <a href="#">
+                                            <img src="images/latest-2.png">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="lastest-collection__item" id="3">
-                                    <div class="lastest-collection__item__image">
-                                        <img src="images/latest-3.png">
+                                <div class="latest-collection__item" id="3">
+                                    <div class="latest-collection__item__image">
+                                        <a href="#">
+                                            <img src="images/latest-3.png">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-6">
-                                <div class="lastest-collection__item" id="4">
-                                    <div class="lastest-collection__item__image">
-                                        <img src="images/latest-4.png">
+                                <div class="latest-collection__item" id="4">
+                                    <div class="latest-collection__item__image">
+                                        <a href="#">
+                                            <img src="images/latest-4.png">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="lastest-collection__box">
+                    <div class="latest-collection__box">
                         <div class="row">
                             <div class="col-md-4"></div>
                             <div class="col-md-4">
-                                <div class="lastest-collection__box__item">
-                                    <div class="lastest-collection__box__content">
+                                <div class="latest-collection__box__item">
+                                    <div class="latest-collection__box__content">
                                         <div class="content__logo">
                                             <img src="images/logo.png">
                                         </div>
@@ -180,9 +771,7 @@
                                         <div class="content__save">SAVE <span> UP TO 50%</span></div>
                                         <div class="content__desc">Lorem ipsum lodor amet consectetur sodales</div>
                                         <br><br>
-                                        <div class="content__button">
-                                            <a target="_blank" href="#" title="">VIEW MORE</a>
-                                        </div>
+                                        <button class="btn btn-primary">VIEW MORE</button>
                                     </div>
                                 </div>
                             </div>
@@ -196,63 +785,348 @@
             <section class="section-featured">
                 <div class="section__intro">
                     <div class="section-title">
-                        <h3>FEATURED PRODUCT</h3>
+                        <h3>FEATURED PRODUCTS</h3>
                     </div>
                     <div class="section-description">
                         <p>Our collection hover on a look you like to shop the items featured</p>
                     </div>
                 </div>
                 <div class="featured__list">
-                    <div class="row">
-                        <div class="featured__item">
-                            <div class="featured__item__image">
-
+                    <div class="slider" id="featured_item">
+                        <div class="products__item">
+                            <div class="products__item__image">
+                                <a href="#">
+                                    <img src="images/featured-product-1.png">
+                                </a>
+                                <ul class="products__item__image__bottom">
+                                    <li class="bottom__item active" data-src="images/featured-product-1.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/featured-product-2.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/featured-product-4.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="featured__item__info">
-                                <div class="featured__item__name">
-                                    
+                            <div class="products__item__info">
+                                <div class="products__item__name">
+                                    <a href="#">Convallis Venenatis Metus</a>
                                 </div>
-                                <div class="featured__item__type">
-
+                                <div class="products__item__type">
+                                    <a href="#">Essentials</a>
                                 </div>
-                                <div class="featured__item__price">
-
+                                <div class="products__item__price">
+                                    $124.00
+                                </div>
+                            </div>
+                            <div class="products__item__add">
+                                <span>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item__image">
+                                <a href="#">
+                                    <img src="images/featured-product-2.png">
+                                </a>
+                                <ul class="products__item__image__bottom">
+                                    <li class="bottom__item active" data-src="images/featured-product-2.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/featured-product-4.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/featured-product-1.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="products__item__info">
+                                <div class="products__item__name">
+                                    <a href="#">Quisque Elementum Posuere</a>
+                                </div>
+                                <div class="products__item__type">
+                                    <a href="#">Decor</a>
+                                </div>
+                                <div class="products__item__price">
+                                    $169.00
+                                </div>
+                            </div>
+                            <div class="products__item__add">
+                                <span>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item__image">
+                                <a href="#">
+                                    <img src="images/featured-product-3.png">
+                                </a>
+                                <ul class="products__item__image__bottom">
+                                    <li class="bottom__item active" data-src="images/featured-product-3.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/featured-product-2.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/featured-product-4.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="products__item__info">
+                                <div class="products__item__name">
+                                    <a href="#">Lorem Ipsum Lodor Amet</a>
+                                </div>
+                                <div class="products__item__type">
+                                    <a href="#">Furniture</a>
+                                </div>
+                                <div class="products__item__price">
+                                    $119.00
+                                </div>
+                            </div>
+                            <div class="products__item__add">
+                                <span>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item__image">
+                                <a href="#">
+                                    <img src="images/featured-product-4.png">
+                                </a>
+                                <ul class="products__item__image__bottom">
+                                    <li class="bottom__item active" data-src="images/featured-product-4.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/featured-product-1.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/featured-product-3.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="products__item__info">
+                                <div class="products__item__name">
+                                    <a href="#">Hicamus Venenatis Eleifend</a>
+                                </div>
+                                <div class="products__item__type">
+                                    <a href="#">Essentials</a>
+                                </div>
+                                <div class="products__item__price">
+                                    $107.00
+                                </div>
+                            </div>
+                            <div class="products__item__add">
+                                <span>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item__image">
+                                <a href="#">
+                                    <img src="images/featured-product-2.png">
+                                </a>
+                                <ul class="products__item__image__bottom">
+                                    <li class="bottom__item" data-src="images/featured-product-2.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/featured-product-3.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/featured-product-1.png">
+                                        <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="products__item__info">
+                                <div class="products__item__name">
+                                    <a href="#">Quisque Elementum Posuere</a>
+                                </div>
+                                <div class="products__item__type">
+                                    <a href="#">Decor</a>
+                                </div>
+                                <div class="products__item__price">
+                                    $169.00
+                                </div>
+                            </div>
+                            <div class="products__item__add">
+                                <span>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                    <a href="#"><i class="fas fa-search"></i></a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+<!---------------->
+            <hr>
+            <section class="section-company">
+                <div class="company__list">
+                    <div class="slider" id="company_items">     
+                        <div class="company__item__image">
+                            <img src="images/company-1.png">
+                        </div>
+                        <div class="company__item__image">
+                            <img src="images/company-2.png">
+                        </div>
+                        <div class="company__item__image">
+                            <img src="images/company-3.png">
+                        </div>
+                        <div class="company__item__image">
+                            <img src="images/company-4.png">
+                        </div>
+                        <div class="company__item__image">
+                            <img src="images/company-5.png">
+                        </div>
+                        <div class="company__item__image">
+                            <img src="images/company-6.png">
+                        </div>
+                        <div class="company__item__image">
+                            <img src="images/company-4.png">
+                        </div>
+                        <div class="company__item__image">
+                            <img src="images/company-5.png">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+<!----------------->
+            <div class="space"></div>
+            <section class="section-blog">
+                <div class="section__intro">
+                    <div class="section-title">
+                        <h3>OUT BLOG POST</h3>
+                    </div>
+                    <div class="section-description">
+                        <p>All out post are the latest updates from furniture and decor world</p>
+                    </div>
+                </div>
+                <div class="blog__list">
+                    <div class="slider" id="multiple_items">
+                        <div class="blog__item">
+                            <div class="blog__item__image">
+                                <a href="#">
+                                    <img src="images/blog-1.png">
+                                </a>
+                            </div>
+                            <div class="blog__item__info">
+                                <div class="blog__item__title">
+                                    <a href="#">Fusce Congue Vestibulum Tortor Suscipit</a>
+                                </div>
+                                <div class="blog__item__dated">
+                                    Posted: 20th May / 7 Views / 0 Comment
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item__image">
+                                <a href="#">
+                                    <img src="images/blog-2.png">
+                                </a>
+                            </div>
+                            <div class="blog__item__info">
+                                <div class="blog__item__title">
+                                    <a href="#">Salt Pepper Grinders In Higashiazabu</a>                    
+                                </div>
+                                <div class="blog__item__dated">
+                                    Posted: 24th May / 5 Views / 0 Comment
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item__image">
+                                <a href="#">
+                                    <img src="images/blog-3.png">
+                                </a>
+                            </div>
+                            <div class="blog__item__info">
+                                <div class="blog__item__title">
+                                    <a href="#">Ballaring Retreat By Branch Studio</a>                     
+                                </div>
+                                <div class="blog__item__dated">
+                                    Posted: 20th May / 7 Views / 0 Comment
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item__image">
+                                <a href="#">
+                                    <img src="images/blog-2.png">
+                                </a>
+                            </div>
+                            <div class="blog__item__info">
+                                <div class="blog__item__title">
+                                    <a href="#">Salt Pepper Grinders In Higashiazabu</a>                    
+                                </div>
+                                <div class="blog__item__dated">
+                                    Posted: 24th May / 5 Views / 0 Comment
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item__image">
+                                <a href="">
+                                    <img src="images/blog-3.png">
+                                </a>
+                            </div>
+                            <div class="blog__item__info">
+                                <div class="blog__item__title">
+                                    <a href="#">Salt Pepper Grinders In Higashiazabu</a>                    
+                                </div>
+                                <div class="blog__item__dated">
+                                    Posted: 24th May / 5 Views / 0 Comment
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section-company">
-
-            </section>
-            <section class="section-blog">
-
-            </section>
         </div>
+<!--------------------->
         <section class="section-newsletter">
             <div class="newsletter">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="newsletter__info">
-                                <div class="newsletter__info__signup">
-                                    SIGN UP NEWSLETTER
-                                    <div class="newsletter__info__signup__image">
-                                        <img src="images/sent.png">
+                    <div class="newsletter__content">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="newsletter__info">
+                                    <div class="newsletter__info__signup">
+                                        SIGN UP NEWSLETTER
+                                        <div class="newsletter__info__signup__image">
+                                            <img src="images/sent.png">
+                                        </div>
+                                    </div>
+                                    <div class="newsletter__info__text">
+                                        Get news and receive 20% off for your next buy!
                                     </div>
                                 </div>
-                                <div class="newsletter__info__text">
-                                    Get news and receive 20% off for your next buy!
-                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="newsletter__form">
-                                <form>
-                                    <input type="text" id="search" placeholder="Email@example.com">
-                                    <input type="submit" value="SUBSCRIBE" id="submit">
-                                </form>
+                            <div class="col-md-6">
+                                <div class="newsletter__form">
+                                    <form>
+                                        <input type="text" id="search" placeholder="Email@example.com">
+                                        <input type="submit" value="SUBSCRIBE" id="submit">
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -261,118 +1135,129 @@
         </section>
 <!----------->
         <div class="space"></div>
-        <section class="section-footer">
-            <div class="container">
-                <div class="footer__top">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="footer__top__list">
-                                <div class="top__list__title">
-                                    <div class="top__list__logo">
-                                        <a href="#">
-                                            <img src = "images/logo.png">
-                                        </a>
-                                    </div>
+        <div class="container">
+        <section class="section-footer">           
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer__top__list">
+                            <div class="top__list__title">
+                                <div class="top__list__logo">
+                                    <a href="#">
+                                        <img src = "images/logo.png">
+                                    </a>
                                 </div>
-                                <div class="top__list__item">
-                                    <div class="top__list__item__content">
-                                        Lorem ipsum dolor amet conseter adipis pulvinar fermentum. Praliquet molest justo eleifend haretra lacus pretiur lacinia nulla.
+                            </div>
+                            <div class="top__list__item">
+                                <div class="top__list__item__content">
+                                    Lorem ipsum dolor amet conseter adipis pulvinar fermentum. Praliquet molest justo eleifend haretra lacus pretiur lacinia nulla.
+                                </div>
+                                <div class="top__list__item__contact">
+                                    <div class="item__contact item__contact__address">
+                                        <span>
+                                            <i class="fas fa-location-arrow"></i>
+                                            Add: No. 1203 Jonh Rhjn Suite 120, NY 77101.
+                                        </span>
                                     </div>
-                                    <div class="top__list__item__contact">
-                                        <div class="item__contact item__contact__address">
-                                            <span>
-                                                <i class="fas fa-location-arrow"></i>
-                                                Add: No. 1203 Jonh Rhjn Suite 120, NY 77101.
-                                            </span>
-                                        </div>
-                                        <div class="item__contact item__contact__phone">
-                                            <span>
-                                                <i class="fas fa-phone"></i>
-                                                    Call Us: +1 (230) 2 4466 - 4468
-                                            </span>
-                                        </div>
-                                        <div class="item__contact item__contact__email">
-                                            <span>
-                                                <i class="fas fa-envelope"></i>
-                                                Email: Care247@demo.com
-                                            </span>
-                                        </div>
+                                    <div class="item__contact item__contact__phone">
+                                        <span>
+                                            <i class="fas fa-phone"></i>
+                                                Call Us: +1 (230) 2 4466 - 4468
+                                        </span>
+                                    </div>
+                                    <div class="item__contact item__contact__email">
+                                        <span>
+                                            <i class="fas fa-envelope"></i>
+                                            Email: Care247@demo.com
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="footer__top__list">
-                                        <div class="top__list__title">
-                                            INFORMATION
-                                        </div>
-                                        <div class="top__list__item">
-                                            <ul>
-                                                <li><a href="#">About Us</a></li>
-                                                <li><a href="#">Returns & Refunds</a></li>
-                                                <li><a href="#">Shipping Guide</a></li>
-                                                <li><a href="#">Term & Conditions</a></li>
-                                                <li><a href="#">My Wishlist</a></li>
-                                                <li><a href="#">Top Research</a></li>
-                                            </ul>
-                                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="footer__top__list">
+                                    <div class="top__list__title">
+                                        INFORMATION
+                                    </div>
+                                    <div class="top__list__item">
+                                        <ul>
+                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="#">Returns & Refunds</a></li>
+                                            <li><a href="#">Shipping Guide</a></li>
+                                            <li><a href="#">Term & Conditions</a></li>
+                                            <li><a href="#">My Wishlist</a></li>
+                                            <li><a href="#">Top Research</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="footer__top__list">
-                                        <div class="top__list__title">
-                                            NEED HELP
-                                        </div>
-                                        <div class="top__list__item">
-                                            <ul>
-                                                <li><a href="#">Discount Info</a></li>
-                                                <li><a href="#">Privacy Policy</a></li>
-                                                <li><a href="#">Payment & Returns</a></li>
-                                                <li><a href="#">Site Guide</a></li>
-                                                <li><a href="#">Product Care</a></li>
-                                                <li><a href="#">Customer Services</a></li>
-                                            </ul>
-                                        </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer__top__list">
+                                    <div class="top__list__title">
+                                        NEED HELP
+                                    </div>
+                                    <div class="top__list__item">
+                                        <ul>
+                                            <li><a href="#">Discount Info</a></li>
+                                            <li><a href="#">Privacy Policy</a></li>
+                                            <li><a href="#">Payment & Returns</a></li>
+                                            <li><a href="#">Site Guide</a></li>
+                                            <li><a href="#">Product Care</a></li>
+                                            <li><a href="#">Customer Services</a></li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="footer__top__list">
-                                        <div class="top__list__title">
-                                            INSTAGRAM
-                                        </div>
-                                        <div class="top__list__item">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="item__image">
+                            </div>
+                            <div class="col-md-4">
+                                <div class="footer__top__list">
+                                    <div class="top__list__title">
+                                        INSTAGRAM
+                                    </div>
+                                    <div class="top__list__item">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="item__image">
+                                                    <a href="#">
                                                         <img src="images/instagram-1.png">
-                                                    </div>
+                                                    </a>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div class="item__image">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="item__image">
+                                                    <a href="#">
                                                         <img src="images/instagram-2.png">
-                                                    </div>
+                                                    </a>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div class="item__image">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="item__image">
+                                                    <a href="#">
                                                         <img src="images/instagram-3.png">
-                                                    </div>
+                                                    </a>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div class="item__image">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="item__image">
+                                                    <a href="#">
                                                         <img src="images/instagram-4.png">
-                                                    </div>
+                                                    </a>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div class="item__image">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="item__image">
+                                                    <a href="#">
                                                         <img src="images/instagram-5.png">
-                                                    </div>
+                                                    </a>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div class="item__image">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="item__image">
+                                                    <a href="#">
                                                         <img src="images/instagram-6.png">
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
@@ -382,34 +1267,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="space"></div>
-                <hr>
-                <div class="footer__bottom">
-                    <div class="footer__bottom__left">
-                        &copy;2018 All rights reserved. Design by<a href="#"> <span> Joommasters.com</span>    </a>
-                    </div>
-                    <div class="footer__bottom__right">
-                        <ul>
-                            Follow Us: 
-                            <li>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-google"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-pinterest"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+            </div>
+            <div class="space"></div>
+            <hr>
+            <div class="footer__bottom">
+                <div class="footer__bottom__left">
+                    &copy;2018 All rights reserved. Design by<a href="#"> <span> Joommasters.com</span>    </a>
+                </div>
+                <div class="footer__bottom__right">
+                    <ul>
+                        Follow Us: 
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.3.15/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+    <script language="javascript" src="scripts/slider.js"></script>
+
     </body>
 </html>
