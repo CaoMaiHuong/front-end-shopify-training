@@ -17,18 +17,11 @@ $(document).ready(function () {
         slidesToScroll: 1
     });
 
-    // $('.products__item').hover(function(){
-    //     $(this).children().find("i").first().css('color','red');
-    //     $(this).children().find("i").first().css('color','black');
-    // })
     $('.bottom__item').hover(function(){
         var datasrc = $(this).attr("data-src");
         $(this).parent().siblings().find("img").attr("src",datasrc);
         $(this).siblings().removeClass("active");
         $(this).addClass("active");
-
-        // $(this).siblings().children().css('color','black');
-        // $(this).children().css('color','red');
     })   
 
     $('#company_items').slick({
