@@ -4,15 +4,17 @@ body{
     font-weight: 400;
 }
 .section-page-content,.newsletter__content, .section-footer{
-    margin-left: -30px;
-    margin-right: -30px;
+    margin-left: -35px;
+    margin-right: -35px;
 }
 .section-header{
-    margin-bottom: 14px
+    margin-bottom: 35px;
+    margin-top: 35px;
 }
+
 .header__nav{
     font-family: poppins;
-    margin: 36px -45px 45px -45px;
+   
 }
 .nav__logo{
     float: left;
@@ -359,21 +361,38 @@ ul.breadcrumb li a:hover {
     color: rgb(254,79,24);
     float: right;
 }
+.module__list__item__color .module__content__item{
+    cursor: pointer;
+}
+.module__list__item__price .module__content__item__filter{
+    width: 100%;
+    padding-top: 5px;
+    margin-bottom: -13px;
+}
 .module__list__item__price .module__content__item__filter button{
     border-radius: 0%;
     border: 2px solid rgb(235,235, 235);
     font-weight: 600;
     margin-right: 10px;
+    height: 40px;
+    width: 73px;
 }
 .module__list__item__price .module__content__item__filter span{
     font-weight: 400;
 }
+
 .module__list__item__color .module__content__item{
     padding-bottom: 21px;
 }
 .module__list__item__color .module__content__item .module__content__item__type i{
     font-size: 20px;
     margin-right: 10px;
+}
+.module__list__item__color .module__content__item .module__content__item__type span{
+    margin-bottom: 5px;
+}
+.module__list__item__size .module__content__item{
+    cursor: pointer;
 }
 .module__list__item__size .module__content__item__type label{
     font-size: 14px;
@@ -512,6 +531,7 @@ ul{
     font-size: 15px;
     color:rgb(123,123,123);
     padding: 0px 3px;
+    cursor: pointer;
 }
 .page-choose__left span{
     font-size: 12px;
@@ -524,6 +544,7 @@ ul{
 .page-choose__right__sort{
     float: left;
 }
+
 .page-choose__right__show{
     float: right;
     margin-left: 30px;
@@ -534,6 +555,7 @@ ul{
     margin-left: 5px;
     outline: none;
 }
+
 hr{
     clear: both;
 }
@@ -545,7 +567,9 @@ hr{
     clear: both;
     display: none;
 }
-
+#G4.product-list{
+    margin-bottom: 40px;
+}
 #G4.product-list .product-list__item{
     padding: 7px;
     font-family: poppins;
@@ -631,7 +655,7 @@ hr{
     margin-left: 5px;
     margin-right: 5px;
 }
-.product-list__item .product-list__item__image:hover ul{
+.product-list__item:hover ul{
     visibility: visible;
     transition: 0.5s;
 }
@@ -649,8 +673,43 @@ hr{
     z-index: 1;
     
 }
+#G2.product-list .product-list__item{
+    margin-bottom: 5px;
+}
+#G2.product-list .product-list__item .product-list__item__info__price{
+    margin-bottom: 10px;
+}
 #G2.product-list .product-list__item .product-list__item__info{
     margin-top: 5px;
+    margin-bottom: 10px;
+}
+#G2.product-list .product-list__item .product-list__item__info__add{
+    visibility: hidden;
+}
+
+#G2.product-list .product-list__item:hover .product-list__item__info__add{
+    visibility: visible;
+    text-align: center;  
+    transition: 0.5s;
+}
+#G2.product-list .product-list__item:hover .product-list__item__info__add span{
+    vertical-align: middle;
+}
+#G2.product-list .product-list__item:hover .product-list__item__info__add span a i{
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(130,130,130);
+}
+
+#G2 .product-list__item .product-list__item__info__add button{
+    margin-left: 22px;
+    margin-right: 22px;
+    padding: 7px 14px 5px 14px;
+    margin-bottom: 0px;
+}
+#G2 .product-list__item__info__add img{
+    height: 20px;
+    width: 20px; 
 }
 .old-price{
     font-family: lato;
@@ -687,6 +746,7 @@ hr{
 #G2 .product-list__item .product-list__item__image img{
     width: 100%;
 }
+
 .pagination-page{
     margin-bottom: 75px;
 }
@@ -725,7 +785,6 @@ hr{
 }
   
 .pagination a:hover:not(.active) {
-    background-color: #ddd;
     color: rgb(254,79,24);
     text-decoration: none;
 }
@@ -891,4 +950,45 @@ hr{
 }
 .footer__bottom__right a:hover{
     color: rgb(254,79,24);
+}
+
+.slider-box {
+    width: 100%; 
+    margin-top: 33px;
+}
+.module__content__item__filter input {
+    border: none; 
+    display: inline-block; 
+    margin-right: -4px; 
+    vertical-align: middle; 
+    width: 45%;
+    margin-left: 10px;
+    outline: none;
+}
+#price-range{
+    border: none;
+}
+.slider {
+    margin: 25px 8px 25px 8px;
+}
+.ui-widget-header {
+    background: rgb(230,230,230);
+}
+.ui-widget.ui-widget-content{
+	background: rgb(230,230,230); 
+    border-radius:0%;
+    height: 5px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    border-radius: 0%;
+    border: none;
+}
+
+.slider-box #price-range .ui-state-default, .ui-widget-content .ui-state-default{
+    background: rgb(254,79,24);
+    top: -6px;
+    border: none;
+    border-bottom: 2px solid rgb(221,53,0);
+    outline: none;
+    cursor: pointer;
 }
