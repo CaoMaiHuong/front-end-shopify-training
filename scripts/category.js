@@ -1,7 +1,3 @@
-$(':radio').change(function() {
-  console.log('New star rating: ' + this.value);
-});
-
 $('.bottom__item').hover(function(){
     var datasrc = $(this).attr("data-src");
     $(this).parent().siblings().find("img").attr("src",datasrc);
