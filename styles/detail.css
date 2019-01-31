@@ -275,8 +275,8 @@ ul{
     background: rgb(254,79,24);
     text-align: center;
     border-radius: 50%;
-    bottom: 70%;
-    left: 75%;
+    bottom: 65%;
+    left: 70%;
     font-weight: 400;
 }
 .nav__setting__menu{
@@ -291,7 +291,7 @@ ul{
     background-color: rgb(244,244,245);
     padding-top: 50px;
     padding-bottom: 45px;
-    margin-bottom: 80px;
+    margin-bottom: 85px;
 }
 .page-title{
     text-align: center;
@@ -328,8 +328,267 @@ ul.breadcrumb li a:hover {
 section{
     font-family: poppins;
 }
+.section-main-product{
+    margin-bottom: 70px;
+}
+.main-product{
+    margin-bottom: 75px;
+}
+.main-product .img-left{
+    padding-right: 5px;
+}
+.main-product__image .main-product__list__slider{
+    float: left;
+}
+.main-product__image .main-product__big-image{
+    float: right;
+}
+.main-product__list__slider__image{
+    overflow:hidden;
+    height: 540px;
+}
+.main-product__list__slider .main-product__slider__item{
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.main-product__list__slider .main-product__slider__item.active{
+    border: 1px solid rgb(254,79,24);
+}
+.main-product__list__slider .slider__arrow ul{
+    margin: 0px;
+}
+.main-product__list__slider .slider__arrow ul li{
+    display: inline;
+    background-color: rgb(235,235,235);
+    padding: 4px 17px;
+    font-size: 18px;
+    color: rgb(164,164,164);
+    cursor: pointer;
+}
+.main-product__list__slider .slider__arrow ul li.active{
+    background-color: rgb(254,79,24);
+    color: #fff;
+}
+.main-product__list__slider .slider__arrow ul li.down{
+    float: left;
+}
+.main-product__list__slider .slider__arrow ul li.up{
+
+    float: right;
+}
+.main-product__image .main-product__slider__item img{
+    width: 95px;
+    height: 114px;
+    display: block;
+}
+.main-product__image .main-product__big-image img{
+    width:470px;
+    height: 565px;
+    object-fit: contain;
+}
+.main-product__detail__name{
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    line-height: 1;
+}
+.main-product__detail__review ul li{
+    display: inline;
+    margin-right: 10px;
+}
+.main-product__detail__review{
+    margin-bottom: 20px;
+}
+.main-product__detail__review ul li a{
+    text-decoration: none;
+    font-size: 12px;
+    color: rgb(32,37,78);  
+}
+.main-product__detail__review ul li a:hover{
+    color: rgb(254,79,24);
+}
+.main-product__detail__review ul li span i{
+    font-size: 12px;
+    color: rgb(255,156,0);
+    width: 10px;
+    cursor: pointer;
+}
+
+.main-product__detail__price{
+    font-family: lato;
+    font-size: 28px;
+    color: rgb(254,79,24);
+    font-weight: 900;
+}
+.main-product__detail__price span{
+    font-family: poppins;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(32,37,78);
+    margin-left: 20px;
+}
+.main-product__detail__price span i{
+    color: rgb(157,197,36);
+}
+
+.main-product__detail__info{
+    margin-bottom: 20px;
+}
+.main-product__detail__info li::before {
+    content: '\2022';
+    color: rgb(254,79,24);
+    display: inline-block;
+    width: 12px;
+    font-size: 17px;
+}
+.main-product__detail__info ul li{
+    font-size: 13px;
+    font-weight: 300;
+    color: rgb(80,80,80);
+}
+.main-product__detail__info ul li a{    
+    color:  rgb(80,80,80);
+    text-decoration: none;
+    line-height: 27px;
+}
+.main-product__detail__info ul li a:hover{
+    color: rgb(254,79,24);
+}
+.main-product__detail__description{
+    line-height: 28px;
+    margin-bottom: 30px;
+    color: rgb(17,17,17);
+}
+.main-product__detail__color{
+    float: left;
+}
+.main-product__detail__size{
+    float: left;
+    margin-left: 80px;
+}
+.main-product__detail__color ul li{
+    display: inline;    
+}
+.main-product__detail__color ul span,.main-product__detail__size span{
+    margin-right: 14px;    
+    
+}
+.main-product__detail__color ul li i{
+    border: 1px solid rgb(221,221,221);
+    border-radius: 50%;  
+    cursor: pointer;     
+}
+.main-product__detail__color ul li.active i{
+    font-size: 20px;       
+}
+.main-product__detail__size select{
+    border: none;
+    border-bottom: 1px  solid rgb(221,221,221);
+    font-size: 12px;
+    font-weight: 300;
+    outline: none;
+}
+.main-product__detail__add{
+    clear: both;
+    margin-top: 28px;
+    margin-bottom: 22px;
+}
+.main-product__detail__add__quantity{
+    float: left;
+    width: 210px;
+}
+.main-product__detail__add__button{
+    float: left;
+}
+.main-product__detail__add__button button{
+    padding: 9px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    border: 0px;
+    border-bottom: 2px solid rgb(221,53,0);
+    background-color: rgb(254,79,24);
+    border-radius: 0;
+}
+.main-product__detail__add__quantity input[type="number"] {
+    -moz-appearance: textfield;
+    border: none;
+    height: 40px;
+    line-height: 40px;
+    width: 45px;
+    font-size: 15px;
+    font-weight: 600;
+    background: rgb(235,235,235);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    cursor: pointer;
+}
+.main-product__detail__add__quantity span{
+    background-color: rgb(235,235,235);
+    padding: 10px 7px;
+    cursor: pointer;    
+}
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.main-product__detail__add__bottom{
+    clear: both;
+    margin-top: 30px;
+}
+
+.main-product__detail__add__bottom a{
+    margin-left: 5px;
+    color: #000;
+}
+.main-product__detail__add__bottom span{
+    margin-left: 5px;
+}
+.main-product__detail__add__bottom a:hover{
+    text-decoration: none;
+    color: rgb(254,79,24);
+}
+.main-product__detail__add__wishlist{
+    float: left;
+    margin-right: 30px;
+}
+.main-product__detail__add__wishlist span a i{
+    font-size: 20px;
+    color: rgb(136,136,136);
+}
+.main-product__detail__add__compare{
+    float: left;
+}
+.main-product__detail__social{
+    clear: both;
+    margin-top: 30px;
+}
+.main-product__detail__social a:hover{
+    text-decoration: none;
+}
+.main-product__detail__social ul li{
+    display: inline;
+}
+.main-product__detail__social .social__item{
+    margin-right: 10px;
+}
+
+.main-product__detail__social button{
+    background-color: rgb(254,79,24);
+    border: none;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 11px;
+    padding: 2px;
+}
+.main-product__detail__social button i{
+    color: #fff;
+    font-size: 11px;
+}
+
 .main-product__info .info__title{
     font-size: 20px;
+    cursor: pointer;
     font-weight: 600;
 }
 
@@ -361,18 +620,11 @@ section{
   font-family: 'Font Awesome\ 5 Free';
   margin-left: 10px;
   font-size: 16px;
-
 }
-.section-main-product{
-    margin-bottom: 70px;
-}
-
-
-
 
 .section-intro{
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .section-title{
     font-size: 27px;
@@ -400,7 +652,7 @@ section{
 
 }
 .section-also-like .pr-item{
-    padding: 2px;
+    padding: 0px;
 }
 .products__item:hover{
     box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.18); 
@@ -414,11 +666,13 @@ section{
     z-index: 6;
 }
 
-
 .products__item__image a{
     outline: none;
 }
-
+.products__item__image img{
+    width: 100%;
+    vertical-align: middle;
+}
 .products__item__info{
     text-align: center;
 }
@@ -426,14 +680,12 @@ section{
     font-size: 14px;
     font-weight: 400;
     color: black;
-
 }
 
 .products__item__type a{
     color: rgb(117,117,117);
     font-size: 13px;
     font-weight: 400;
- 
 }
 .products__item__type{
     margin-top: 3px;
@@ -457,14 +709,12 @@ section{
     visibility: hidden;
     margin-top: 10px;
     margin-bottom: 10px;
-    
 }
 
 .products__item:hover .products__item__add{
     visibility: visible;
     text-align: center;  
     transition: 0.5s;
-     
 }
 
 .products__item__add button{
@@ -477,7 +727,6 @@ section{
     border-bottom: 2px solid rgb(221,53,0);
     background-color: rgb(254,79,24);
     border-radius: 0;
-
 }
 .products__item:hover .products__item__add span a{
     font-size: 20px;
@@ -525,8 +774,7 @@ section{
     position: absolute;
     top: 13px;
     left: 13px;
-    z-index: 1000;
-    
+    z-index: 1000;  
 }
 
 .box-label button{
