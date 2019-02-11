@@ -5,28 +5,43 @@ body{
     font-family: myriad-pro;
     src:url('../fonts/MyriadProRegular.ttf')
 }
-.section-service,.section-best-selling, .section-featured,.section-blog,.section-footer,.newsletter__content{
-    margin-left: -40px;
-    margin-right: -40px;
+.section-featured,.section-blog,.section-company,.section-footer,.newsletter__content{
+    margin:0px 60px;
 }
-
+.section-best-selling{
+    margin: 0px 60px;
+}
 .header__nav{
     font-family: poppins;
-    margin: 31px -45px;
+    margin: 31px 60px;
 }
+
 .nav__logo{
     float: left;
 }
+.nav__menu button{
+    display: none;
+}
+.nav__menu .navbar-collapse{
+    display: block;
+}
+.nav__menu{
+    text-align: center;
+}
+
 .nav__logo img{
     max-height: 28px;
+    margin-top: 8px;
+    margin-bottom: 35px;
 }
 .menu__list{
     margin-bottom: 0px;
 }
 ul.menu__list .menu__item{
     display: inline; 
-    margin-left: 20px;
-    margin-right: 20px;  
+    margin-left: 10px;
+    margin-right: 10px;  
+    text-align: left;
 }
 .menu__item .dropdown-content{
     padding: 20px 35px;
@@ -78,7 +93,7 @@ ul.menu__list .dropdown-content li a {
     
     display: none;
     position: absolute;
-    right: -20px;
+    right: -12px;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.18); 
@@ -339,7 +354,7 @@ ul{
 }
 .header__slider img{
     height: 750px;
-    object-fit: cover;
+  width: 100%;
 }
 .slider__content-1{
     position: absolute;
@@ -381,29 +396,34 @@ ul{
     border-bottom: 2px solid rgb(221,53,0);
 }
 .service__list{
-    margin-top: -14px;
+    margin: -14px 60px 0px 60px;
+}
+
+.service__list .ser{
+    margin-bottom:15px;
 }
 .service__item{
     background-color: rgb(243,245,247);
     margin-right: -5px;
     margin-left:-5px;
     height: 100%;
+    padding: 50px;
 }
-.service__item__icon img{
+.service__item__icon{
     margin-top: 4px;
     float: left;
-    padding: 48px 0px 48px 64px;
-    transition: transform .5s;
+    margin-right: 15px;
 }
 .service__item:hover .service__item__icon img{
     transform: scale(1.1);
     cursor: pointer; 
+    transition: transform .5s;
 }
 
 .service__item__content{
     float: left;
     font-family: poppins;
-    padding: 48px 48px 48px 20px;
+    word-wrap: break-word;
 }
 
 .service__item__content__title h6{
@@ -516,7 +536,6 @@ ul{
     border-bottom: 2px solid rgb(221,53,0);
     background-color: rgb(254,79,24);
     border-radius: 0;
-
 }
 .products__item:hover .products__item__add span a{
     font-size: 20px;
@@ -559,9 +578,7 @@ ul{
 .latest-collection{
   position: relative;
 }
-.latest-collection__list{
-   position: relative;
-}
+
 .latest-collection__item__image{
     margin-left: -5px;
     margin-right: -5px; 
@@ -576,40 +593,22 @@ ul{
     top: 20%;
     position: absolute;
     width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.latest-collection__box__item img{
+    width: 100%;
 }
 .latest-collection__box__item{
-    background-color: #fff;
-    border: 1px ;
-    border-radius: 50%;
-    width: 100%;
+   text-align: center;
+    width:100%;
     height: 100%;
 }
-.latest-collection__box__content{
-    text-align: center;
-    padding-top: 20%;
-    margin-bottom: 17%;
-    font-family: poppins;
-}
-.content__logo img {
-    max-height: 27px;
-}
-.content__title{
-    font-size: 22px;
-    font-weight: 600;
-}
-.content__save{
-    font-size: 32px;
-    font-weight: bold;
-}
-.content__save span{
-    color: rgb(254,79,24);
-}
-.content__desc{
-    font-family: 'Playfair Display', serif;
-    font-style: italic;
-    font-size: 16px;
-}
-.latest-collection__box__content button{
+
+.latest-collection__box__item button{
+    position: relative;
+    bottom: 30%;
     background-color: rgb(254,79,24);
     border: none;
     border-radius: 0;
@@ -618,7 +617,7 @@ ul{
     border-bottom: 2px solid rgb(221,53,0);
     padding-left: 20px;
     padding-right: 20px;
-    margin-top: 40px;
+    z-index: 3;
 }
 
 .section-featured{
@@ -719,7 +718,7 @@ ul{
 .newsletter{
     background-color: rgb(255,194,174);
     font-family: poppins;
-    padding: 50px 0px 100px 0px;
+    padding: 50px 0px 50px 0px;
     margin-top: 10px;
     
 }
@@ -815,21 +814,28 @@ ul { list-style-type: none; }
     text-decoration:none; 
     color: rgb(254,79,24);
 }
-.footer-insta{
-    margin-left: 40px;
-    margin-right: 25px;
-}
+
 .item__image{
     padding-bottom: 6px;
 }
 .item__image img{
-    width: 84px;
+    width: 100%;
     height: 84px;
     transition: .4s ease;
+    object-fit: cover;
 }
 
 .item__image:hover img {
     opacity: 0.7;
+}
+.footer__top__list{
+    margin-bottom: 30px;
+}
+.footer-insta .top__list__item .item-image{
+    padding: 0px 3px;
+}
+.footer-insta .top__list__item .row{
+    margin: 0px -6px;
 }
 .footer__bottom{
     border-top: 2px solid rgb(233,237,240);
@@ -839,8 +845,6 @@ ul { list-style-type: none; }
     float: left;
     font-size: 12px;
     font-weight: 400;
-    margin-top: 8px;
-    margin-bottom: 20px;
 }
 .footer__bottom__left span{
     color: rgb(254,79,24);
@@ -852,8 +856,6 @@ ul { list-style-type: none; }
     float: right;
     font-size: 13px;
     font-weight: 400;
-    margin-top: 8px;
-    margin-bottom: 20px;
 }
 .footer__bottom__right ul{
     margin-bottom: 0px;
@@ -870,4 +872,156 @@ ul { list-style-type: none; }
 }
 .footer__bottom__right a:hover{
     color: rgb(254,79,24);
+}
+
+@media screen and (max-width: 1300px) {
+    .header__slider .content-1{
+        font-size: 32px;
+    }
+    .header__slider .content-2{
+        font-size: 39px;
+    }
+    .header__slider .content-3{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1232px) {
+    .service__item .service__item__icon img{
+        width: 40px;
+        height: 35px;
+        object-fit: contain;
+    }
+    .service__item .service__item__content__title h6{
+        font-size: 17px;
+    }
+    .service__item .service__item__content__description p {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .header__nav{
+        font-family: poppins;
+        margin: 31px 20px;
+    }
+    .section-service .service__list,.section-featured,.newsletter__content,.section-footer{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .section-best-selling .latest-collection{
+        margin-right: -40px;
+        margin-left: -40px;
+    }
+    .service__item .service__item__content{
+        clear: both;
+    }
+    .service__item .service__item__content__title h6{
+        font-size: 18px;
+    }
+    .service__item .service__item__content__description p {
+        font-size: 14px;
+    }
+    .service__item .service__item__icon{
+        margin-bottom: 10px;
+    }
+    .service__item .service__item__icon img{
+        width: auto;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav__menu{
+        clear: both;
+        display: block;
+        background-color: rgb(255,194,174);
+        text-align: left;
+        padding: 10px;
+    }
+    .nav__setting{
+        float: right;
+    }
+    .nav__menu button {
+        display: block;
+        border: none;
+    }
+    .nav__menu .navbar-collapse{
+        display: none;
+        background-color: rgb(255,194,174);
+        margin-top: 10px;
+    }
+    .nav__menu ul.menu__list .menu__item{
+        display: block; 
+    }
+    .menu__item .dropdown-content{
+        position: static;
+    }
+    .menu__item .menu__title {
+        line-height: 2.5;
+    }
+    .menu__item .dropbtn{
+       padding: 0px;
+    }
+    .menu__item .features .features__bottom{
+        display: none;
+    }
+    .menu__item .features .dropdown-content{
+        width: auto;
+    }
+    .menu__item .features .features__item__title {
+        margin-bottom: 10px;
+    }
+    .menu__item .features .features__top__list__item{
+        margin-bottom: 20px;
+    }
+    .header__slider .content-1{
+        font-size: 28px;
+    }
+    .header__slider .content-2{
+        font-size: 35px;
+    }
+    .header__slider .content-3{
+        font-size: 16px;
+    }
+    .newsletter .newsletter__info{
+        float: none;
+    }
+    .newsletter .newsletter__form{
+        margin-top: 30px;
+        float: none;
+    }
+    .newsletter{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 900px) {
+    .header__slider{
+        display: none;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .service__item .service__item__content{
+        clear: none;
+    }
+    .service__item .service__item__icon{
+        margin-bottom: 0px;
+    }
+    .section-best-selling .latest-collection__box{
+        position: static;
+    }
+    .section-footer .footer__bottom .footer__bottom__right, .section-footer .footer__bottom .footer__bottom__left{
+        clear: both;
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .newsletter .newsletter__info__signup{
+        display: block;
+    }
+    .newsletter .newsletter__info__text{
+        border: none;
+    }
+    .newsletter #search{
+        width: 230px;
+    }
 }

@@ -9,17 +9,186 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
     </head>
     <body>
         <section class="section-header">
-            <div class="container">
-                <div class="header__nav navbar">
+                <div class="header__nav ">
                     <div class="nav__logo">
                         <a href="#">
                             <img src="images/logo.png" alt=""/>
-                        </a>
+                        </a>                            
                     </div>
-                    <div class="nav__menu">
+                    <div class="nav__setting">
+                            <div class="nav__setting__search">
+                                <div class="dropdown" >
+                                    <div class="dropbtn"><img src="images/search.png" alt=""></div>
+                                    <div class="dropdown-content" >
+                                        <input type="text" placeholder="Search everything here">
+                                    </div>
+                                  </div>
+                            </div>
+                            <div class="nav__setting__cart">
+                                <div class="dropdown">
+                                    <div class="dropbtn icon">
+                                        <!-- <i class="fa fa-shopping-bag"></i>  -->
+                                        <img src="images/cart.png" alt="">
+                                        <div class="num">
+                                            2
+                                        </div>
+                                    </div>
+                                    <div class="dropdown-content">
+                                        <div class="cart__list">
+                                          <div class="cart__product">
+                                                <ul class="cart__product__list">
+                                                    <li class="cart__product__item">
+                                                        <div class="cart__item__image">
+                                                            <a href="#">
+                                                                <img src="images/cart-1.png" alt=""/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="cart__item__content">
+                                                            <div class=" content cart__item__title">
+                                                                <a href="#">Hicamus Venenatis Eleifend</a>
+                                                            </div>
+                                                            <div class="content cart__item__price">
+                                                                $107.00
+                                                            </div>
+                                                            <div class="content cart__item__quantity">
+                                                                x1
+                                                                <span class="delete"><i class="far fa-trash-alt"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <br>
+                                                <ul class="cart__product__list">
+                                                    <li class="cart__product__item">
+                                                        <div class="cart__item__image">
+                                                            <a href="#">
+                                                                <img src="images/cart-2.png" alt=""/>
+                                                            </a>
+                                                        </div>
+                                                        <div class="cart__item__content">
+                                                            <div class="content cart__item__title">
+                                                                <a href="#">Convallis Venenatis Metus</a>
+                                                            </div>
+                                                            <div class="content cart__item__price">
+                                                                $124.00
+                                                            </div>
+                                                            <div class="content cart__item__quantity">
+                                                                x 1
+                                                                <span class="delete"><i class="far fa-trash-alt"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                                <br>
+                                            </div>
+                                            <div class="cart__payment">
+                                                <div class="payment__list">
+                                                    <div class="payment__item">
+                                                        <div class="payment__title">
+                                                            Shipping:
+                                                        </div>
+                                                        <div class="payment__price">
+                                                            $0.00
+                                                        </div>
+                                                    </div>
+                                                    <div class="payment__itemm"></div>
+                                                    <div class="payment__item">
+                                                        <div class="payment__title">
+                                                            Subtotal:
+                                                        </div>
+                                                        <div class="payment__price">
+                                                            $231.00
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cart__button">
+                                                <button class="btn btn-primary">CHECK OUT</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav__setting__menu">
+                                <div class="dropdown">
+                                    <div class="dropbtn"><img src="images/menu.png" alt=""></div>
+                                    <div class="dropdown-content">
+                                        <div class="menu">
+                                            <div class="menu__top">
+                                            <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="menu__top__currency">
+                                                            <div class="menu__top__title">
+                                                                CURRENTCY:
+                                                            </div>
+                                                            <div class="menu__top__list">
+                                                                <ul>
+                                                                    <li><a href="">USD</a></li>
+                                                                    <li><a href="">EUR</a></li>
+                                                                    <li><a href="">GBP</a></li>
+                                                                    <li><a href="">JPY</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="menu__top__language">
+                                                            <div class="menu__top__title">
+                                                                LANGUAGE:
+                                                            </div>
+                                                            <div class="menu__top__list">
+                                                                <ul>
+                                                                    <li><a href="">English</a></li>
+                                                                    <li><a href="">German</a></li>
+                                                                    <li><a href="">Japanese</a></li>
+                                                                    <li><a href="">French</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="menu__bottom">
+                                                <div class="menu__bottom__list">
+                                                    <div class="menu__bottom__list__item">
+                                                        <span>
+                                                        <a href=""><i class="fas fa-unlock-alt"></i>LOGIN / SIGN UP</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="menu__bottom__list__item">
+                                                        <span>
+                                                        <a href=""><i class="far fa-user"></i>MY ACCOUNT</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="menu__bottom__list__item">
+                                                        <span>
+                                                        <a href=""><i class="far fa-heart"></i>MY WISHLIST</a>
+                                                        </span>
+                                                    </div>
+                                                    <div class="menu__bottom__list__item">
+                                                        <span>
+                                                        <a href=""><i class="fa fa-shopping-bag"></i>MY CART</a>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="nav__menu" id="myNavMenu">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentNV" aria-controls="navbarSupportedContentNV" aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="images/menu.png">
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContentNV">
                         <ul class="menu__list">
                             <li class="menu__item">
                                 <div class="dropdown">
@@ -49,7 +218,9 @@
                                 </div>
                             </li>
                             <li class="menu__item">
-                                <a href="#" class="menu__title">STORE</a>
+                                <div class="dropdown">
+                                    <a href="#" class="menu__title">STORE</a>
+                                </div>
                             </li>
                             <li class="menu__item">
                                 <div class="dropdown">
@@ -59,7 +230,7 @@
                                                 <div class="features__top">
                                                     <div class="features__top__list">
                                                         <div class="row">
-                                                            <div class="col-md-3">
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="features__top__list__item">
                                                                     <div class="features__item__title">
                                                                         FURNITURE
@@ -88,7 +259,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-3">
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="features__top__list__item">
                                                                     <div class="features__item__title">
                                                                         WORKSPACE
@@ -117,7 +288,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-3">
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="features__top__list__item">
                                                                     <div class="features__item__title">
                                                                         DECORATION
@@ -146,7 +317,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-3">
+                                                            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="features__top__list__item">
                                                                     <div class="features__item__title">
                                                                         WORKSPACE
@@ -276,173 +447,12 @@
                                 </div>
                             </li> 
                             <li class="menu__item"><a href="#" class="menu__title">CONTACT</a></li>
-                        </ul>          
-                    </div>
-                    <div class="nav__setting">
-                        <div class="nav__setting__search">
-                            <div class="dropdown" >
-                                <div class="dropbtn"><img src="images/search.png" alt=""></div>
-                                <div class="dropdown-content" >
-                                    <input type="text" placeholder="Search everything here">
-                                </div>
-                              </div>
-                        </div>
-                        <div class="nav__setting__cart">
-                            <div class="dropdown">
-                                <div class="dropbtn icon">
-                                    <!-- <i class="fa fa-shopping-bag"></i>  -->
-                                    <img src="images/cart.png" alt="">
-                                    <div class="num">
-                                        2
-                                    </div>
-                                </div>
-                                <div class="dropdown-content">
-                                    <div class="cart__list">
-                                      <div class="cart__product">
-                                            <ul class="cart__product__list">
-                                                <li class="cart__product__item">
-                                                    <div class="cart__item__image">
-                                                        <a href="#">
-                                                            <img src="images/cart-1.png" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="cart__item__content">
-                                                        <div class=" content cart__item__title">
-                                                            <a href="#">Hicamus Venenatis Eleifend</a>
-                                                        </div>
-                                                        <div class="content cart__item__price">
-                                                            $107.00
-                                                        </div>
-                                                        <div class="content cart__item__quantity">
-                                                            x1
-                                                            <span class="delete"><i class="far fa-trash-alt"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <br>
-                                            <ul class="cart__product__list">
-                                                <li class="cart__product__item">
-                                                    <div class="cart__item__image">
-                                                        <a href="#">
-                                                            <img src="images/cart-2.png" alt=""/>
-                                                        </a>
-                                                    </div>
-                                                    <div class="cart__item__content">
-                                                        <div class="content cart__item__title">
-                                                            <a href="#">Convallis Venenatis Metus</a>
-                                                        </div>
-                                                        <div class="content cart__item__price">
-                                                            $124.00
-                                                        </div>
-                                                        <div class="content cart__item__quantity">
-                                                            x 1
-                                                            <span class="delete"><i class="far fa-trash-alt"></i></span>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <br>
-                                        </div>
-                                        <div class="cart__payment">
-                                            <div class="payment__list">
-                                                <div class="payment__item">
-                                                    <div class="payment__title">
-                                                        Shipping:
-                                                    </div>
-                                                    <div class="payment__price">
-                                                        $0.00
-                                                    </div>
-                                                </div>
-                                                <div class="payment__itemm"></div>
-                                                <div class="payment__item">
-                                                    <div class="payment__title">
-                                                        Subtotal:
-                                                    </div>
-                                                    <div class="payment__price">
-                                                        $231.00
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="cart__button">
-                                            <button class="btn btn-primary">CHECK OUT</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="nav__setting__menu">
-                            <div class="dropdown">
-                                <div class="dropbtn"><img src="images/menu.png" alt=""></div>
-                                <div class="dropdown-content">
-                                    <div class="menu">
-                                        <div class="menu__top">
-                                        <div class="row">
-                                                <div class="col-md-6">
-                                                    <div class="menu__top__currency">
-                                                        <div class="menu__top__title">
-                                                            CURRENTCY:
-                                                        </div>
-                                                        <div class="menu__top__list">
-                                                            <ul>
-                                                                <li><a href="">USD</a></li>
-                                                                <li><a href="">EUR</a></li>
-                                                                <li><a href="">GBP</a></li>
-                                                                <li><a href="">JPY</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <div class="menu__top__language">
-                                                        <div class="menu__top__title">
-                                                            LANGUAGE:
-                                                        </div>
-                                                        <div class="menu__top__list">
-                                                            <ul>
-                                                                <li><a href="">English</a></li>
-                                                                <li><a href="">German</a></li>
-                                                                <li><a href="">Japanese</a></li>
-                                                                <li><a href="">French</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="menu__bottom">
-                                            <div class="menu__bottom__list">
-                                                <div class="menu__bottom__list__item">
-                                                    <span>
-                                                    <a href=""><i class="fas fa-unlock-alt"></i>LOGIN / SIGN UP</a>
-                                                    </span>
-                                                </div>
-                                                <div class="menu__bottom__list__item">
-                                                    <span>
-                                                    <a href=""><i class="far fa-user"></i>MY ACCOUNT</a>
-                                                    </span>
-                                                </div>
-                                                <div class="menu__bottom__list__item">
-                                                    <span>
-                                                    <a href=""><i class="far fa-heart"></i>MY WISHLIST</a>
-                                                    </span>
-                                                </div>
-                                                <div class="menu__bottom__list__item">
-                                                    <span>
-                                                    <a href=""><i class="fa fa-shopping-bag"></i>MY CART</a>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        </ul>
                     </div>
                 </div>
             </div>
+            <!-- </div> -->
+            <div style="clear: both;"></div>
             <div class="header__slider">
                 <div class="slider" id="single_item">
                     <div>
@@ -480,12 +490,12 @@
         </section>
             
 <!----------->
-        <div class="container">
+        
             <div class="space"></div>
             <section class="section-service">
                 <div class="service__list">
                     <div class="row">
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12 ser">
                             <div class="service__item">
                                 <div class="service__item__icon">
                                     <img src="images/service-1.png" alt="">
@@ -498,9 +508,10 @@
                                         <p>For on order over $199.00</p>                
                                     </div>
                                 </div>
+                                <div style="clear: both;"></div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12 ser">
                             <div class="service__item">
                                 <div class="service__item__icon">
                                     <img src="images/service-2.png" alt="">
@@ -510,12 +521,13 @@
                                         <h6>RETURN EXCHANGE</h6>
                                     </div>
                                     <div class="service__item__content__description">
-                                        <p>100% money back guarantee</p>
+                                        <p>100% money back guarante</p>
                                     </div>
                                 </div>
+                                <div style="clear: both;"></div>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12 ser">
                             <div class="service__item">
                                 <div class="service__item__icon">
                                     <img src="images/service-3.png" alt="">
@@ -528,12 +540,14 @@
                                         <p>Always online feedback 24/7</p>
                                     </div>
                                 </div>
+                                <div style="clear: both;"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
  <!--------------->
+ <!-- <div class="container"> -->
             <div class="space"></div>
             <section class="section-best-selling">
                 <div class="section__intro">
@@ -741,7 +755,7 @@
                 <div class="latest-collection">
                     <div class="latest-collection__list">
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="latest-collection__item" id="1">
                                     <div class="latest-collection__item__image">
                                         <a href="#">
@@ -750,7 +764,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="latest-collection__item" id="2">
                                     <div class="latest-collection__item__image">
                                         <a href="#">
@@ -759,7 +773,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="latest-collection__item" id="3">
                                     <div class="latest-collection__item__image">
                                         <a href="#">
@@ -768,7 +782,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                                 <div class="latest-collection__item" id="4">
                                     <div class="latest-collection__item__image">
                                         <a href="#">
@@ -784,16 +798,8 @@
                             <div class="col-md-4"></div>
                             <div class="col-md-4">
                                 <div class="latest-collection__box__item">
-                                    <div class="latest-collection__box__content">
-                                        <div class="content__logo">
-                                            <img src="images/logo.png" alt="">
-                                        </div>
-                                        <br>
-                                        <div class="content__title">LATEST COLLECTION</div>
-                                        <div class="content__save">SAVE <span> UP TO 50%</span></div>
-                                        <div class="content__desc">Lorem ipsum lodor amet consectetur sodales</div>
-                                        <button class="btn btn-primary">VIEW MORE</button>
-                                    </div>
+                                    <img src="images/latest-circle.png">
+                                    <button class="btn btn-primary">VIEW MORE</button>
                                 </div>
                             </div>
                             <div class="col-md-4"></div>
@@ -1103,12 +1109,12 @@
                     </div>
                 </div>
             </section>
-        </div>
+   
 <!--------------------->
         <div class="space"></div>
         <section class="section-newsletter">
             <div class="newsletter">
-                <div class="container">
+                <!-- <div class="container"> -->
                     <div class="newsletter__content">
                         <!-- <div class="row">
                             <div class="col-md-6"> -->
@@ -1131,20 +1137,20 @@
                                         <input type="submit" value="SUBSCRIBE" id="submit">
                                     </form>
                                 </div>
+                                <div style="clear: both;"></div>
                             <!-- </div>
                         </div> -->
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
         </section>
 <!----------->
         <br>
        <div class="space"></div>
-        <div class="container">
         <section class="section-footer">           
             <div class="footer__top">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 col-12">
                         <div class="footer__top__list">
                             <div class="top__list__title">
                                 <div class="top__list__logo">
@@ -1180,9 +1186,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-4">
+                    <!-- <div class="col-md-8">
+                        <div class="row"> -->
+                            <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
                                 <div class="footer__top__list">
                                     <div class="top__list__title">
                                         INFORMATION
@@ -1199,7 +1205,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
+                            <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 col-12">
                                 <div class="footer__top__list">
                                     <div class="top__list__title">
                                         NEED HELP
@@ -1216,49 +1222,49 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-5">
+                            <div class="col-xl-3 col-lg-3 col-md-5 col-sm-6 col-xs-8 col-9">
                                 <div class="footer__top__list footer-insta">
                                     <div class="top__list__title">
                                         INSTAGRAM
                                     </div>
                                     <div class="top__list__item">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                                                 <div class="item__image">
                                                     <a href="#">
                                                         <img src="images/instagram-1.png" alt="">
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                                                 <div class="item__image">
                                                     <a href="#">
                                                         <img src="images/instagram-2.png" alt="">
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                                                 <div class="item__image">
                                                     <a href="#">
                                                         <img src="images/instagram-3.png" alt="">
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                                                 <div class="item__image">
                                                     <a href="#">
                                                         <img src="images/instagram-4.png" alt="">
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                                                 <div class="item__image">
                                                     <a href="#">
                                                         <img src="images/instagram-5.png" alt="">
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="col-md-4">
+                                            <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
                                                 <div class="item__image">
                                                     <a href="#">
                                                         <img src="images/instagram-6.png" alt="">
@@ -1267,8 +1273,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
+                                <!-- </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -1298,13 +1304,11 @@
                         </li>
                     </ul>
                 </div>
+                <div style="clear: both;"></div>
             </div>
         </section>
-    </div>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
-    <script language="javascript" src="scripts/slider.js"></script>
-
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+        <script language="javascript" src="scripts/slider.js"></script>
     </body>
 </html>
