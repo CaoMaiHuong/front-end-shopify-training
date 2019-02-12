@@ -1,281 +1,26 @@
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="styles/category.css">
-        <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="styles/category.css">
+        <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
         <link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
     </head>
     <body>
         <section class="section-header">
-            <div class="header__nav navbar">
+            <div class="header__nav ">
                 <div class="nav__logo">
                     <a href="#">
                         <img src="images/logo.png" alt=""/>
-                    </a>
-                </div>
-                <div class="nav__menu">
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <div class="dropdown">
-                                <div class="dropbtn menu__title">HOME</div>
-                                <div class="dropdown-content home">
-                                    <ul>
-                                        <li>
-                                            <a href="#">Home 1</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Home 2</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Home 3</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Home 4</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Home 5</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Home 6</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__title">STORE</a>
-                        </li>
-                        <li class="menu__item">
-                            <div class="dropdown">
-                                <div class="dropbtn menu__title">FEATURES</div>
-                                    <div class="features">
-                                        <div class="dropdown-content">   
-                                            <div class="features__top">
-                                                <div class="features__top__list">
-                                                    <div class="row">
-                                                        <div class="col-md-3">
-                                                            <div class="features__top__list__item">
-                                                                <div class="features__item__title">
-                                                                    FURNITURE
-                                                                </div>
-                                                                <div class="features__item__list">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="">Chairs And Shelves</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Outdoor Furniture</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Entryway Furniture</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Office Furniture</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Dining Tables</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Office Chairs</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <div class="features__top__list__item">
-                                                                <div class="features__item__title">
-                                                                    WORKSPACE
-                                                                </div>
-                                                                <div class="features__item__list">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="">Desk Work</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Office Space</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Arm Chairs</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Relax Table</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Long Table</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Accessories</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <div class="features__top__list__item">
-                                                                <div class="features__item__title">
-                                                                    DECORATION
-                                                                </div>
-                                                                <div class="features__item__list">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="">Wall Clock</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Office Space</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Arm Chairs</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Relax Table</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Long Table</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Accessories</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-3">
-                                                            <div class="features__top__list__item">
-                                                                <div class="features__item__title">
-                                                                    WORKSPACE
-                                                                </div>
-                                                                <div class="features__item__list">
-                                                                    <ul>
-                                                                        <li>
-                                                                            <a href="">Desk Work</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Office Space</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Arm Chairs</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Relax Table</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Long Table</a>
-                                                                        </li>
-                                                                        <li>
-                                                                            <a href="">Accessories</a>
-                                                                        </li>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="features__bottom">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="features__bottom__image" >
-                                                            <a href="">
-                                                                <img src ="images/features-1.png" alt="">
-                                                                <div class="image__content">
-                                                                    <div class="image__content">
-                                                                        <div class="image__content__name">
-                                                                            WOOD CABINETS
-                                                                        </div>
-                                                                        <div class="image__content__price">
-                                                                            Sale Off 50%
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="features__bottom__image">
-                                                            <a href="">
-                                                                <img src ="images/features-2.png" alt="">
-                                                                <div class="image__content">
-                                                                    <div class="image__content__name">
-                                                                        LOUGNE CHAIR
-                                                                    </div>
-                                                                    <div class="image__content__price">
-                                                                        Only From $99.00
-                                                                    </div>
-                                                                </div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        <li class="menu__item">
-                            <div class="dropdown">
-                                <div class="dropbtn menu__title">BLOG</div>
-                                <div class="dropdown-content blog">
-                                    <ul>
-                                        <li>
-                                            <a href="#">Blog Slidebar</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Blog Categories</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Blog Single Post</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Blog Archives</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Blog Tags</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="menu__item">
-                            <div class="dropdown">
-                                <div class="dropbtn menu__title">PAGES</div>
-                                <div class="dropdown-content pages">
-                                    <ul>
-                                        <li>
-                                            <a href="#">Typography</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Inforgraphic</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Our Store</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Search Page</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Compare Page</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Offline Page</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Our Office</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">404 Page</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </li> 
-                        <li class="menu__item"><a href="#" class="menu__title">CONTACT</a></li>
-                    </ul>          
+                    </a>                            
                 </div>
                 <div class="nav__setting">
                     <div class="nav__setting__search">
@@ -284,12 +29,11 @@
                             <div class="dropdown-content" >
                                 <input type="text" placeholder="Search everything here">
                             </div>
-                            </div>
+                        </div>
                     </div>
                     <div class="nav__setting__cart">
                         <div class="dropdown">
                             <div class="dropbtn icon">
-                                <!-- <i class="fa fa-shopping-bag"></i>  -->
                                 <img src="images/cart.png" alt="">
                                 <div class="num">
                                     2
@@ -440,7 +184,275 @@
                         </div>
                     </div>
                 </div>
+                <div class="nav__menu" id="myNavMenu">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContentNV" aria-controls="navbarSupportedContentNV" aria-expanded="false" aria-label="Toggle navigation">
+                        <img src="images/menu.png">
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContentNV">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <div class="dropdown">
+                                <div class="dropbtn menu__title">HOME</div>
+                                <div class="dropdown-content home">
+                                    <ul>
+                                        <li>
+                                            <a href="#">Home 1</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Home 2</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Home 3</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Home 4</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Home 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Home 6</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="dropdown">
+                                <a href="#" class="menu__title">STORE</a>
+                            </div>
+                        </li>
+                        <li class="menu__item">
+                            <div class="dropdown">
+                                <div class="dropbtn menu__title">FEATURES</div>
+                                    <div class="features">
+                                        <div class="dropdown-content">   
+                                            <div class="features__top">
+                                                <div class="features__top__list">
+                                                    <div class="row">
+                                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                                            <div class="features__top__list__item">
+                                                                <div class="features__item__title">
+                                                                    FURNITURE
+                                                                </div>
+                                                                <div class="features__item__list">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="">Chairs And Shelves</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Outdoor Furniture</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Entryway Furniture</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Office Furniture</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Dining Tables</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Office Chairs</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                                            <div class="features__top__list__item">
+                                                                <div class="features__item__title">
+                                                                    WORKSPACE
+                                                                </div>
+                                                                <div class="features__item__list">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="">Desk Work</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Office Space</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Arm Chairs</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Relax Table</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Long Table</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Accessories</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                                            <div class="features__top__list__item">
+                                                                <div class="features__item__title">
+                                                                    DECORATION
+                                                                </div>
+                                                                <div class="features__item__list">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="">Wall Clock</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Office Space</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Arm Chairs</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Relax Table</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Long Table</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Accessories</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                                                            <div class="features__top__list__item">
+                                                                <div class="features__item__title">
+                                                                    WORKSPACE
+                                                                </div>
+                                                                <div class="features__item__list">
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="">Desk Work</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Office Space</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Arm Chairs</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Relax Table</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Long Table</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="">Accessories</a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="features__bottom">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="features__bottom__image" >
+                                                            <a href="">
+                                                                <img src ="images/features-1.png" alt="">
+                                                                <div class="image__content">
+                                                                    <div class="image__content">
+                                                                        <div class="image__content__name">
+                                                                            WOOD CABINETS
+                                                                        </div>
+                                                                        <div class="image__content__price">
+                                                                            Sale Off 50%
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="features__bottom__image">
+                                                            <a href="">
+                                                                <img src ="images/features-2.png" alt="">
+                                                                <div class="image__content">
+                                                                    <div class="image__content__name">
+                                                                        LOUGNE CHAIR
+                                                                    </div>
+                                                                    <div class="image__content__price">
+                                                                        Only From $99.00
+                                                                    </div>
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <div class="dropdown">
+                                    <div class="dropbtn menu__title">BLOG</div>
+                                    <div class="dropdown-content blog">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Blog Slidebar</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blog Categories</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blog Single Post</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blog Archives</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Blog Tags</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <div class="dropdown">
+                                    <div class="dropbtn menu__title">PAGES</div>
+                                    <div class="dropdown-content pages">
+                                        <ul>
+                                            <li>
+                                                <a href="#">Typography</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Inforgraphic</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Our Store</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Search Page</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Compare Page</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Offline Page</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Our Office</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">404 Page</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li> 
+                            <li class="menu__item"><a href="#" class="menu__title">CONTACT</a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <!-- </div> -->
+            <div style="clear: both;"></div>
         </section>
         <section class="section-page-title">
             <div class="page-title">
@@ -454,11 +466,15 @@
                 </ul>
             </div>
         </section>
-        <div class="container">
-            <section class="section-page-content">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="module__list">
+        <section class="section-page-content">
+            <div class="row">
+                <div class="col-xl-3 col-lg-4 col-md-12">
+                    <div class="module__list">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#moduleList" aria-controls="moduleList" aria-expanded="false" aria-label="Toggle navigation">
+                            <img src="images/menu.png">
+                            <b style="font-size:20px; margin-left: 20px; margin-top: 10px;">ALL CATEGORIES</b>
+                        </button>
+                        <div class="collapse navbar-collapse" id="moduleList">
                             <div class="module__list__item__category module__item">
                                 <div class="module__list__item__title">
                                     CATEGORIES
@@ -705,14 +721,14 @@
                                 <div class="module__list__item__content">
                                     <div class="module__content__item">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-xl-4 col-lg-3 col-md-2 col-sm-2 col-xs-3 col-3">
                                                 <div class="module__content__item__image">
                                                     <a href="">
                                                         <img src="images/top-rated-1.png" alt="">
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-xl-8 col-lg-9 col-md-10 col-sm-10 col-xs-9 col-9">
                                                 <div class="module__content__item__info">
                                                     <div class="module__content__item__info__name">
                                                         <a href="">Hicamus Venenatis....</a>
@@ -761,14 +777,14 @@
                                     <hr>
                                     <div class="module__content__item">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-xl-4 col-lg-3 col-md-2 col-sm-2 col-xs-3 col-3">
                                                 <div class="module__content__item__image">
                                                     <a href="">
                                                         <img src="images/top-rated-2.png" alt="">
                                                     </a>
                                                 </div>
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-xl-8 col-lg-9 col-md-10 col-sm-10 col-xs-9 col-9">
                                                 <div class="module__content__item__info">
                                                     <div class="module__content__item__info__name">
                                                         <a href="">Tincidunt Pharetrem...</a>
@@ -817,12 +833,12 @@
                                     <hr>
                                     <div class="module__content__item">
                                         <div class="row">
-                                            <div class="col-md-4">
+                                            <div class="col-xl-4 col-lg-3 col-md-2 col-sm-2 col-xs-3 col-3">
                                                 <div class="module__content__item__image">
                                                     <img src="images/top-rated-3.png" alt="">
                                                 </div>
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-xl-8 col-lg-9 col-md-10 col-sm-10 col-xs-9 col-9">
                                                 <div class="module__content__item__info">
                                                     <div class="module__content__item__info__name">
                                                         <a href="">Maximus Pharetra...</a>
@@ -872,854 +888,847 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-9 grid">
-                        <div class="page-choose">
-                            <div class="page-choose__left">
-                                <ul class="view-mode"> 
-                                    <span>View mode:</span>
-                                    <li class="grid__item view-grid active"><i class="fas fa-th"></i></li>
-                                    <li class="grid__item view-list"><i class="fas fa-th-list"></i></li>
-                                </ul>
-                            </div>
-                            <div class="page-choose__right">
-                                <div class="page-choose__right__sort">
-                                    Sort by:
-                                    <select>
-                                        <option>Default</option>
-                                        <option>Price</option>
-                                        <option>Size</option>
-                                        <option>Color</option>
-                                    </select>
-                                </div>
-                                <div class="page-choose__right__show">
-                                    Show:
-                                    <select>
-                                        <option>06</option>
-                                        <option>12</option>
-                                        <option>24</option>
-                                    </select>
-                                </div>
-                            </div>
+                </div>
+                <div class="col-xl-9 col-lg-8 col-md-12 grid">
+                    <div class="page-choose">
+                        <div class="page-choose__left">
+                            <ul class="view-mode"> 
+                                <span>View mode:</span>
+                                <li class="grid__item view-grid active"><i class="fas fa-th"></i></li>
+                                <li class="grid__item view-list"><i class="fas fa-th-list"></i></li>
+                            </ul>
                         </div>
-                        <hr>
-                        
-                        <div class="product-list product-view-grid">
-                            <div class="row">
-                                <div class="collumn item">
-                                    <div class="product-list__item">
-                                        <div class="product-list__item__image">
-                                            <a href="">
-                                                <img src="images/best-selling-1.png">
-                                            </a>
-                                            <ul class="products-list__item__image__bottom">
-                                                <li class="bottom__item active" data-src="images/best-selling-1.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/best-selling-2.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/best-selling-3.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-list__item__info">
-                                            <div class="product-list__item__info__name">
-                                                <a href="">Convallis Venenatis Metus</a>
-                                            </div>
-                                            <div class="product-list__item__info__type">
-                                                <a href="">Essentials</a>
-                                            </div>
-                                            <div class="product-list__item__info__price">
-                                                $124.00
-                                            </div>
-                                            <div class="product-list__item__info__description">
-                                                Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
-                                            </div>
-                                            <div class="product-list__item__info__add">
-                                                <button class="btn btn-add">ADD TO CART</button>
-                                                <div class="add-wishlish">
-                                                    <span>
-                                                        <a href=""><i class="far fa-heart"></i></a>
-                                                        <span class="add-wish">Add Wishlist</span>
-                                                    </span>
-                                                </div>
-                                                <div class="add-compare">
-                                                    <span>
-                                                        <a href=""><img src="images/Comapre.png"></a>
-                                                        <span class="add-com">Add Compare</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collumn item">
-                                    <div class="product-list__item">
-                                        <div class="product-list__item__image">
-                                            <a href="">
-                                                <img src="images/best-selling-2.png">
-                                            </a>
-                                            <ul class="products-list__item__image__bottom">
-                                                <li class="bottom__item active" data-src="images/best-selling-2.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/best-selling-1.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/best-selling-3.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                                </li>
-                                            </ul>
-                                            <div class="box-label">
-                                                <button class="btn btn-default">SALE</button>
-                                            </div>
-                                        </div>
-                                        <div class="product-list__item__info">
-                                            <div class="product-list__item__info__name">
-                                                <a href="">Convallis Venenatis Metus</a>
-                                            </div>
-                                            <div class="product-list__item__info__type">
-                                                <a href="">Essentials</a>
-                                            </div>
-                                            <div class="product-list__item__info__price">
-                                                <span class="old-price">
-                                                    <del>$199.00</del>
-                                                </span>
-                                                $124.00
-                                            </div>
-                                            <div class="product-list__item__info__description">
-                                                Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
-                                            </div>
-                                            <div class="product-list__item__info__add">
-                                                <button class="btn btn-add">ADD TO CART</button>
-                                                <div class="add-wishlish">
-                                                    <span>
-                                                        <a href=""><i class="far fa-heart"></i></a>
-                                                        <span class="add-wish">Add Wishlist</span>
-                                                    </span>
-                                                </div>
-                                                <div class="add-compare">
-                                                    <span>
-                                                        <a href=""><img src="images/Comapre.png"></a>
-                                                        <span class="add-com">Add Compare</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collumn item">
-                                    <div class="product-list__item">
-                                        <div class="product-list__item__image">
-                                            <a href="">
-                                                <img src="images/best-selling-3.png">
-                                            </a>
-                                            <ul class="products-list__item__image__bottom">
-                                                <li class="bottom__item active" data-src="images/best-selling-3.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/best-selling-2.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/best-selling-1.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                                </li>
-                                            </ul>
-                                            <div class="box-label">
-                                                <button class="btn btn-default">NEW</button>
-                                            </div>
-                                        </div>
-                                        <div class="product-list__item__info">
-                                            <div class="product-list__item__info__name">
-                                                <a href="">Convallis Venenatis Metus</a>
-                                            </div>
-                                            <div class="product-list__item__info__type">
-                                                <a href="">Essentials</a>
-                                            </div>
-                                            <div class="product-list__item__info__price">
-                                                $124.00
-                                            </div>
-                                            <div class="product-list__item__info__description">
-                                                Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
-                                            </div>
-                                            <div class="product-list__item__info__add">
-                                                <button class="btn btn-add">ADD TO CART</button>
-                                                <div class="add-wishlish">
-                                                    <span>
-                                                        <a href=""><i class="far fa-heart"></i></a>
-                                                        <span class="add-wish">Add Wishlist</span>
-                                                    </span>
-                                                </div>
-                                                <div class="add-compare">
-                                                    <span>
-                                                        <a href=""><img src="images/Comapre.png"></a>
-                                                        <span class="add-com">Add Compare</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collumn item">
-                                    <div class="product-list__item">
-                                        <div class="product-list__item__image">
-                                            <a href="">
-                                                <img src="images/best-selling-4.png">
-                                            </a>
-                                            <ul class="products-list__item__image__bottom">
-                                                <li class="bottom__item active" data-src="images/best-selling-4.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/best-selling-2.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/best-selling-3.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-list__item__info">
-                                            <div class="product-list__item__info__name">
-                                                <a href="">Convallis Venenatis Metus</a>
-                                            </div>
-                                            <div class="product-list__item__info__type">
-                                                <a href="">Essentials</a>
-                                            </div>
-                                            <div class="product-list__item__info__price">
-                                                $124.00
-                                            </div>
-                                            <div class="product-list__item__info__description">
-                                                Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
-                                            </div>
-                                            <div class="product-list__item__info__add">
-                                                <button class="btn btn-add">ADD TO CART</button>
-                                                <div class="add-wishlish">
-                                                    <span>
-                                                        <a href=""><i class="far fa-heart"></i></a>
-                                                        <span class="add-wish">Add Wishlist</span>
-                                                    </span>
-                                                </div>
-                                                <div class="add-compare">
-                                                    <span>
-                                                        <a href=""><img src="images/Comapre.png"></a>
-                                                        <span class="add-com">Add Compare</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collumn item">
-                                    <div class="product-list__item">
-                                        <div class="product-list__item__image">
-                                            <a href="">
-                                                <img src="images/best-selling-1.png">
-                                            </a>
-                                            <ul class="products-list__item__image__bottom">
-                                                <li class="bottom__item active" data-src="images/best-selling-1.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/best-selling-2.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/best-selling-3.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-list__item__info">
-                                            <div class="product-list__item__info__name">
-                                                <a href="">Convallis Venenatis Metus</a>
-                                            </div>
-                                            <div class="product-list__item__info__type">
-                                                <a href="">Essentials</a>
-                                            </div>
-                                            <div class="product-list__item__info__price">
-                                                $124.00
-                                            </div>
-                                            <div class="product-list__item__info__description">
-                                                Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
-                                            </div>
-                                            <div class="product-list__item__info__add">
-                                                <button class="btn btn-add">ADD TO CART</button>
-                                                <div class="add-wishlish">
-                                                    <span>
-                                                        <a href=""><i class="far fa-heart"></i></a>
-                                                        <span class="add-wish">Add Wishlist</span>
-                                                    </span>
-                                                </div>
-                                                <div class="add-compare">
-                                                    <span>
-                                                        <a href=""><img src="images/Comapre.png"></a>
-                                                        <span class="add-com">Add Compare</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collumn item">
-                                    <div class="product-list__item">
-                                        <div class="product-list__item__image">
-                                            <a href="">
-                                                <img src="images/best-selling-1.png">
-                                            </a>
-                                            <ul class="products-list__item__image__bottom">
-                                                <li class="bottom__item active" data-src="images/best-selling-1.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/best-selling-2.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/best-selling-3.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                                </li>
-                                            </ul>
-                                            <div class="box-label">
-                                                <button class="btn btn-default">SALE</button>
-                                            </div>
-                                        </div>
-                                        <div class="product-list__item__info">
-                                            <div class="product-list__item__info__name">
-                                                <a href="">Convallis Venenatis Metus</a>
-                                            </div>
-                                            <div class="product-list__item__info__type">
-                                                <a href="">Essentials</a>
-                                            </div>
-                                            <div class="product-list__item__info__price">
-                                                $124.00
-                                            </div>
-                                            <div class="product-list__item__info__description">
-                                                Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
-                                            </div>
-                                            <div class="product-list__item__info__add">
-                                                <button class="btn btn-add">ADD TO CART</button>
-                                                <div class="add-wishlish">
-                                                    <span>
-                                                        <a href=""><i class="far fa-heart"></i></a>
-                                                        <span class="add-wish">Add Wishlist</span>
-                                                    </span>
-                                                </div>
-                                                <div class="add-compare">
-                                                    <span>
-                                                        <a href=""><img src="images/Comapre.png"></a>
-                                                        <span class="add-com">Add Compare</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collumn item">
-                                    <div class="product-list__item">
-                                        <div class="product-list__item__image">
-                                            <a href="">
-                                                <img src="images/grid-1.png">
-                                            </a>
-                                            <ul class="products-list__item__image__bottom">
-                                                <li class="bottom__item active" data-src="images/grid-1.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/grid-2.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/grid-3.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-list__item__info">
-                                            <div class="product-list__item__info__name">
-                                                <a href="">Convallis Venenatis Metus</a>
-                                            </div>
-                                            <div class="product-list__item__info__type">
-                                                <a href="">Essentials</a>
-                                            </div>
-                                            <div class="product-list__item__info__price">
-                                                $124.00
-                                            </div>
-                                            <div class="product-list__item__info__description">
-                                                Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
-                                            </div>
-                                            <div class="product-list__item__info__add">
-                                                <button class="btn btn-add">ADD TO CART</button>
-                                                <div class="add-wishlish">
-                                                    <span>
-                                                        <a href=""><i class="far fa-heart"></i></a>
-                                                        <span class="add-wish">Add Wishlist</span>
-                                                    </span>
-                                                </div>
-                                                <div class="add-compare">
-                                                    <span>
-                                                        <a href=""><img src="images/Comapre.png"></a>
-                                                        <span class="add-com">Add Compare</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collumn item">
-                                    <div class="product-list__item">
-                                        <div class="product-list__item__image">
-                                            <a href="">
-                                                <img src="images/grid-2.png">
-                                            </a>
-                                            <ul class="products-list__item__image__bottom">
-                                                <li class="bottom__item active" data-src="images/grid-2.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/grid-3.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/grid-4.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                                </li>
-                                            </ul>
-                                            <div class="box-label">
-                                                <button class="btn btn-default">SALE</button>
-                                            </div>
-                                        </div>
-                                        <div class="product-list__item__info">
-                                            <div class="product-list__item__info__name">
-                                                <a href="">Convallis Venenatis Metus</a>
-                                            </div>
-                                            <div class="product-list__item__info__type">
-                                                <a href="">Essentials</a>
-                                            </div>
-                                            <div class="product-list__item__info__price">
-                                                $124.00
-                                            </div>
-                                            <div class="product-list__item__info__description">
-                                                Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
-                                            </div>
-                                            <div class="product-list__item__info__add">
-                                                <button class="btn btn-add">ADD TO CART</button>
-                                                <div class="add-wishlish">
-                                                    <span>
-                                                        <a href=""><i class="far fa-heart"></i></a>
-                                                        <span class="add-wish">Add Wishlist</span>
-                                                    </span>
-                                                </div>
-                                                <div class="add-compare">
-                                                    <span>
-                                                        <a href=""><img src="images/Comapre.png"></a>
-                                                        <span class="add-com">Add Compare</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collumn item">
-                                    <div class="product-list__item">
-                                        <div class="product-list__item__image">
-                                            <a href="">
-                                                <img src="images/grid-3.png">
-                                            </a>
-                                            <ul class="products-list__item__image__bottom">
-                                                <li class="bottom__item active" data-src="images/grid-3.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/grid-4.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/grid-5.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-list__item__info">
-                                            <div class="product-list__item__info__name">
-                                                <a href="">Convallis Venenatis Metus</a>
-                                            </div>
-                                            <div class="product-list__item__info__type">
-                                                <a href="">Essentials</a>
-                                            </div>
-                                            <div class="product-list__item__info__price">
-                                                $124.00
-                                            </div>
-                                            <div class="product-list__item__info__description">
-                                                Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
-                                            </div>
-                                            <div class="product-list__item__info__add">
-                                                <button class="btn btn-add">ADD TO CART</button>
-                                                <div class="add-wishlish">
-                                                    <span>
-                                                        <a href=""><i class="far fa-heart"></i></a>
-                                                        <span class="add-wish">Add Wishlist</span>
-                                                    </span>
-                                                </div>
-                                                <div class="add-compare">
-                                                    <span>
-                                                        <a href=""><img src="images/Comapre.png"></a>
-                                                        <span class="add-com">Add Compare</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collumn item">
-                                    <div class="product-list__item">
-                                        <div class="product-list__item__image">
-                                            <a href="">
-                                                <img src="images/grid-4.png">
-                                            </a>
-                                            <ul class="products-list__item__image__bottom">
-                                                <li class="bottom__item active" data-src="images/grid-4.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/grid-5.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/grid-6.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-list__item__info">
-                                            <div class="product-list__item__info__name">
-                                                <a href="">Convallis Venenatis Metus</a>
-                                            </div>
-                                            <div class="product-list__item__info__type">
-                                                <a href="">Essentials</a>
-                                            </div>
-                                            <div class="product-list__item__info__price">
-                                                $124.00
-                                            </div>
-                                            <div class="product-list__item__info__description">
-                                                Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
-                                            </div>
-                                            <div class="product-list__item__info__add">
-                                                <button class="btn btn-add">ADD TO CART</button>
-                                                <div class="add-wishlish">
-                                                    <span>
-                                                        <a href=""><i class="far fa-heart"></i></a>
-                                                        <span class="add-wish">Add Wishlist</span>
-                                                    </span>
-                                                </div>
-                                                <div class="add-compare">
-                                                    <span>
-                                                        <a href=""><img src="images/Comapre.png"></a>
-                                                        <span class="add-com">Add Compare</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collumn item">
-                                    <div class="product-list__item">
-                                        <div class="product-list__item__image">
-                                            <a href="">
-                                                <img src="images/grid-5.png">
-                                            </a>
-                                            <ul class="products-list__item__image__bottom">
-                                                <li class="bottom__item active" data-src="images/grid-5.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/grid-6.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/grid-4.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-list__item__info">
-                                            <div class="product-list__item__info__name">
-                                                <a href="">Convallis Venenatis Metus</a>
-                                            </div>
-                                            <div class="product-list__item__info__type">
-                                                <a href="">Essentials</a>
-                                            </div>
-                                            <div class="product-list__item__info__price">
-                                                $124.00
-                                            </div>
-                                            <div class="product-list__item__info__description">
-                                                Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
-                                            </div>
-                                            <div class="product-list__item__info__add">
-                                                <button class="btn btn-add">ADD TO CART</button>
-                                                <div class="add-wishlish">
-                                                    <span>
-                                                        <a href=""><i class="far fa-heart"></i></a>
-                                                        <span class="add-wish">Add Wishlist</span>
-                                                    </span>
-                                                </div>
-                                                <div class="add-compare">
-                                                    <span>
-                                                        <a href=""><img src="images/Comapre.png"></a>
-                                                        <span class="add-com">Add Compare</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="collumn item">
-                                    <div class="product-list__item">
-                                        <div class="product-list__item__image">
-                                            <a href="">
-                                                <img src="images/grid-6.png">
-                                            </a>
-                                            <ul class="products-list__item__image__bottom">
-                                                <li class="bottom__item active" data-src="images/grid-6.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/grid-4.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                                </li>
-                                                <li class="bottom__item" data-src="images/grid-5.png">
-                                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div class="product-list__item__info">
-                                            <div class="product-list__item__info__name">
-                                                <a href="">Convallis Venenatis Metus</a>
-                                            </div>
-                                            <div class="product-list__item__info__type">
-                                                <a href="">Essentials</a>
-                                            </div>
-                                            <div class="product-list__item__info__price">
-                                                $124.00
-                                            </div>
-                                            <div class="product-list__item__info__description">
-                                                Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
-                                            </div>
-                                            <div class="product-list__item__info__add">
-                                                <button class="btn btn-add">ADD TO CART</button>
-                                                <div class="add-wishlish">
-                                                    <span>
-                                                        <a href=""><i class="far fa-heart"></i></a>
-                                                        <span class="add-wish">Add Wishlist</span>
-                                                    </span>
-                                                </div>
-                                                <div class="add-compare">
-                                                    <span>
-                                                        <a href=""><img src="images/Comapre.png"></a>
-                                                        <span class="add-com">Add Compare</span>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="page-choose__right">
+                            <div class="page-choose__right__sort">
+                                Sort by:
+                                <select>
+                                    <option>Default</option>
+                                    <option>Price</option>
+                                    <option>Size</option>
+                                    <option>Color</option>
+                                </select>
                             </div>
-                        </div>
-                        <hr>
-                        <div class="pagination-page">
-                            <div class="pagination__info">
-                                Showing 12 of 30 products
-                            <div class="pagination__box">
-                                <div class="pagination">
-                                    <a href="#"><i class="fas fa-angle-left" style="font-size: 22px;"></i></a>  
-                                    <a href="#" class="active">1</a>
-                                    <a href="#">2</a>
-                                    <a href="#"><i class="fas fa-angle-right" style="font-size: 22px;"></i></a>
-                                </div>
+                            <div class="page-choose__right__show">
+                                Show:
+                                <select>
+                                    <option>06</option>
+                                    <option>12</option>
+                                    <option>24</option>
+                                </select>
                             </div>
-                            <div class="pag"></div>
                         </div>
                     </div>
-                </div>
-            </section>
-        </div>
-        
-        <section class="section-newsletter">
-            <div class="newsletter">
-                <div class="container">
-                    <div class="newsletter__content">
-                        <div class="newsletter__info">
-                            <div class="newsletter__info__signup">
-                                SIGN UP NEWSLETTER
-                                <div class="newsletter__info__signup__image">
-                                    <img src="images/sent.png" alt="">
+                    <hr>
+                    
+                    <div class="product-list product-view-grid">
+                        <div class="row">
+                            <div class="collumn item">
+                                <div class="product-list__item">
+                                    <div class="product-list__item__image">
+                                        <a href="">
+                                            <img src="images/best-selling-1.png">
+                                        </a>
+                                        <ul class="products-list__item__image__bottom">
+                                            <li class="bottom__item active" data-src="images/best-selling-1.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/best-selling-2.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/best-selling-3.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__item__info">
+                                        <div class="product-list__item__info__name">
+                                            <a href="">Convallis Venenatis Metus</a>
+                                        </div>
+                                        <div class="product-list__item__info__type">
+                                            <a href="">Essentials</a>
+                                        </div>
+                                        <div class="product-list__item__info__price">
+                                            $124.00
+                                        </div>
+                                        <div class="product-list__item__info__description">
+                                            Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
+                                        </div>
+                                        <div class="product-list__item__info__add">
+                                            <button class="btn btn-add">ADD TO CART</button>
+                                            <div class="add-wishlish">
+                                                <span>
+                                                    <a href=""><i class="far fa-heart"></i></a>
+                                                    <span class="add-wish">Add Wishlist</span>
+                                                </span>
+                                            </div>
+                                            <div class="add-compare">
+                                                <span>
+                                                    <a href=""><img src="images/Comapre.png"></a>
+                                                    <span class="add-com">Add Compare</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="newsletter__info__text">
-                                Get news and receive 20% off for your next buy!
+                            <div class="collumn item">
+                                <div class="product-list__item">
+                                    <div class="product-list__item__image">
+                                        <a href="">
+                                            <img src="images/best-selling-2.png">
+                                        </a>
+                                        <ul class="products-list__item__image__bottom">
+                                            <li class="bottom__item active" data-src="images/best-selling-2.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/best-selling-1.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/best-selling-3.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                            </li>
+                                        </ul>
+                                        <div class="box-label">
+                                            <button class="btn btn-default">SALE</button>
+                                        </div>
+                                    </div>
+                                    <div class="product-list__item__info">
+                                        <div class="product-list__item__info__name">
+                                            <a href="">Convallis Venenatis Metus</a>
+                                        </div>
+                                        <div class="product-list__item__info__type">
+                                            <a href="">Essentials</a>
+                                        </div>
+                                        <div class="product-list__item__info__price">
+                                            <span class="old-price">
+                                                <del>$199.00</del>
+                                            </span>
+                                            $124.00
+                                        </div>
+                                        <div class="product-list__item__info__description">
+                                            Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
+                                        </div>
+                                        <div class="product-list__item__info__add">
+                                            <button class="btn btn-add">ADD TO CART</button>
+                                            <div class="add-wishlish">
+                                                <span>
+                                                    <a href=""><i class="far fa-heart"></i></a>
+                                                    <span class="add-wish">Add Wishlist</span>
+                                                </span>
+                                            </div>
+                                            <div class="add-compare">
+                                                <span>
+                                                    <a href=""><img src="images/Comapre.png"></a>
+                                                    <span class="add-com">Add Compare</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collumn item">
+                                <div class="product-list__item">
+                                    <div class="product-list__item__image">
+                                        <a href="">
+                                            <img src="images/best-selling-3.png">
+                                        </a>
+                                        <ul class="products-list__item__image__bottom">
+                                            <li class="bottom__item active" data-src="images/best-selling-3.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/best-selling-2.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/best-selling-1.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                            </li>
+                                        </ul>
+                                        <div class="box-label">
+                                            <button class="btn btn-default">NEW</button>
+                                        </div>
+                                    </div>
+                                    <div class="product-list__item__info">
+                                        <div class="product-list__item__info__name">
+                                            <a href="">Convallis Venenatis Metus</a>
+                                        </div>
+                                        <div class="product-list__item__info__type">
+                                            <a href="">Essentials</a>
+                                        </div>
+                                        <div class="product-list__item__info__price">
+                                            $124.00
+                                        </div>
+                                        <div class="product-list__item__info__description">
+                                            Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
+                                        </div>
+                                        <div class="product-list__item__info__add">
+                                            <button class="btn btn-add">ADD TO CART</button>
+                                            <div class="add-wishlish">
+                                                <span>
+                                                    <a href=""><i class="far fa-heart"></i></a>
+                                                    <span class="add-wish">Add Wishlist</span>
+                                                </span>
+                                            </div>
+                                            <div class="add-compare">
+                                                <span>
+                                                    <a href=""><img src="images/Comapre.png"></a>
+                                                    <span class="add-com">Add Compare</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collumn item">
+                                <div class="product-list__item">
+                                    <div class="product-list__item__image">
+                                        <a href="">
+                                            <img src="images/best-selling-4.png">
+                                        </a>
+                                        <ul class="products-list__item__image__bottom">
+                                            <li class="bottom__item active" data-src="images/best-selling-4.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/best-selling-2.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/best-selling-3.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__item__info">
+                                        <div class="product-list__item__info__name">
+                                            <a href="">Convallis Venenatis Metus</a>
+                                        </div>
+                                        <div class="product-list__item__info__type">
+                                            <a href="">Essentials</a>
+                                        </div>
+                                        <div class="product-list__item__info__price">
+                                            $124.00
+                                        </div>
+                                        <div class="product-list__item__info__description">
+                                            Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
+                                        </div>
+                                        <div class="product-list__item__info__add">
+                                            <button class="btn btn-add">ADD TO CART</button>
+                                            <div class="add-wishlish">
+                                                <span>
+                                                    <a href=""><i class="far fa-heart"></i></a>
+                                                    <span class="add-wish">Add Wishlist</span>
+                                                </span>
+                                            </div>
+                                            <div class="add-compare">
+                                                <span>
+                                                    <a href=""><img src="images/Comapre.png"></a>
+                                                    <span class="add-com">Add Compare</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collumn item">
+                                <div class="product-list__item">
+                                    <div class="product-list__item__image">
+                                        <a href="">
+                                            <img src="images/best-selling-1.png">
+                                        </a>
+                                        <ul class="products-list__item__image__bottom">
+                                            <li class="bottom__item active" data-src="images/best-selling-1.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/best-selling-2.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/best-selling-3.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__item__info">
+                                        <div class="product-list__item__info__name">
+                                            <a href="">Convallis Venenatis Metus</a>
+                                        </div>
+                                        <div class="product-list__item__info__type">
+                                            <a href="">Essentials</a>
+                                        </div>
+                                        <div class="product-list__item__info__price">
+                                            $124.00
+                                        </div>
+                                        <div class="product-list__item__info__description">
+                                            Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
+                                        </div>
+                                        <div class="product-list__item__info__add">
+                                            <button class="btn btn-add">ADD TO CART</button>
+                                            <div class="add-wishlish">
+                                                <span>
+                                                    <a href=""><i class="far fa-heart"></i></a>
+                                                    <span class="add-wish">Add Wishlist</span>
+                                                </span>
+                                            </div>
+                                            <div class="add-compare">
+                                                <span>
+                                                    <a href=""><img src="images/Comapre.png"></a>
+                                                    <span class="add-com">Add Compare</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collumn item">
+                                <div class="product-list__item">
+                                    <div class="product-list__item__image">
+                                        <a href="">
+                                            <img src="images/best-selling-1.png">
+                                        </a>
+                                        <ul class="products-list__item__image__bottom">
+                                            <li class="bottom__item active" data-src="images/best-selling-1.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/best-selling-2.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/best-selling-3.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                            </li>
+                                        </ul>
+                                        <div class="box-label">
+                                            <button class="btn btn-default">SALE</button>
+                                        </div>
+                                    </div>
+                                    <div class="product-list__item__info">
+                                        <div class="product-list__item__info__name">
+                                            <a href="">Convallis Venenatis Metus</a>
+                                        </div>
+                                        <div class="product-list__item__info__type">
+                                            <a href="">Essentials</a>
+                                        </div>
+                                        <div class="product-list__item__info__price">
+                                            $124.00
+                                        </div>
+                                        <div class="product-list__item__info__description">
+                                            Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
+                                        </div>
+                                        <div class="product-list__item__info__add">
+                                            <button class="btn btn-add">ADD TO CART</button>
+                                            <div class="add-wishlish">
+                                                <span>
+                                                    <a href=""><i class="far fa-heart"></i></a>
+                                                    <span class="add-wish">Add Wishlist</span>
+                                                </span>
+                                            </div>
+                                            <div class="add-compare">
+                                                <span>
+                                                    <a href=""><img src="images/Comapre.png"></a>
+                                                    <span class="add-com">Add Compare</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collumn item">
+                                <div class="product-list__item">
+                                    <div class="product-list__item__image">
+                                        <a href="">
+                                            <img src="images/grid-1.png">
+                                        </a>
+                                        <ul class="products-list__item__image__bottom">
+                                            <li class="bottom__item active" data-src="images/grid-1.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/grid-2.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/grid-3.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__item__info">
+                                        <div class="product-list__item__info__name">
+                                            <a href="">Convallis Venenatis Metus</a>
+                                        </div>
+                                        <div class="product-list__item__info__type">
+                                            <a href="">Essentials</a>
+                                        </div>
+                                        <div class="product-list__item__info__price">
+                                            $124.00
+                                        </div>
+                                        <div class="product-list__item__info__description">
+                                            Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
+                                        </div>
+                                        <div class="product-list__item__info__add">
+                                            <button class="btn btn-add">ADD TO CART</button>
+                                            <div class="add-wishlish">
+                                                <span>
+                                                    <a href=""><i class="far fa-heart"></i></a>
+                                                    <span class="add-wish">Add Wishlist</span>
+                                                </span>
+                                            </div>
+                                            <div class="add-compare">
+                                                <span>
+                                                    <a href=""><img src="images/Comapre.png"></a>
+                                                    <span class="add-com">Add Compare</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collumn item">
+                                <div class="product-list__item">
+                                    <div class="product-list__item__image">
+                                        <a href="">
+                                            <img src="images/grid-2.png">
+                                        </a>
+                                        <ul class="products-list__item__image__bottom">
+                                            <li class="bottom__item active" data-src="images/grid-2.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/grid-3.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/grid-4.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                            </li>
+                                        </ul>
+                                        <div class="box-label">
+                                            <button class="btn btn-default">SALE</button>
+                                        </div>
+                                    </div>
+                                    <div class="product-list__item__info">
+                                        <div class="product-list__item__info__name">
+                                            <a href="">Convallis Venenatis Metus</a>
+                                        </div>
+                                        <div class="product-list__item__info__type">
+                                            <a href="">Essentials</a>
+                                        </div>
+                                        <div class="product-list__item__info__price">
+                                            $124.00
+                                        </div>
+                                        <div class="product-list__item__info__description">
+                                            Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
+                                        </div>
+                                        <div class="product-list__item__info__add">
+                                            <button class="btn btn-add">ADD TO CART</button>
+                                            <div class="add-wishlish">
+                                                <span>
+                                                    <a href=""><i class="far fa-heart"></i></a>
+                                                    <span class="add-wish">Add Wishlist</span>
+                                                </span>
+                                            </div>
+                                            <div class="add-compare">
+                                                <span>
+                                                    <a href=""><img src="images/Comapre.png"></a>
+                                                    <span class="add-com">Add Compare</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collumn item">
+                                <div class="product-list__item">
+                                    <div class="product-list__item__image">
+                                        <a href="">
+                                            <img src="images/grid-3.png">
+                                        </a>
+                                        <ul class="products-list__item__image__bottom">
+                                            <li class="bottom__item active" data-src="images/grid-3.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/grid-4.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/grid-5.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__item__info">
+                                        <div class="product-list__item__info__name">
+                                            <a href="">Convallis Venenatis Metus</a>
+                                        </div>
+                                        <div class="product-list__item__info__type">
+                                            <a href="">Essentials</a>
+                                        </div>
+                                        <div class="product-list__item__info__price">
+                                            $124.00
+                                        </div>
+                                        <div class="product-list__item__info__description">
+                                            Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
+                                        </div>
+                                        <div class="product-list__item__info__add">
+                                            <button class="btn btn-add">ADD TO CART</button>
+                                            <div class="add-wishlish">
+                                                <span>
+                                                    <a href=""><i class="far fa-heart"></i></a>
+                                                    <span class="add-wish">Add Wishlist</span>
+                                                </span>
+                                            </div>
+                                            <div class="add-compare">
+                                                <span>
+                                                    <a href=""><img src="images/Comapre.png"></a>
+                                                    <span class="add-com">Add Compare</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collumn item">
+                                <div class="product-list__item">
+                                    <div class="product-list__item__image">
+                                        <a href="">
+                                            <img src="images/grid-4.png">
+                                        </a>
+                                        <ul class="products-list__item__image__bottom">
+                                            <li class="bottom__item active" data-src="images/grid-4.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/grid-5.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/grid-6.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__item__info">
+                                        <div class="product-list__item__info__name">
+                                            <a href="">Convallis Venenatis Metus</a>
+                                        </div>
+                                        <div class="product-list__item__info__type">
+                                            <a href="">Essentials</a>
+                                        </div>
+                                        <div class="product-list__item__info__price">
+                                            $124.00
+                                        </div>
+                                        <div class="product-list__item__info__description">
+                                            Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
+                                        </div>
+                                        <div class="product-list__item__info__add">
+                                            <button class="btn btn-add">ADD TO CART</button>
+                                            <div class="add-wishlish">
+                                                <span>
+                                                    <a href=""><i class="far fa-heart"></i></a>
+                                                    <span class="add-wish">Add Wishlist</span>
+                                                </span>
+                                            </div>
+                                            <div class="add-compare">
+                                                <span>
+                                                    <a href=""><img src="images/Comapre.png"></a>
+                                                    <span class="add-com">Add Compare</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collumn item">
+                                <div class="product-list__item">
+                                    <div class="product-list__item__image">
+                                        <a href="">
+                                            <img src="images/grid-5.png">
+                                        </a>
+                                        <ul class="products-list__item__image__bottom">
+                                            <li class="bottom__item active" data-src="images/grid-5.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/grid-6.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/grid-4.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__item__info">
+                                        <div class="product-list__item__info__name">
+                                            <a href="">Convallis Venenatis Metus</a>
+                                        </div>
+                                        <div class="product-list__item__info__type">
+                                            <a href="">Essentials</a>
+                                        </div>
+                                        <div class="product-list__item__info__price">
+                                            $124.00
+                                        </div>
+                                        <div class="product-list__item__info__description">
+                                            Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
+                                        </div>
+                                        <div class="product-list__item__info__add">
+                                            <button class="btn btn-add">ADD TO CART</button>
+                                            <div class="add-wishlish">
+                                                <span>
+                                                    <a href=""><i class="far fa-heart"></i></a>
+                                                    <span class="add-wish">Add Wishlist</span>
+                                                </span>
+                                            </div>
+                                            <div class="add-compare">
+                                                <span>
+                                                    <a href=""><img src="images/Comapre.png"></a>
+                                                    <span class="add-com">Add Compare</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collumn item">
+                                <div class="product-list__item">
+                                    <div class="product-list__item__image">
+                                        <a href="">
+                                            <img src="images/grid-6.png">
+                                        </a>
+                                        <ul class="products-list__item__image__bottom">
+                                            <li class="bottom__item active" data-src="images/grid-6.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/grid-4.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                            </li>
+                                            <li class="bottom__item" data-src="images/grid-5.png">
+                                                <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-list__item__info">
+                                        <div class="product-list__item__info__name">
+                                            <a href="">Convallis Venenatis Metus</a>
+                                        </div>
+                                        <div class="product-list__item__info__type">
+                                            <a href="">Essentials</a>
+                                        </div>
+                                        <div class="product-list__item__info__price">
+                                            $124.00
+                                        </div>
+                                        <div class="product-list__item__info__description">
+                                            Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, iaculis augue, duis ullamcorper ullamcorper
+                                        </div>
+                                        <div class="product-list__item__info__add">
+                                            <button class="btn btn-add">ADD TO CART</button>
+                                            <div class="add-wishlish">
+                                                <span>
+                                                    <a href=""><i class="far fa-heart"></i></a>
+                                                    <span class="add-wish">Add Wishlist</span>
+                                                </span>
+                                            </div>
+                                            <div class="add-compare">
+                                                <span>
+                                                    <a href=""><img src="images/Comapre.png"></a>
+                                                    <span class="add-com">Add Compare</span>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="newsletter__form">
-                            <form>
-                                <input type="text" id="search" placeholder="Email@example.com">
-                                <input type="submit" value="SUBSCRIBE" id="submit">
-                            </form>
+                    </div>
+                    <hr>
+                    <div class="pagination-page">
+                        <div class="pagination__info">
+                            Showing 12 of 30 products
+                        <div class="pagination__box">
+                            <div class="pagination">
+                                <a href="#"><i class="fas fa-angle-left" style="font-size: 22px;"></i></a>  
+                                <a href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#"><i class="fas fa-angle-right" style="font-size: 22px;"></i></a>
+                            </div>
                         </div>
+                        <div class="pag"></div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <div class="container">      
-            <section class="section-footer">  
-                <div class="footer__top">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="footer__top__list">
-                                <div class="top__list__title" id="tt1">
-                                    <div class="top__list__logo">
-                                        <a href="#">
-                                            <img src = "images/logo.png" alt="">
-                                        </a>
-                                    </div>
+<!----------->       
+        <section class="section-newsletter">
+            <div class="newsletter">
+                <div class="newsletter__content">
+                    <div class="newsletter__info">
+                        <div class="newsletter__info__signup">
+                            SIGN UP NEWSLETTER
+                        </div>
+                        <div class="newsletter__info__text">
+                            Get news and receive 20% off for your next buy!
+                        </div>
+                    </div>
+                    <div class="newsletter__form">
+                        <form>
+                            <input type="text" id="search" placeholder="Email@example.com">
+                            <input type="submit" value="SUBSCRIBE" id="submit">
+                        </form>
+                    </div>
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+        </section>
+        <!----------->
+        <div class="space"></div>
+        <section class="section-footer">           
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 col-12">
+                        <div class="footer__top__list">
+                            <div class="top__list__title">
+                                <div class="top__list__logo">
+                                    <a href="#">
+                                        <img src = "images/logo.png" alt="">
+                                    </a>
                                 </div>
-                                <div class="top__list__item">
-                                    <div class="top__list__item__content">
-                                        Lorem ipsum dolor amet conseter adipis pulvinar fermentum. Praliquet molest justo eleifend haretra lacus pretiur lacinia nulla.
+                            </div>
+                            <div class="top__list__item">
+                                <div class="top__list__item__content">
+                                    Lorem ipsum dolor amet conseter adipis pulvinar fermentum. Praliquet molest justo eleifend haretra lacus pretiur lacinia nulla.
+                                </div>
+                                <div class="top__list__item__contact">
+                                    <div class="item__contact item__contact__address">
+                                        <span>
+                                            <i class="fas fa-location-arrow"></i>
+                                            Add: No. 1203 Jonh Rhjn Suite 120, NY 77101.
+                                        </span>
                                     </div>
-                                    <div class="top__list__item__contact">
-                                        <div class="item__contact item__contact__address">
-                                            <span>
-                                                <i class="fas fa-location-arrow"></i>
-                                                Add: No. 1203 Jonh Rhjn Suite 120, NY 77101.
-                                            </span>
-                                        </div>
-                                        <div class="item__contact item__contact__phone">
-                                            <span>
-                                                <i class="fas fa-phone"></i>
-                                                    Call Us: +1 (230) 2 4466 - 4468
-                                            </span>
-                                        </div>
-                                        <div class="item__contact item__contact__email">
-                                            <span>
-                                                <i class="fas fa-envelope"></i>
-                                                Email: Care247@demo.com
-                                            </span>
-                                        </div>
+                                    <div class="item__contact item__contact__phone">
+                                        <span>
+                                            <i class="fas fa-phone"></i>
+                                                Call Us: +1 (230) 2 4466 - 4468
+                                        </span>
+                                    </div>
+                                    <div class="item__contact item__contact__email">
+                                        <span>
+                                            <i class="fas fa-envelope"></i>
+                                            Email: Care247@demo.com
+                                        </span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="footer__top__list">
-                                        <div class="top__list__title">
-                                            INFORMATION
-                                        </div>
-                                        <div class="top__list__item">
-                                            <ul>
-                                                <li><a href="#">About Us</a></li>
-                                                <li><a href="#">Returns & Refunds</a></li>
-                                                <li><a href="#">Shipping Guide</a></li>
-                                                <li><a href="#">Term & Conditions</a></li>
-                                                <li><a href="#">My Wishlist</a></li>
-                                                <li><a href="#">Top Research</a></li>
-                                            </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                        <div class="footer__top__list">
+                            <div class="top__list__title">
+                                INFORMATION
+                            </div>
+                            <div class="top__list__item">
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Returns & Refunds</a></li>
+                                    <li><a href="#">Shipping Guide</a></li>
+                                    <li><a href="#">Term & Conditions</a></li>
+                                    <li><a href="#">My Wishlist</a></li>
+                                    <li><a href="#">Top Research</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                        <div class="footer__top__list">
+                            <div class="top__list__title">
+                                NEED HELP
+                            </div>
+                            <div class="top__list__item">
+                                <ul>
+                                    <li><a href="#">Discount Info</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                    <li><a href="#">Payment & Returns</a></li>
+                                    <li><a href="#">Site Guide</a></li>
+                                    <li><a href="#">Product Care</a></li>
+                                    <li><a href="#">Customer Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-8 col-11">
+                        <div class="footer__top__list footer-insta">
+                            <div class="top__list__title">
+                                INSTAGRAM
+                            </div>
+                            <div class="top__list__item">
+                                <div class="row">
+                                    <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                        <div class="item__image">
+                                            <a href="#">
+                                                <img src="images/instagram-1.png" alt="">
+                                            </a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="footer__top__list">
-                                        <div class="top__list__title">
-                                            NEED HELP
-                                        </div>
-                                        <div class="top__list__item">
-                                            <ul>
-                                                <li><a href="#">Discount Info</a></li>
-                                                <li><a href="#">Privacy Policy</a></li>
-                                                <li><a href="#">Payment & Returns</a></li>
-                                                <li><a href="#">Site Guide</a></li>
-                                                <li><a href="#">Product Care</a></li>
-                                                <li><a href="#">Customer Services</a></li>
-                                            </ul>
+                                    <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                        <div class="item__image">
+                                            <a href="#">
+                                                <img src="images/instagram-2.png" alt="">
+                                            </a>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-md-5">
-                                    <div class="footer__top__list footer-insta">
-                                        <div class="top__list__title">
-                                            INSTAGRAM
+                                    <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                        <div class="item__image">
+                                            <a href="#">
+                                                <img src="images/instagram-3.png" alt="">
+                                            </a>
                                         </div>
-                                        <div class="top__list__item">
-                                            <div class="row">
-                                                <div class="col-md-4">
-                                                    <div class="item__image">
-                                                        <a href="#">
-                                                            <img src="images/instagram-1.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="item__image">
-                                                        <a href="#">
-                                                            <img src="images/instagram-2.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="item__image">
-                                                        <a href="#">
-                                                            <img src="images/instagram-3.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="item__image">
-                                                        <a href="#">
-                                                            <img src="images/instagram-4.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="item__image">
-                                                        <a href="#">
-                                                            <img src="images/instagram-5.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4">
-                                                    <div class="item__image">
-                                                        <a href="#">
-                                                            <img src="images/instagram-6.png" alt="">
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    </div>
+                                    <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                        <div class="item__image">
+                                            <a href="#">
+                                                <img src="images/instagram-4.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                        <div class="item__image">
+                                            <a href="#">
+                                                <img src="images/instagram-5.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                        <div class="item__image">
+                                            <a href="#">
+                                                <img src="images/instagram-6.png" alt="">
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
-                <div class="footer__bottom">
-                    <div class="footer__bottom__left">
-                        &copy;2018 All rights reserved. Design by<a href="#"> <span> Joommasters.com</span></a>
-                    </div>
-                    <div class="footer__bottom__right">
-                        <ul>
-                            Follow Us: 
-                            <li>
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-google"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-pinterest"></i></a>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                </div> 
-            </section>
-        </div>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-        <script language="javascript" src="scripts/category.js"></script>
+            </div>
+            <div class="footer__bottom">
+                <div class="footer__bottom__left">
+                    &copy;2018 All rights reserved. Design by<a href="#"> <span> Joommasters.com</span></a>
+                </div>
+                <div class="footer__bottom__right">
+                    <ul>
+                        Follow Us: 
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-google"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+        </section>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+        <script language="javascript" src="scripts/category.js"></script>
     </body>
 </html>
