@@ -15,7 +15,6 @@ body{
     font-family: poppins;
     margin: 31px 60px;
 }
-
 .nav__logo{
     float: left;
 }
@@ -285,8 +284,8 @@ ul{
     background: rgb(254,79,24);
     text-align: center;
     border-radius: 50%;
-    bottom: 70%;
-    left: 75%;
+    bottom: 61%;
+    left: 65%;
     font-weight: 400;
 }
 .nav__setting__menu{
@@ -441,6 +440,7 @@ ul{
 
 .section__intro{
     text-align: center;
+    margin-top: 60px;
 }
 .section-title {
     font-family: poppins;
@@ -470,9 +470,6 @@ ul{
 
 }
 
-.section-best-selling{
-    margin-top: 7px;
-}
 .products__item:hover{
     box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.18); 
     transition: 0.5s;
@@ -718,7 +715,7 @@ ul{
 .newsletter{
     background-color: rgb(255,194,174);
     font-family: poppins;
-    padding: 50px 0px 50px 0px;
+    padding: 60px 0px 60px 0px;
     margin-top: 10px;
     
 }
@@ -730,12 +727,8 @@ ul{
     display: inline;
     font-size: 20px;
     font-weight: 600;
-    padding-right: 17px;
-    position: relative;
-}
-.newsletter__info__signup__image{
-    position: absolute;
-    top: -55px;
+    padding: 60px 17px 60px 0px;
+    background: url(../images/sent.png) no-repeat center;
 }
 
 .newsletter__info__text{
@@ -761,6 +754,7 @@ ul{
     font-size: 13px;
     font-weight: 400;
     padding-left: 20px;
+    border-top: 1.5px solid #fff;
 }
 #submit{
     width: 149px;
@@ -828,6 +822,9 @@ ul { list-style-type: none; }
 .item__image:hover img {
     opacity: 0.7;
 }
+.footer__top{
+    margin-bottom: 30px;
+}
 .footer__top__list{
     margin-bottom: 30px;
 }
@@ -884,6 +881,16 @@ ul { list-style-type: none; }
     .header__slider .content-3{
         font-size: 18px;
     }
+    .newsletter .newsletter__info{
+        float: none;
+    }
+    .newsletter .newsletter__form{
+        margin-top: 30px;
+        float: none;
+    }
+    .newsletter{
+        text-align: center;
+    }
 }
 @media screen and (max-width: 1232px) {
     .service__item .service__item__icon img{
@@ -911,8 +918,12 @@ ul { list-style-type: none; }
         margin-right: -40px;
         margin-left: -40px;
     }
+    .service__item{
+        text-align: center;
+
+    }
     .service__item .service__item__content{
-        clear: both;
+        float: none;
     }
     .service__item .service__item__content__title h6{
         font-size: 18px;
@@ -922,6 +933,7 @@ ul { list-style-type: none; }
     }
     .service__item .service__item__icon{
         margin-bottom: 10px;
+        float: none;
     }
     .service__item .service__item__icon img{
         width: auto;
@@ -943,6 +955,9 @@ ul { list-style-type: none; }
     .nav__menu button {
         display: block;
         border: none;
+    }
+    .nav__menu button.navbar-toggler{
+        outline: none;
     }
     .nav__menu .navbar-collapse{
         display: none;
@@ -982,30 +997,19 @@ ul { list-style-type: none; }
     .header__slider .content-3{
         font-size: 16px;
     }
-    .newsletter .newsletter__info{
-        float: none;
-    }
-    .newsletter .newsletter__form{
-        margin-top: 30px;
-        float: none;
-    }
-    .newsletter{
-        text-align: center;
+    .service__item{
+        padding: 20px;
     }
 }
 @media screen and (max-width: 900px) {
     .header__slider{
         display: none;
     }
-    
+    .section-service{
+        margin-top: -55px;
+    }
 }
 @media screen and (max-width: 768px) {
-    .service__item .service__item__content{
-        clear: none;
-    }
-    .service__item .service__item__icon{
-        margin-bottom: 0px;
-    }
     .section-best-selling .latest-collection__box{
         position: static;
     }
@@ -1015,13 +1019,121 @@ ul { list-style-type: none; }
         text-align: center;
         margin-bottom: 10px;
     }
+    .newsletter{
+        padding-top: 0px;
+    }
     .newsletter .newsletter__info__signup{
         display: block;
+        padding: 30px 0px 10px 0px;
+        background: url(../images/sent.png) no-repeat center;       
     }
     .newsletter .newsletter__info__text{
         border: none;
+        padding: 0px;
+    }
+    .newsletter #search{
+        width: 350px;
+    }
+    .service__item{
+        text-align: left;
+    }
+    .service__item .service__item__content{
+        float: left;
+    }
+    .service__item .service__item__icon{
+        margin-bottom: 0px;
+        float: left;
+    }
+}
+@media screen and (max-width: 600px) {
+    .newsletter #search{
+        width: 250px;
+    }
+    .newsletter #submit{
+        width: 120px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .header__nav .nav__setting .nav__setting__cart{
+        margin-left: 15px;
+    }
+    .header__nav .nav__setting__menu {
+        margin-left: 15px;
+    }
+    .header__nav .nav__setting__cart .dropdown-content .cart__list {
+        padding: 20px;
+        width: 280px;
+    }
+    .header__nav .nav__setting__cart .dropdown-content{
+        right:-40px;
+    }
+    .header__nav .nav__setting__search .dropdown-content{
+        right: -50px;
+    }
+    .header__nav .nav__setting__search .dropdown-content input {
+        width: 310px;
     }
     .newsletter #search{
         width: 230px;
+    }
+    
+    section .section__intro{
+        margin-top: 30px;
+    }
+    
+    .section-footer .top__list__title{
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .newsletter .newsletter__info{
+        line-height: 2;
+    }
+    .newsletter #search{
+        width: 170px;
+        border: none;
+    }
+    .newsletter #submit{
+        width: 90px;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 360px) {
+    .header__nav .nav__setting__search .dropdown-content input {
+        width: 290px;
+    }
+    .service__item{
+        text-align: left;
+    }
+    .service__item .service__item__content{
+        float: left;
+    }
+    .service__item .service__item__icon{
+        margin-bottom: 0px;
+        float: left;
+    }
+    .newsletter .newsletter__info__text{
+        word-break: normal;
+        line-height: 0.5;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .header__nav .nav__setting__search .dropdown-content input {
+        width: 255px;
+    }
+    .service__item .service__item__icon img{
+        width: 45px;
+        height: 40px;
+        object-fit: contain;
+    }
+    .service__item .service__item__content__title h6{
+        font-size: 17px;
+    }
+    .service__item .service__item__content__description p {
+        font-size: 13px;
+    }
+    .products__item__add button{
+        margin: 5px;
     }
 }
