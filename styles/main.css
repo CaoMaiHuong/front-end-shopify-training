@@ -325,15 +325,11 @@ ul{
     line-height: 14px;
 }
 
-/* .slick-prev:before, .slick-next:before {
-    color: rgb(108,108,108) !important;
-
-} */
 
 .slick-prev:after {
     content: url('../images/arrow-1.png');
     font-size: 20px;
-    top: 0px;
+    top: -4px;
     right: 7px;
     position: absolute;
 }
@@ -341,7 +337,7 @@ ul{
     content: url('../images/arrow-2.png');
     color: red;
     font-size: 20px;
-    top: 0px;
+    top: -4px;
     right: 0px;
     position: absolute;
 }
@@ -605,7 +601,7 @@ ul{
 
 .latest-collection__box__item button{
     position: relative;
-    bottom: 30%;
+    bottom: 27%;
     background-color: rgb(254,79,24);
     border: none;
     border-radius: 0;
@@ -692,7 +688,7 @@ ul{
 }
 #company_items{
     margin-top: 45px;
-    margin-bottom: 35px;
+    margin-bottom: 45px;
 }
 .section-company{
     border-top: 2px solid rgb(233,237,240);
@@ -920,7 +916,7 @@ ul { list-style-type: none; }
     }
     .service__item{
         text-align: center;
-
+        padding: 20px;
     }
     .service__item .service__item__content{
         float: none;
@@ -997,10 +993,16 @@ ul { list-style-type: none; }
     .header__slider .content-3{
         font-size: 16px;
     }
-    .service__item{
-        padding: 20px;
+    .section-footer .top__list__title{
+        margin-bottom: 10px;
     }
 }
+@media screen and (max-width: 992px) {
+    .newsletter #search{
+        width: 350px;
+    }
+}
+
 @media screen and (max-width: 900px) {
     .header__slider{
         display: none;
@@ -1031,8 +1033,16 @@ ul { list-style-type: none; }
         border: none;
         padding: 0px;
     }
+    .service__item{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 600px) {
     .newsletter #search{
-        width: 350px;
+        width: 245px;
+    }
+    .newsletter #submit{
+        width: 115px;
     }
     .service__item{
         text-align: left;
@@ -1044,13 +1054,9 @@ ul { list-style-type: none; }
         margin-bottom: 0px;
         float: left;
     }
-}
-@media screen and (max-width: 600px) {
-    .newsletter #search{
-        width: 250px;
-    }
-    .newsletter #submit{
-        width: 120px;
+    #company_items{
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 @media screen and (max-width: 414px) {
@@ -1076,13 +1082,16 @@ ul { list-style-type: none; }
     .newsletter #search{
         width: 230px;
     }
-    
     section .section__intro{
         margin-top: 30px;
     }
-    
-    .section-footer .top__list__title{
-        margin-bottom: 10px;
+    .slider .blog__item .blog__item__image img {
+        height: 200px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .newsletter #search{
+        width: 200px;
     }
 }
 @media screen and (max-width: 375px) {
@@ -1115,6 +1124,9 @@ ul { list-style-type: none; }
     .newsletter .newsletter__info__text{
         word-break: normal;
         line-height: 0.5;
+    }
+    .slider .blog__item .blog__item__image img {
+        height: 170px;
     }
 }
 
