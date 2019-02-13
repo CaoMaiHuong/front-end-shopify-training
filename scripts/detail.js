@@ -2,6 +2,29 @@ $('#related-product').slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1100,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 550,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+    ]
 });
 
 $('.bottom__item').hover(function(){
