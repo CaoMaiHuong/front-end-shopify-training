@@ -935,6 +935,9 @@ hr{
 .newsletter__form{
     float: right;
 }
+.newsletter__form form{
+    margin-bottom: 0px;
+}
 .newsletter__form input{
     border: none;
     height: 50px;
@@ -1166,7 +1169,7 @@ ul { list-style-type: none; }
         border: none;
     }
     .newsletter #search{
-        width: 230px;
+        width:350px;
     }
     .module__list{
         clear: both;
@@ -1220,9 +1223,6 @@ ul { list-style-type: none; }
     .newsletter .newsletter__info__text{
         border: none;
         padding: 0px;
-    }
-    .newsletter #search{
-        width: 350px;
     }
     .product-view-list .product-list__item .product-list__item__image{
         width: 48%;
