@@ -395,6 +395,9 @@ ul.breadcrumb li a:hover {
 .module__list__item__price .module__content__item__filter span{
     font-weight: 400;
 }
+.module__content__item__image img{
+    width:100%;
+}
 .slider-box {
     width: 100%; 
     margin-top: 33px;
@@ -404,7 +407,7 @@ ul.breadcrumb li a:hover {
     display: inline-block; 
     margin-right: -4px; 
     vertical-align: middle; 
-    width: 45%;
+    width: 35%;
     margin-left: 10px;
     outline: none;
 }
@@ -637,12 +640,9 @@ input[type="checkbox"] {
     outline: none;
     cursor: pointer;
 }
-
 hr{
     clear: both;
 }
-
-
 .product-list{
     margin-bottom: 30px;
     margin: 0px 10px 30px 10px;
@@ -663,7 +663,13 @@ hr{
     float: left;
     position: relative;
 }
-.product-list.product-view-list .item{
+.product-view-grid .product-list__item .product-list__item__image{
+    width: 100%;
+}
+.product-view-grid .product-list__item .product-list__item__image img{
+    width: 100%;
+}
+.product-list .product-view-list .collumn{
     width: 100% !important;
     position: inherit !important;
     left: 0 !important;
@@ -678,9 +684,9 @@ hr{
     box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.18); 
     transition: 0.5s;
 }
-/* .product-list__item__image{
+.product-list__item__image{
     width: 100%;
-} */
+}
 .product-view-list .product-list__item .product-list__item__info__description{
     width: 100%;
 }
@@ -689,9 +695,14 @@ hr{
 }
 .product-view-grid .product-list__item .product-list__item__info__add{
     display: flex;
+    justify-content: center;
 }
 
-.product-view-grid .product-list__item__info__add button { order: 2; }
+.product-view-grid .product-list__item__info__add button { 
+    order: 2; 
+    margin-left: 20px;
+    margin-right: 20px;
+}
 .product-view-grid .product-list__item__info__add .add-wishlish { 
     order: 1; 
     margin-top: 10px;
@@ -750,7 +761,7 @@ hr{
     color: rgb(130,130,130);
 }
 
-.product-list .product-list__item .product-list__item__info__add img{
+.product-view-list .product-list__item .product-list__item__info__add img{
     margin-right: 8px;
 }
 
@@ -791,40 +802,29 @@ hr{
 
 .product-view-grid .product-list__item .product-list__item__info{
     margin-top: 5px;
-    margin-bottom: 20px;
     text-align: center;
 }
+
 .product-view-grid .product-list__item .product-list__item__info__add{
     visibility: hidden;
-    padding-left: 14%;
 }
 
 .product-view-grid .product-list__item:hover .product-list__item__info__add{
     visibility: visible;  
     transition: 0.5s;
 }
-.product-view-grid .product-list__item:hover .product-list__item__info__add span{
-    vertical-align: middle;
-}
-.product-view-grid .product-list__item .product-list__item__info__add span a i{
-    font-size: 20px;
-    font-weight: 400;
-    color: rgb(130,130,130);
+.product-view-grid .product-list__item__info__add img {
     margin-right: 0px;
+}
+.product-view-grid .product-list__item .product-list__item__info__add a i {
+    font-size: 20px;
+    margin: 0px;
+    color: rgb(130,130,130);
 }
 .product-view-grid .product-list__item .product-list__item__info__price{
     margin-bottom: 20px;
 }
-.product-view-grid .product-list__item .product-list__item__info__add button{
-    margin-left: 22px;
-    margin-right: 22px;
-    padding: 7px 14px 5px 14px;
-    margin-bottom: 0px;
-}
-.product-view-grid .product-list__item__info__add img{
-    height: 20px;
-    width: 20px; 
-}
+
 .old-price{
     font-family: lato;
     font-weight: 400;
@@ -852,15 +852,15 @@ hr{
 }
 .product-view-grid .product-list__item{
     padding: 7px;
-    padding-right: 0px;
     font-family: poppins;
-    margin: 2px 0px 5px 7px;
+    margin: 2px 0px 5px 0px;
     width: 100%;
     position: relative;
 }
-.product-view-grid .product-list__item .product-list__item__image{
-    width: 100%;
-}
+
+.product-view-grid .item{
+    padding:0px;
+} 
 
 .pagination-page{
     margin-bottom: 75px;
@@ -1234,10 +1234,10 @@ ul { list-style-type: none; }
 }
 @media screen and (max-width: 600px) {
     .newsletter #search{
-        width: 250px;
+        width: 245px;
     }
     .newsletter #submit{
-        width: 120px;
+        width: 115px;
     }
     .product-view-list .product-list__item .product-list__item__info{
         width: 100%;
@@ -1289,6 +1289,11 @@ ul { list-style-type: none; }
         margin-bottom: 10px;
     }
 }
+@media screen and (max-width: 400px) {
+    .newsletter #search{
+        width: 200px;
+    }
+}
 @media screen and (max-width: 375px) {
     .newsletter .newsletter__info{
         line-height: 2;
@@ -1314,5 +1319,9 @@ ul { list-style-type: none; }
     }
     .products__item__add button{
         margin: 5px;
+    }
+    .module__list__item__price .module__content__item__filter button{
+        display: block;
+        margin-bottom: 10px;
     }
 }
