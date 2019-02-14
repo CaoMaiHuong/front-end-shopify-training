@@ -4,6 +4,13 @@ $(document).ready(function() {
         $(this).parents().siblings().find('.dropdown-content.setting').slideUp(100);
     });
 
+    // if (window.matchMedia("(max-width: 1024px)").matches) {
+    //     $('.nav__menu .dropdown .dropbtn').on('click', function(e){
+    //         $(this).parent().find('.dropdown-content').toggle(250);
+    //         $(this).parents().siblings().find('.dropdown-content').slideUp(100);
+    //     });
+    // }
+
     window.onscroll = function() {scrollFunction()};
     function scrollFunction(){
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

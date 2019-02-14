@@ -6,11 +6,7 @@ body{
 #goTop{
     padding: 10px 15px;
 }
-.header__nav .nav__menu .navbar-collapse.in{
-    display: block;
-    background-color: rgb(255,194,174);
-    margin-top: 20px;
-}
+
 .section-page-title{
     background-color: rgb(244,244,245);
     padding-top: 50px;
@@ -571,6 +567,11 @@ input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-i
     .section-related-product{
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .header__nav .nav__menu .navbar-collapse.in{
+        display: block;
+        background-color: rgb(255,194,174);
+        margin-top: 20px;
     }
 }
 @media screen and (max-width: 992px) {
