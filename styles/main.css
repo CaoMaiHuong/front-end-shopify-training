@@ -105,6 +105,7 @@ body{
 
 .service__list .ser{
     margin-bottom:15px;
+    padding: 10px;
 }
 .service__item{
     background-color: rgb(243,245,247);
@@ -477,6 +478,9 @@ body{
     .header__slider .content-3{
         font-size: 16px;
     }
+    .section-best-selling, .section-company, .section-blog{
+        margin: 0px 10px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -506,7 +510,7 @@ body{
         margin-bottom: 0px;
         float: left;
     }
-    .section-best-selling, .section-company, .section-blog{
+    .section-best-selling, .section-company, .section-blog,.section-featured{
         margin: 0px 20px;
     }
     #company_items{

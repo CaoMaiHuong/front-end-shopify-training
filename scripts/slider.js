@@ -1,11 +1,10 @@
-$(document).ready(function () {
+$(document).ready(function() {
     $("#single_item").slick({
         dots: true,
         arrows: false,
         autoplay: true,
         dotsClass: 'slick-dots'
     });
-    
 
     $('#best-selling_item').slick({
         infinite: true,

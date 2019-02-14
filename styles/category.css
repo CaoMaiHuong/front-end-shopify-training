@@ -725,6 +725,9 @@ hr{
         width: 60%;
         margin-top: 0px;
     }
+    .section-page-content .cont {
+        padding-right: 12px;
+    }
 }
 @media screen and (max-width: 768px) {
     .product-view-list .product-list__item .product-list__item__image{
