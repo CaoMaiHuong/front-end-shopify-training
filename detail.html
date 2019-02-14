@@ -4,15 +4,18 @@
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="styles/detail.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">      
+        <link rel="stylesheet" type="text/css" href="styles/common.css">
+        <link rel="stylesheet" type="text/css" href="styles/detail.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+        
     </head>
     <body>
+        <button onclick="goToTop()" id="goTop"><i class="fas fa-angle-double-up"></i></button>
         <section class="section-header">
-            <div class="header__nav ">
+            <div class="header__nav container">
                 <div class="nav__logo">
                     <a href="#">
                         <img src="images/logo.png" alt=""/>
@@ -462,556 +465,311 @@
                 </ul>
             </div>
         </section>
-        <section class="section-main-product">
-            <div class="main-product">
-                <div class="row">
-                    <div class="img-left col-xl-6 col-lg-6 col-md-7 col-sm-12">
-                        <div class="main-product__image">
-                            <div class="main-product__list__slider">
-                                <div class="main-product__list__slider__image">
-                                    <div class="main-product__slider__item">
-                                        <img src="images/grid-2.png">
+
+        <div class="container">
+            <section class="section-main-product">
+                <div class="main-product">
+                    <div class="row">
+                        <div class="img-left col-xl-6 col-lg-6 col-md-7 col-sm-12">
+                            <div class="main-product__image">
+                                <div class="main-product__list__slider">
+                                    <div class="main-product__list__slider__image">
+                                        <div class="main-product__slider__item">
+                                            <img src="images/grid-2.png">
+                                        </div>
+                                        <div class="main-product__slider__item">
+                                            <img src="images/grid-3.png">
+                                        </div>
+                                        <div class="main-product__slider__item">
+                                            <img src="images/grid-4.png">
+                                        </div>
+                                        <div class="main-product__slider__item">
+                                            <img src="images/grid-5.png">
+                                        </div>
+                                        <div class="main-product__slider__item">
+                                            <img src="images/grid-1.png">
+                                        </div>
+                                        <div class="main-product__slider__item">
+                                            <img src="images/grid-3.png">
+                                        </div>
                                     </div>
-                                    <div class="main-product__slider__item">
-                                        <img src="images/grid-3.png">
-                                    </div>
-                                    <div class="main-product__slider__item">
-                                        <img src="images/grid-4.png">
-                                    </div>
-                                    <div class="main-product__slider__item">
-                                        <img src="images/grid-5.png">
-                                    </div>
-                                    <div class="main-product__slider__item">
-                                        <img src="images/grid-1.png">
-                                    </div>
-                                    <div class="main-product__slider__item">
-                                        <img src="images/grid-3.png">
+                                    <div class="slider__arrow">
+                                        <ul>
+                                            <li class="arrow down">
+                                                <i class="fas fa-angle-down"></i>
+                                            </li>
+                                            <li class="arrow up">
+                                                <i class="fas fa-angle-up"></i>
+                                            </li>
+                                            <div style="clear:both;"></div>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="slider__arrow">
+                                <div class="main-product__big-image">
+                                    <img src="images/grid-4.png">
+                                </div>
+                                <div style="clear:both;"></div>   
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12 main-pro">
+                            <div class="main-product__detail">
+                                <div class="main-product__detail__name">
+                                    Quisque Elementum Posuere
+                                </div>
+                                <div class="main-product__detail__review">
                                     <ul>
-                                        <li class="arrow down">
-                                            <i class="fas fa-angle-down"></i>
+                                        <li class="rate">
+                                            <span class="icon"><i class="far fa-star"></i></span>
+                                            <span class="icon"><i class="far fa-star"></i></span>
+                                            <span class="icon"><i class="far fa-star"></i></span>
+                                            <span class="icon"><i class="far fa-star"></i></span>
+                                            <span class="icon"><i class="far fa-star"></i></span>
                                         </li>
-                                        <li class="arrow up">
-                                            <i class="fas fa-angle-up"></i>
+                                        <li style="color:rgb(225,225,225);">|</li>
+                                        <li class="review">
+                                            <a href="">0 Customer review</a>
                                         </li>
-                                        <div style="clear:both;"></div>
+                                        <li style="color:rgb(225,225,225);">|</li>
+                                        <li class="add-review">
+                                            <a href="">Add your review</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="main-product__detail__price">
+                                    $349.00
+                                    <span class="status">
+                                        <i class="fas fa-check-square"></i> Available In Stock
+                                    </span>
+                                </div>
+                                <hr>
+                                <div class="main-product__detail__info">
+                                    <ul>
+                                        <li>Product code: 02</li>
+                                        <li>Tags:
+                                            <a href="">Furniture</a>, <a href="">Office</a>, <a href="">Seating</a>, <a href="">Wood</a>                                            
+                                        </li>
+                                        <li>
+                                            Shipping: Free
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="main-product__detail__description">
+                                    Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, dignissim iaculis augue, duis ullamcorper ullamcorper
+                                </div>
+                                <div class="main-product__detail__color">
+                                    <ul>
+                                        <span>Color:</span>
+                                        <li class="color active"><i class="fas fa-circle" style="color: rgb(216,64,51)"></i></li>
+                                        <li class="color"><i class="fas fa-circle" style="color: rgb(0,174,239)"></i></li>
+                                        <li class="color"><i class="fas fa-circle" style="color: rgb(255,255,255)"></i></li>
+                                        <li class="color"><i class="fas fa-circle" style="color: rgb(237,28,36)"></i></li>
+                                        <li class="color"><i class="fas fa-circle" style="color: rgb(25,123,48)"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="main-product__detail__size">
+                                    <span>Size:</span> 
+                                    <select>
+                                        <option>Select Option</option>
+                                        <option>S</option>
+                                        <option>M</option>
+                                        <option>L</option>
+                                        <option>XL</option>
+                                    </select>
+                                </div>
+                                <div style="clear: both;"></div>
+                                <div class="main-product__detail__add">
+                                    <div class="main-product__detail__add__top">
+                                        <div class="main-product__detail__add__quantity">
+                                            Quantity:
+                                            <span class="minus" style="margin-left: 15px;"><i class="fas fa-minus"></i></span>
+                                            <input type="number" id="quantity" name="quantity" value="1" size="4">
+                                            <span class="plus"><i class="fas fa-plus"></i></span>
+                                        </div>
+                                        <div class="main-product__detail__add__button">
+                                            <button class="btn btn-primary">ADD TO CART</button>
+                                        </div>
+                                        <div style="clear: both;"></div>
+                                    </div>
+                                    <div class="main-product__detail__add__bottom">
+                                        <div class="main-product__detail__add__wishlist">
+                                            <span>
+                                                <a href=""><i class="far fa-heart"></i>
+                                                <span class="add-wish" style="margin-left:7px">Add Wishlist</span>
+                                            </a>
+                                            </span>
+                                        </div>
+                                        <div class="main-product__detail__add__compare">
+                                            <span>
+                                                <a href=""><img src="images/Comapre.png">
+                                                    <span class="add-com" style="margin-left:7px">Add Compare</span>
+                                                </a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div style="clear:both;"></div>
+                                </div>
+                                <hr style="clear:both;">
+                                <div class="main-product__detail__social">
+                                    <ul>
+                                        <li class="social__item fb">
+                                            <a href="">
+                                                <img src="images/facebook.png">
+                                            </a>
+                                            <img src="images/share-fb.png">
+                                        </li>
+                                        <li class="social__item tt">
+                                            <a href="">
+                                                <img src="images/twitter.png">
+                                            </a>
+                                            <img src="images/share-fb.png">
+                                        </li>
+                                        <li class="social__item gg">
+                                            <a href="">
+                                                <img src="images/google.png">
+                                            </a>
+                                            <img src="images/share-fb.png">
+                                        </li>
+                                        <li>
+                                            <button><i class="fas fa-plus-square"></i> Share</button>
+                                        </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="main-product__big-image">
-                                <img src="images/grid-4.png">
-                            </div>
-                            <div style="clear:both;"></div>   
-                        </div>
-                    </div>
-                    <div class="col-xl-6 col-lg-6 col-md-5 col-sm-12">
-                        <div class="main-product__detail">
-                            <div class="main-product__detail__name">
-                                Quisque Elementum Posuere
-                            </div>
-                            <div class="main-product__detail__review">
-                                <ul>
-                                    <li class="rate">
-                                        <span class="icon"><i class="far fa-star"></i></span>
-                                        <span class="icon"><i class="far fa-star"></i></span>
-                                        <span class="icon"><i class="far fa-star"></i></span>
-                                        <span class="icon"><i class="far fa-star"></i></span>
-                                        <span class="icon"><i class="far fa-star"></i></span>
-                                    </li>
-                                    <li style="color:rgb(225,225,225);">|</li>
-                                    <li class="review">
-                                        <a href="">0 Customer review</a>
-                                    </li>
-                                    <li style="color:rgb(225,225,225);">|</li>
-                                    <li class="add-review">
-                                        <a href="">Add your review</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="main-product__detail__price">
-                                $349.00
-                                <span class="status">
-                                    <i class="fas fa-check-square"></i> Available In Stock
-                                </span>
-                            </div>
-                            <hr>
-                            <div class="main-product__detail__info">
-                                <ul>
-                                    <li>Product code: 02</li>
-                                    <li>Tags:
-                                        <a href="">Furniture</a>, <a href="">Office</a>, <a href="">Seating</a>, <a href="">Wood</a>                                            
-                                    </li>
-                                    <li>
-                                        Shipping: Free
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="main-product__detail__description">
-                                Lorem ipsum amet, consectetur adipiscing. Posuere lobortis mauris scelerisque. Nam ante massa, dignissim iaculis augue, duis ullamcorper ullamcorper
-                            </div>
-                            <div class="main-product__detail__color">
-                                <ul>
-                                    <span>Color:</span>
-                                    <li class="color active"><i class="fas fa-circle" style="color: rgb(216,64,51)"></i></li>
-                                    <li class="color"><i class="fas fa-circle" style="color: rgb(0,174,239)"></i></li>
-                                    <li class="color"><i class="fas fa-circle" style="color: rgb(255,255,255)"></i></li>
-                                    <li class="color"><i class="fas fa-circle" style="color: rgb(237,28,36)"></i></li>
-                                    <li class="color"><i class="fas fa-circle" style="color: rgb(25,123,48)"></i></li>
-                                </ul>
-                            </div>
-                            <div class="main-product__detail__size">
-                                <span>Size:</span> 
-                                <select>
-                                    <option>Select Option</option>
-                                    <option>S</option>
-                                    <option>M</option>
-                                    <option>L</option>
-                                    <option>XL</option>
-                                </select>
-                            </div>
-                            <div style="clear: both;"></div>
-                            <div class="main-product__detail__add">
-                                <div class="main-product__detail__add__top">
-                                    <div class="main-product__detail__add__quantity">
-                                        Quantity:
-                                        <span class="minus" style="margin-left: 15px;"><i class="fas fa-minus"></i></span>
-                                        <input type="number" id="quantity" name="quantity" value="1" size="4">
-                                        <span class="plus"><i class="fas fa-plus"></i></span>
-                                    </div>
-                                    <div class="main-product__detail__add__button">
-                                        <button class="btn btn-primary">ADD TO CART</button>
-                                    </div>
-                                    <div style="clear: both;"></div>
-                                </div>
-                                <div class="main-product__detail__add__bottom">
-                                    <div class="main-product__detail__add__wishlist">
-                                        <span>
-                                            <a href=""><i class="far fa-heart"></i>
-                                            <span class="add-wish">Add Wishlist</span>
-                                        </a>
-                                        </span>
-                                    </div>
-                                    <div class="main-product__detail__add__compare">
-                                        <span>
-                                            <a href=""><img src="images/Comapre.png">
-                                                <span class="add-com">Add Compare</span>
-                                            </a>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div style="clear:both;"></div>
-                            </div>
-                            <hr style="clear:both;">
-                            <div class="main-product__detail__social">
-                                <ul>
-                                    <li class="social__item fb">
-                                        <a href="">
-                                            <img src="images/facebook.png">
-                                        </a>
-                                        <img src="images/share-fb.png">
-                                    </li>
-                                    <li class="social__item tt">
-                                        <a href="">
-                                            <img src="images/twitter.png">
-                                        </a>
-                                        <img src="images/share-fb.png">
-                                    </li>
-                                    <li class="social__item gg">
-                                        <a href="">
-                                            <img src="images/google.png">
-                                        </a>
-                                        <img src="images/share-fb.png">
-                                    </li>
-                                    <li>
-                                        <button><i class="fas fa-plus-square"></i> Share</button>
-                                    </li>
-                                </ul>
-                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="main-product__info">
-                <div class="main-product__info__item main-product__description">
-                    <div data-toggle="collapse" data-target="#demo1" class="info__title" aria-expanded="false">
-                        DESCRIPTION
+                <div class="main-product__info">
+                    <div class="main-product__info__item main-product__description">
+                        <div data-toggle="collapse" data-target="#demo1" class="info__title" aria-expanded="false">
+                            DESCRIPTION
+                        </div>
+                        <div class="info__content collapse" id="demo1">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing. Nunc posuere lobortis mauris quis scelerisque. Nam ante massa, dignissim nec, iaculis sed augue. Duis ullamcorper
+                                Suspendisse lobortis maximus velit quis tincidunt. Donec vitae vestibulum massa, non convallis sem. In consectetur felis vel porttitor gravida. Quisque vehicula
+                                diam. Vivamus a est varius, imperdiet leo a, molestie odio.
+                            </p>
+                            <p>
+                                Praesent vehicula euismod velit et ultrices. Sed eget massa diam. Proin malesuada lectus ut aliquet pulvinar. Vestibulum luctus finibus dolor, vel tempus velit ultricies.
+                                Etiam dolor auctor sapien tempus porta vulputate
+                            </p>
+                        </div>
                     </div>
-                    <div class="info__content collapse" id="demo1">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing. Nunc posuere lobortis mauris quis scelerisque. Nam ante massa, dignissim nec, iaculis sed augue. Duis ullamcorper
-                            Suspendisse lobortis maximus velit quis tincidunt. Donec vitae vestibulum massa, non convallis sem. In consectetur felis vel porttitor gravida. Quisque vehicula
-                            diam. Vivamus a est varius, imperdiet leo a, molestie odio.
-                        </p>
-                        <p>
-                            Praesent vehicula euismod velit et ultrices. Sed eget massa diam. Proin malesuada lectus ut aliquet pulvinar. Vestibulum luctus finibus dolor, vel tempus velit ultricies.
-                            Etiam dolor auctor sapien tempus porta vulputate
-                        </p>
+                    <hr>
+                    <div class="main-product__info__item main-product__specification">
+                        <div data-toggle="collapse" data-target="#demo2" class="info__title" aria-expanded="false">
+                            SPECIFICATION
+                        </div>
+                        <div class="info__content collapse" id="demo2">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing. Nunc posuere lobortis mauris quis scelerisque. Nam ante massa, dignissim nec, iaculis sed augue. Duis ullamcorper
+                                Suspendisse lobortis maximus velit quis tincidunt. Donec vitae vestibulum massa, non convallis sem. In consectetur felis vel porttitor gravida. Quisque vehicula
+                                diam. Vivamus a est varius, imperdiet leo a, molestie odio.
+                            </p>
+                            <p>
+                                Praesent vehicula euismod velit et ultrices. Sed eget massa diam. Proin malesuada lectus ut aliquet pulvinar. Vestibulum luctus finibus dolor, vel tempus velit ultricies.
+                                Etiam dolor auctor sapien tempus porta vulputate
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <hr>
-                <div class="main-product__info__item main-product__specification">
-                    <div data-toggle="collapse" data-target="#demo2" class="info__title" aria-expanded="false">
-                        SPECIFICATION
+                    <hr>
+                    <div class="main-product__info__item main-product__review">
+                        <div data-toggle="collapse" data-target="#demo3" class="info__title" aria-expanded="false">
+                            REVIEW (0)
+                        </div>
+                        <div class="info__content collapse" id="demo3">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing. Nunc posuere lobortis mauris quis scelerisque. Nam ante massa, dignissim nec, iaculis sed augue. Duis ullamcorper
+                                Suspendisse lobortis maximus velit quis tincidunt. Donec vitae vestibulum massa, non convallis sem. In consectetur felis vel porttitor gravida. Quisque vehicula
+                                diam. Vivamus a est varius, imperdiet leo a, molestie odio.
+                            </p>
+                            <p>
+                                Praesent vehicula euismod velit et ultrices. Sed eget massa diam. Proin malesuada lectus ut aliquet pulvinar. Vestibulum luctus finibus dolor, vel tempus velit ultricies.
+                                Etiam dolor auctor sapien tempus porta vulputate
+                            </p>
+                        </div>
                     </div>
-                    <div class="info__content collapse" id="demo2">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing. Nunc posuere lobortis mauris quis scelerisque. Nam ante massa, dignissim nec, iaculis sed augue. Duis ullamcorper
-                            Suspendisse lobortis maximus velit quis tincidunt. Donec vitae vestibulum massa, non convallis sem. In consectetur felis vel porttitor gravida. Quisque vehicula
-                            diam. Vivamus a est varius, imperdiet leo a, molestie odio.
-                        </p>
-                        <p>
-                            Praesent vehicula euismod velit et ultrices. Sed eget massa diam. Proin malesuada lectus ut aliquet pulvinar. Vestibulum luctus finibus dolor, vel tempus velit ultricies.
-                            Etiam dolor auctor sapien tempus porta vulputate
-                        </p>
+                    <hr>
+                    <div class="main-product__info__item main-product__faq">
+                        <div data-toggle="collapse" data-target="#demo4" class="info__title" aria-expanded="false">
+                            FAQ'S
+                        </div>
+                        <div class="info__content collapse" id="demo4">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing. Nunc posuere lobortis mauris quis scelerisque. Nam ante massa, dignissim nec, iaculis sed augue. Duis ullamcorper
+                                Suspendisse lobortis maximus velit quis tincidunt. Donec vitae vestibulum massa, non convallis sem. In consectetur felis vel porttitor gravida. Quisque vehicula
+                                diam. Vivamus a est varius, imperdiet leo a, molestie odio.
+                            </p>
+                            <p>
+                                Praesent vehicula euismod velit et ultrices. Sed eget massa diam. Proin malesuada lectus ut aliquet pulvinar. Vestibulum luctus finibus dolor, vel tempus velit ultricies.
+                                Etiam dolor auctor sapien tempus porta vulputate
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <hr>
-                <div class="main-product__info__item main-product__review">
-                    <div data-toggle="collapse" data-target="#demo3" class="info__title" aria-expanded="false">
-                        REVIEW (0)
-                    </div>
-                    <div class="info__content collapse" id="demo3">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing. Nunc posuere lobortis mauris quis scelerisque. Nam ante massa, dignissim nec, iaculis sed augue. Duis ullamcorper
-                            Suspendisse lobortis maximus velit quis tincidunt. Donec vitae vestibulum massa, non convallis sem. In consectetur felis vel porttitor gravida. Quisque vehicula
-                            diam. Vivamus a est varius, imperdiet leo a, molestie odio.
-                        </p>
-                        <p>
-                            Praesent vehicula euismod velit et ultrices. Sed eget massa diam. Proin malesuada lectus ut aliquet pulvinar. Vestibulum luctus finibus dolor, vel tempus velit ultricies.
-                            Etiam dolor auctor sapien tempus porta vulputate
-                        </p>
-                    </div>
-                </div>
-                <hr>
-                <div class="main-product__info__item main-product__faq">
-                    <div data-toggle="collapse" data-target="#demo4" class="info__title" aria-expanded="false">
-                        FAQ'S
-                    </div>
-                    <div class="info__content collapse" id="demo4">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing. Nunc posuere lobortis mauris quis scelerisque. Nam ante massa, dignissim nec, iaculis sed augue. Duis ullamcorper
-                            Suspendisse lobortis maximus velit quis tincidunt. Donec vitae vestibulum massa, non convallis sem. In consectetur felis vel porttitor gravida. Quisque vehicula
-                            diam. Vivamus a est varius, imperdiet leo a, molestie odio.
-                        </p>
-                        <p>
-                            Praesent vehicula euismod velit et ultrices. Sed eget massa diam. Proin malesuada lectus ut aliquet pulvinar. Vestibulum luctus finibus dolor, vel tempus velit ultricies.
-                            Etiam dolor auctor sapien tempus porta vulputate
-                        </p>
-                    </div>
-                </div>
 
-            </div>
-        </section>
-        <section class="section-related-product">
-            <div class="section-intro">
-                <div class="section-title">
-                    RELATED PRODUCTS
                 </div>
-                <div class="section-description">
-                    Include products updated are similar or are same of quality
-                </div>
-            </div>
-            <div class="section-content">
-                <div class="slider" id="related-product">
-                    <div class="products__item">
-                        <div class="products__item__image">
-                            <a href="#">
-                                <img src="images/best-selling-1.png" alt="" data-src="images/best-selling-1.png">
-                            </a>
-                            <ul class="products__item__image__bottom">
-                                <li class="bottom__item active" data-src="images/best-selling-1.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-2.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-3.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="products__item__info">
-                            <div class="products__item__name">
-                                <a href="#">Convallis Venenatis Metus</a>
-                            </div>
-                            <div class="products__item__type">
-                                <a href="#">Essentials</a>
-                            </div>
-                            <div class="products__item__price">
-                                $124.00
-                            </div>
-                        </div>
-                        <div class="products__item__add">
-                            <span>
-                                <a href="#"><i class="far fa-heart"></i></a>
-                                <button class="btn btn-primary">ADD TO CART</button>
-                                <a href="#"><img src="images/Comapre.png" alt="" ></a>
-                            </span>
-                        </div>
+            </section>
+            <section class="section-related-product">
+                <div class="section-intro">
+                    <div class="section-title">
+                        RELATED PRODUCTS
                     </div>
-                    <div class="products__item">
-                        <div class="products__item__image">
-                            <a href="#">
-                                <img src="images/best-selling-1.png" alt="" data-src="images/best-selling-1.png">
-                            </a>
-                            <ul class="products__item__image__bottom">
-                                <li class="bottom__item active" data-src="images/best-selling-2.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-3.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-4.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-4.png"></i>
-                                </li>
-                            </ul>
-                            <div class="box-label">
-                                <button class="btn btn-label">SALE</button>
-                            </div>
-                        </div>
-                        <div class="products__item__info">
-                            <div class="products__item__name">
-                                <a href="#">Convallis Venenatis Metus</a>
-                            </div>
-                            <div class="products__item__type">
-                                <a href="#">Essentials</a>
-                            </div>
-                            <div class="products__item__price">
-                                <span class="old-price">
-                                    <del>$199.00</del>
-                                </span>
-                                $124.00
-                            </div>
-                        </div>
-                        <div class="products__item__add">
-                            <span>
-                                <a href="#"><i class="far fa-heart"></i></a>
-                                <button class="btn btn-primary">ADD TO CART</button>
-                                <a href="#"><img src="images/Comapre.png" alt="" ></a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="products__item__image">
-                            <a href="#">
-                                <img src="images/best-selling-3.png" alt="" data-src="images/best-selling-3.png">
-                            </a>
-                            <ul class="products__item__image__bottom">
-                                <li class="bottom__item active" data-src="images/best-selling-3.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-4.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-4.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-1.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="products__item__info">
-                            <div class="products__item__name">
-                                <a href="#">Convallis Venenatis Metus</a>
-                            </div>
-                            <div class="products__item__type">
-                                <a href="#">Essentials</a>
-                            </div>
-                            <div class="products__item__price">
-                                $124.00
-                            </div>
-                        </div>
-                        <div class="products__item__add">
-                            <span>
-                                <a href="#"><i class="far fa-heart"></i></a>
-                                <button class="btn btn-primary">ADD TO CART</button>
-                                <a href="#"><img src="images/Comapre.png" alt="" ></a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="products__item__image">
-                            <a href="#">
-                                <img src="images/best-selling-4.png" alt="" data-src="images/best-selling-4.png">
-                            </a>
-                            <ul class="products__item__image__bottom">
-                                <li class="bottom__item active" data-src="images/best-selling-4.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-4.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-2.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-3.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                </li>
-                            </ul>
-                            <div class="box-label">
-                                <button class="btn btn-label">NEW</button>
-                            </div>
-                        </div>
-                        <div class="products__item__info">
-                            <div class="products__item__name">
-                                <a href="#">Convallis Venenatis Metus</a>
-                            </div>
-                            <div class="products__item__type">
-                                <a href="#">Essentials</a>
-                            </div>
-                            <div class="products__item__price">
-                                $124.00
-                            </div>
-                        </div>
-                        <div class="products__item__add">
-                            <span>
-                                <a href="#"><i class="far fa-heart"></i></a>
-                                <button class="btn btn-primary">ADD TO CART</button>
-                                <a href="#"><img src="images/Comapre.png" alt="" ></a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="products__item__image">
-                            <a href="#">
-                                <img src="images/best-selling-3.png" alt="" data-src="images/best-selling-3.png">
-                            </a>
-                            <ul class="products__item__image__bottom">
-                                <li class="bottom__item active" data-src="images/best-selling-3.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-2.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-4.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-4.png"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="products__item__info">
-                            <div class="products__item__name">
-                                <a href="#">Convallis Venenatis Metus</a>
-                            </div>
-                            <div class="products__item__type">
-                                <a href="#">Essentials</a>
-                            </div>
-                            <div class="products__item__price">
-                                $124.00
-                            </div>
-                        </div>
-                        <div class="products__item__add">
-                            <span>
-                                <a href="#"><i class="far fa-heart"></i></a>
-                                <button class="btn btn-primary">ADD TO CART</button>
-                                <a href="#"><img src="images/Comapre.png" alt="" ></a>
-                            </span>
-                        </div>
+                    <div class="section-description">
+                        Include products updated are similar or are same of quality
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="section-also-like">
-            <div class="section-intro">
-                <div class="section-title">
-                    YOU MAY ALSO LIKE
-                </div>
-                <div class="section-description">
-                    Update all similar products that you may like
-                </div>
-            </div>
-            <div class="section-content">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 pr-item">
+                <div class="section-content">
+                    <div class="slider" id="related-product">
                         <div class="products__item">
                             <div class="products__item__image">
                                 <a href="#">
-                                    <img src="images/featured-product-1.png" alt="">
+                                    <img src="images/best-selling-1.png" alt="" data-src="images/best-selling-1.png">
                                 </a>
                                 <ul class="products__item__image__bottom">
-                                    <li class="bottom__item active" data-src="images/featured-product-1.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                    <li class="bottom__item active" data-src="images/best-selling-1.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
                                     </li>
-                                    <li class="bottom__item" data-src="images/featured-product-2.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-2"></i>
+                                    <li class="bottom__item" data-src="images/best-selling-2.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
                                     </li>
-                                    <li class="bottom__item" data-src="images/featured-product-3">
-                                        <i class="fas fa-circle" data-src="images/featured-product-3"></i>
+                                    <li class="bottom__item" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
                                     </li>
                                 </ul>
-                                <div class="box-label">
-                                    <button class="btn btn-label">NEW</button>
-                                </div>
                             </div>
                             <div class="products__item__info">
                                 <div class="products__item__name">
-                                    <a href="#">Quisque Elementum Posuere</a>
+                                    <a href="#">Convallis Venenatis Metus</a>
                                 </div>
                                 <div class="products__item__type">
-                                    <a href="#">Decor</a>
+                                    <a href="#">Essentials</a>
                                 </div>
                                 <div class="products__item__price">
-                                    $169.00
+                                    $124.00
                                 </div>
                             </div>
                             <div class="products__item__add">
                                 <span>
                                     <a href="#"><i class="far fa-heart"></i></a>
                                     <button class="btn btn-primary">ADD TO CART</button>
-                                    <a href="#"><img src="images/Comapre.png" alt=""></a>
+                                    <a href="#"><img src="images/Comapre.png" alt="" ></a>
                                 </span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 pr-item">
                         <div class="products__item">
                             <div class="products__item__image">
                                 <a href="#">
-                                    <img src="images/featured-product-4.png" alt="">
+                                    <img src="images/best-selling-1.png" alt="" data-src="images/best-selling-1.png">
                                 </a>
                                 <ul class="products__item__image__bottom">
-                                    <li class="bottom__item active" data-src="images/featured-product-4.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-4"></i>
+                                    <li class="bottom__item active" data-src="images/best-selling-2.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
                                     </li>
-                                    <li class="bottom__item" data-src="images/featured-product-3.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-3.png"></i>
+                                    <li class="bottom__item" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
                                     </li>
-                                    <li class="bottom__item" data-src="images/featured-product-1.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="products__item__info">
-                                <div class="products__item__name">
-                                    <a href="#">Quisque Elementum Posuere</a>
-                                </div>
-                                <div class="products__item__type">
-                                    <a href="#">Decor</a>
-                                </div>
-                                <div class="products__item__price">
-                                    $169.00
-                                </div>
-                            </div>
-                            <div class="products__item__add">
-                                <span>
-                                    <a href="#"><i class="far fa-heart"></i></a>
-                                    <button class="btn btn-primary">ADD TO CART</button>
-                                    <a href="#"><img src="images/Comapre.png" alt=""></a>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 pr-item">
-                        <div class="products__item">
-                            <div class="products__item__image">
-                                <a href="#">
-                                    <img src="images/featured-product-2.png" alt="">
-                                </a>
-                                <ul class="products__item__image__bottom">
-                                    <li class="bottom__item active" data-src="images/featured-product-2.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
-                                    </li>
-                                    <li class="bottom__item" data-src="images/featured-product-3.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-3.png"></i>
-                                    </li>
-                                    <li class="bottom__item" data-src="images/featured-product-4.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                    <li class="bottom__item" data-src="images/best-selling-4.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-4.png"></i>
                                     </li>
                                 </ul>
                                 <div class="box-label">
@@ -1020,72 +778,320 @@
                             </div>
                             <div class="products__item__info">
                                 <div class="products__item__name">
-                                    <a href="#">Quisque Elementum Posuere</a>
+                                    <a href="#">Convallis Venenatis Metus</a>
                                 </div>
                                 <div class="products__item__type">
-                                    <a href="#">Decor</a>
+                                    <a href="#">Essentials</a>
                                 </div>
                                 <div class="products__item__price">
                                     <span class="old-price">
                                         <del>$199.00</del>
                                     </span>
-                                    $169.00
+                                    $124.00
                                 </div>
                             </div>
                             <div class="products__item__add">
                                 <span>
                                     <a href="#"><i class="far fa-heart"></i></a>
                                     <button class="btn btn-primary">ADD TO CART</button>
-                                    <a href="#"><img src="images/Comapre.png" alt=""></a>
+                                    <a href="#"><img src="images/Comapre.png" alt="" ></a>
                                 </span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 pr-item">
                         <div class="products__item">
                             <div class="products__item__image">
                                 <a href="#">
-                                    <img src="images/featured-product-3.png" alt="">
+                                    <img src="images/best-selling-3.png" alt="" data-src="images/best-selling-3.png">
                                 </a>
                                 <ul class="products__item__image__bottom">
-                                    <li class="bottom__item active" data-src="images/featured-product-3.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-3.png"></i>
+                                    <li class="bottom__item active" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
                                     </li>
-                                    <li class="bottom__item" data-src="images/featured-product-2.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                    <li class="bottom__item" data-src="images/best-selling-4.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-4.png"></i>
                                     </li>
-                                    <li class="bottom__item" data-src="images/featured-product-1.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                    <li class="bottom__item" data-src="images/best-selling-1.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
                                     </li>
                                 </ul>
                             </div>
                             <div class="products__item__info">
                                 <div class="products__item__name">
-                                    <a href="#">Quisque Elementum Posuere</a>
+                                    <a href="#">Convallis Venenatis Metus</a>
                                 </div>
                                 <div class="products__item__type">
-                                    <a href="#">Decor</a>
+                                    <a href="#">Essentials</a>
                                 </div>
                                 <div class="products__item__price">
-                                    $169.00
+                                    $124.00
                                 </div>
                             </div>
                             <div class="products__item__add">
                                 <span>
                                     <a href="#"><i class="far fa-heart"></i></a>
                                     <button class="btn btn-primary">ADD TO CART</button>
-                                    <a href="#"><img src="images/Comapre.png" alt=""></a>
+                                    <a href="#"><img src="images/Comapre.png" alt="" ></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item__image">
+                                <a href="#">
+                                    <img src="images/best-selling-4.png" alt="" data-src="images/best-selling-4.png">
+                                </a>
+                                <ul class="products__item__image__bottom">
+                                    <li class="bottom__item active" data-src="images/best-selling-4.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-4.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-2.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                    </li>
+                                </ul>
+                                <div class="box-label">
+                                    <button class="btn btn-label">NEW</button>
+                                </div>
+                            </div>
+                            <div class="products__item__info">
+                                <div class="products__item__name">
+                                    <a href="#">Convallis Venenatis Metus</a>
+                                </div>
+                                <div class="products__item__type">
+                                    <a href="#">Essentials</a>
+                                </div>
+                                <div class="products__item__price">
+                                    $124.00
+                                </div>
+                            </div>
+                            <div class="products__item__add">
+                                <span>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                    <a href="#"><img src="images/Comapre.png" alt="" ></a>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="products__item">
+                            <div class="products__item__image">
+                                <a href="#">
+                                    <img src="images/best-selling-3.png" alt="" data-src="images/best-selling-3.png">
+                                </a>
+                                <ul class="products__item__image__bottom">
+                                    <li class="bottom__item active" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-2.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-4.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-4.png"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="products__item__info">
+                                <div class="products__item__name">
+                                    <a href="#">Convallis Venenatis Metus</a>
+                                </div>
+                                <div class="products__item__type">
+                                    <a href="#">Essentials</a>
+                                </div>
+                                <div class="products__item__price">
+                                    $124.00
+                                </div>
+                            </div>
+                            <div class="products__item__add">
+                                <span>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                    <a href="#"><img src="images/Comapre.png" alt="" ></a>
                                 </span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="section-also-like">
+                <div class="section-intro">
+                    <div class="section-title">
+                        YOU MAY ALSO LIKE
+                    </div>
+                    <div class="section-description">
+                        Update all similar products that you may like
+                    </div>
+                </div>
+                <div class="section-content">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 pr-item">
+                            <div class="products__item">
+                                <div class="products__item__image">
+                                    <a href="#">
+                                        <img src="images/featured-product-1.png" alt="">
+                                    </a>
+                                    <ul class="products__item__image__bottom">
+                                        <li class="bottom__item active" data-src="images/featured-product-1.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-2.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-2"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-3">
+                                            <i class="fas fa-circle" data-src="images/featured-product-3"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="box-label">
+                                        <button class="btn btn-label">NEW</button>
+                                    </div>
+                                </div>
+                                <div class="products__item__info">
+                                    <div class="products__item__name">
+                                        <a href="#">Quisque Elementum Posuere</a>
+                                    </div>
+                                    <div class="products__item__type">
+                                        <a href="#">Decor</a>
+                                    </div>
+                                    <div class="products__item__price">
+                                        $169.00
+                                    </div>
+                                </div>
+                                <div class="products__item__add">
+                                    <span>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <button class="btn btn-primary">ADD TO CART</button>
+                                        <a href="#"><img src="images/Comapre.png" alt=""></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 pr-item">
+                            <div class="products__item">
+                                <div class="products__item__image">
+                                    <a href="#">
+                                        <img src="images/featured-product-4.png" alt="">
+                                    </a>
+                                    <ul class="products__item__image__bottom">
+                                        <li class="bottom__item active" data-src="images/featured-product-4.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-4"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-3.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-3.png"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-1.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__item__info">
+                                    <div class="products__item__name">
+                                        <a href="#">Quisque Elementum Posuere</a>
+                                    </div>
+                                    <div class="products__item__type">
+                                        <a href="#">Decor</a>
+                                    </div>
+                                    <div class="products__item__price">
+                                        $169.00
+                                    </div>
+                                </div>
+                                <div class="products__item__add">
+                                    <span>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <button class="btn btn-primary">ADD TO CART</button>
+                                        <a href="#"><img src="images/Comapre.png" alt=""></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 pr-item">
+                            <div class="products__item">
+                                <div class="products__item__image">
+                                    <a href="#">
+                                        <img src="images/featured-product-2.png" alt="">
+                                    </a>
+                                    <ul class="products__item__image__bottom">
+                                        <li class="bottom__item active" data-src="images/featured-product-2.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-3.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-3.png"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-4.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="box-label">
+                                        <button class="btn btn-label">SALE</button>
+                                    </div>
+                                </div>
+                                <div class="products__item__info">
+                                    <div class="products__item__name">
+                                        <a href="#">Quisque Elementum Posuere</a>
+                                    </div>
+                                    <div class="products__item__type">
+                                        <a href="#">Decor</a>
+                                    </div>
+                                    <div class="products__item__price">
+                                        <span class="old-price">
+                                            <del>$199.00</del>
+                                        </span>
+                                        $169.00
+                                    </div>
+                                </div>
+                                <div class="products__item__add">
+                                    <span>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <button class="btn btn-primary">ADD TO CART</button>
+                                        <a href="#"><img src="images/Comapre.png" alt=""></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 pr-item">
+                            <div class="products__item">
+                                <div class="products__item__image">
+                                    <a href="#">
+                                        <img src="images/featured-product-3.png" alt="">
+                                    </a>
+                                    <ul class="products__item__image__bottom">
+                                        <li class="bottom__item active" data-src="images/featured-product-3.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-3.png"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-2.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-1.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__item__info">
+                                    <div class="products__item__name">
+                                        <a href="#">Quisque Elementum Posuere</a>
+                                    </div>
+                                    <div class="products__item__type">
+                                        <a href="#">Decor</a>
+                                    </div>
+                                    <div class="products__item__price">
+                                        $169.00
+                                    </div>
+                                </div>
+                                <div class="products__item__add">
+                                    <span>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <button class="btn btn-primary">ADD TO CART</button>
+                                        <a href="#"><img src="images/Comapre.png" alt=""></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
         <section class="section-newsletter">
             <div class="newsletter">
-                <div class="newsletter__content">
+                <div class="newsletter__content container">
                     <div class="newsletter__info">
                         <div class="newsletter__info__signup">
                             SIGN UP NEWSLETTER
@@ -1106,7 +1112,7 @@
         </section>
 <!----------->
        <div class="space"></div>
-        <section class="section-footer">           
+        <section class="section-footer container">           
             <div class="footer__top">
                 <div class="row">
                     <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 col-12">
@@ -1265,6 +1271,7 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
         <script language="javascript" src="scripts/detail.js"></script>
+        <script language="javascript" src="scripts/common.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>       

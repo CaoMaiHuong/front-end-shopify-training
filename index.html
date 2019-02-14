@@ -2,12 +2,13 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="styles/main.css">
         <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles/main.css">
+        <link rel="stylesheet" type="text/css" href="styles/common.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
@@ -15,8 +16,9 @@
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
     </head>
     <body>
+        <button onclick="goToTop()" id="goTop"><i class="fas fa-angle-double-up"></i></button>
         <section class="section-header">
-            <div class="header__nav ">
+            <div class="header__nav container">
                 <div class="nav__logo">
                     <a href="#">
                         <img src="images/logo.png" alt=""/>
@@ -26,7 +28,7 @@
                     <div class="nav__setting__search">
                         <div class="dropdown" >
                             <div class="dropbtn"><img src="images/search.png" alt=""></div>
-                            <div class="dropdown-content" >
+                            <div class="dropdown-content">
                                 <input type="text" placeholder="Search everything here">
                             </div>
                         </div>
@@ -122,7 +124,7 @@
                                 <div class="menu">
                                     <div class="menu__top">
                                     <div class="row">
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 col-6">
                                                 <div class="menu__top__currency">
                                                     <div class="menu__top__title">
                                                         CURRENTCY:
@@ -137,7 +139,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
+                                            <div class="col-md-6 col-6">
                                                 <div class="menu__top__language">
                                                     <div class="menu__top__title">
                                                         LANGUAGE:
@@ -492,354 +494,92 @@
 <!----------->
         
         <div class="space"></div>
-        <section class="section-service">
-            <div class="service__list">
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 ser">
-                        <div class="service__item">
-                            <div class="service__item__icon">
-                                <img src="images/service-1.png" alt="">
-                            </div>
-                            <div class="service__item__content">
-                                <div class="service__item__content__title">
-                                    <h6>FREE SHIPPING</h6>
-                                </div>
-                                <div class="service__item__content__description">
-                                    <p>For on order over $199.00</p>                
-                                </div>
-                            </div>
-                            <div style="clear: both;"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 ser">
-                        <div class="service__item">
-                            <div class="service__item__icon">
-                                <img src="images/service-2.png" alt="">
-                            </div>
-                            <div class="service__item__content">
-                                <div class="service__item__content__title">
-                                    <h6>RETURN EXCHANGE</h6>
-                                </div>
-                                <div class="service__item__content__description">
-                                    <p>100% money back guarante</p>
-                                </div>
-                            </div>
-                            <div style="clear: both;"></div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 col-12 ser">
-                        <div class="service__item">
-                            <div class="service__item__icon">
-                                <img src="images/service-3.png" alt="">
-                            </div>
-                            <div class="service__item__content">
-                                <div class="service__item__content__title">
-                                    <h6>QUALITY SUPPORT</h6>
-                                </div>
-                                <div class="service__item__content__description">
-                                    <p>Always online feedback 24/7</p>
-                                </div>
-                            </div>
-                            <div style="clear: both;"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
- <!--------------->
- <!-- <div class="container"> -->
-        
-        <section class="section-best-selling">
-            <div class="section__intro">
-                <div class="section-title">
-                    BEST SELLING
-                </div>
-                <div class="section-description">
-                    Include all items updated are the most customer choice of the week!
-                </div>
-            </div>
-            <br>
-            <div class="best-selling__list">
-                <div class="slider" id="best-selling_item">
-                    <div class="products__item">
-                        <div class="products__item__image" >
-                            <a href="#">
-                                <img src="images/best-selling-1.png" alt="" data-src="images/best-selling-1.png">
-                            </a>
-                            <ul class="products__item__image__bottom">
-                                <li class="bottom__item active" data-src="images/best-selling-1.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-2.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-3.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="products__item__info">
-                            <div class="products__item__name">
-                                <a href="#">Convallis Venenatis Metus</a>
-                            </div>
-                            <div class="products__item__type">
-                                <a href="#">Essentials</a>
-                            </div>
-                            <div class="products__item__price">
-                                $124.00
-                            </div>
-                        </div>
-                        <div class="products__item__add">
-                            <span>
-                                <a href="#"><i class="far fa-heart"></i></a>
-                                <button class="btn btn-primary">ADD TO CART</button>
-                                <a href="#"><img src="images/Comapre.png" alt="" ></a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="products__item__image">
-                            <a href="#">
-                                <img src="images/best-selling-2.png" alt="">
-                            </a>
-                            <ul class="products__item__image__bottom">
-                                <li class="bottom__item active" data-src="images/best-selling-2.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-3.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-4.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                </li>
-                            </ul>
-                            <div class="box-label">
-                                <button class="btn btn-label">NEW</button>
-                            </div>
-                        </div>
-                        <div class="products__item__info">
-                            <div class="products__item__name">
-                                <a href="#">Quisque Elementum Posuere</a>
-                            </div>
-                            <div class="products__item__type">
-                                <a href="#">Decor</a>
-                            </div>
-                            <div class="products__item__price">
-                                <span class="old-price">
-                                    <del>$199.00</del>
-                                </span>
-                                $169.00
-                            </div>
-                        </div>
-                        <div class="products__item__add">
-                            <span>
-                                <a href="#"><i class="far fa-heart"></i></a>
-                                <button class="btn btn-primary">ADD TO CART</button>
-                                <a href="#"><img src="images/Comapre.png" alt=""></a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="products__item__image">
-                            <a href="#">
-                                <img src="images/best-selling-3.png" alt="">
-                            </a>
-                            <ul class="products__item__image__bottom">
-                                <li class="bottom__item active" data-src="images/best-selling-3.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-4.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-2.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="products__item__info">
-                            <div class="products__item__name">
-                                <a href="#">Lorem Ipsum Lodor Amet</a>
-                            </div>
-                            <div class="products__item__type">
-                                <a href="#">Furniture</a>
-                            </div>
-                            <div class="products__item__price">
-                                $119.00
-                            </div>
-                        </div>
-                        <div class="products__item__add">
-                            <span>
-                                <a href="#"><i class="far fa-heart"></i></a>
-                                <button class="btn btn-primary">ADD TO CART</button>
-                                <a href="#"><img src="images/Comapre.png" alt=""></a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="products__item__image">
-                            <a href="#">
-                                <img src="images/best-selling-4.png" alt="">
-                            </a>
-                            <ul class="products__item__image__bottom">
-                                <li class="bottom__item active" data-src="images/best-selling-4.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-2.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-3.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                </li>
-                            </ul>
-                            <div class="box-label">
-                                <button class="btn btn-default">SALE</button>
-                            </div>
-                        </div>
-                        <div class="products__item__info">
-                            <div class="products__item__name">
-                                <a href="#">Hicamus Venenatis Eleifend</a>
-                            </div>
-                            <div class="products__item__type">
-                                <a href="#">Essentials</a>
-                            </div>
-                            <div class="products__item__price">
-                                $107.00
-                            </div>
-                        </div>
-                        <div class="products__item__add">
-                            <span>
-                                <a href="#"><i class="far fa-heart"></i></a>
-                                <button class="btn btn-primary">ADD TO CART</button>
-                                <a href="#"><img src="images/Comapre.png" alt=""></a>
-                            </span>
-                        </div>
-                    </div>
-                    <div class="products__item">
-                        <div class="products__item__image">
-                            <a href="#">
-                                <img src="images/best-selling-2.png" alt="">
-                            </a>
-                            <ul class="products__item__image__bottom">
-                                <li class="bottom__item active" data-src="images/best-selling-2.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-3.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
-                                </li>
-                                <li class="bottom__item" data-src="images/best-selling-4.png">
-                                    <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="products__item__info">
-                            <div class="products__item__name">
-                                <a href="#">Quisque Elementum Posuere</a>
-                            </div>
-                            <div class="products__item__type">
-                                <a href="#">Decor</a>
-                            </div>
-                            <div class="products__item__price">
-                                $169.00
-                            </div>
-                        </div>
-                        <div class="products__item__add">
-                            <span>
-                                <a href="#"><i class="far fa-heart"></i></a>
-                                <button class="btn btn-primary">ADD TO CART</button>
-                                <a href="#"><img src="images/Comapre.png" alt=""></a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="latest-collection">
-                <div class="latest-collection__list">
+        <div class="container">
+            <section class="section-service">
+                <div class="service__list">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="latest-collection__item" id="1">
-                                <div class="latest-collection__item__image">
-                                    <a href="#">
-                                        <img src="images/latest-1.png" alt="">
-                                    </a>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12 ser">
+                            <div class="service__item">
+                                <div class="service__item__icon">
+                                    <img src="images/service-1.png" alt="">
                                 </div>
+                                <div class="service__item__content">
+                                    <div class="service__item__content__title">
+                                        <h6>FREE SHIPPING</h6>
+                                    </div>
+                                    <div class="service__item__content__description">
+                                        <p>For on order over $199.00</p>                
+                                    </div>
+                                </div>
+                                <div style="clear: both;"></div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="latest-collection__item" id="2">
-                                <div class="latest-collection__item__image">
-                                    <a href="#">
-                                        <img src="images/latest-2.png" alt="">
-                                    </a>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12 ser">
+                            <div class="service__item">
+                                <div class="service__item__icon">
+                                    <img src="images/service-2.png" alt="">
                                 </div>
+                                <div class="service__item__content">
+                                    <div class="service__item__content__title">
+                                        <h6>RETURN EXCHANGE</h6>
+                                    </div>
+                                    <div class="service__item__content__description">
+                                        <p>100% money back guarante</p>
+                                    </div>
+                                </div>
+                                <div style="clear: both;"></div>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="latest-collection__item" id="3">
-                                <div class="latest-collection__item__image">
-                                    <a href="#">
-                                        <img src="images/latest-3.png" alt="">
-                                    </a>
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-12 ser">
+                            <div class="service__item">
+                                <div class="service__item__icon">
+                                    <img src="images/service-3.png" alt="">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                            <div class="latest-collection__item" id="4">
-                                <div class="latest-collection__item__image">
-                                    <a href="#">
-                                        <img src="images/latest-4.png" alt="">
-                                    </a>
+                                <div class="service__item__content">
+                                    <div class="service__item__content__title">
+                                        <h6>QUALITY SUPPORT</h6>
+                                    </div>
+                                    <div class="service__item__content__description">
+                                        <p>Always online feedback 24/7</p>
+                                    </div>
                                 </div>
+                                <div style="clear: both;"></div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="latest-collection__box">
-                    <div class="row">
-                        <div class="col-md-4"></div>
-                        <div class="col-md-4">
-                            <div class="latest-collection__box__item">
-                                <img src="images/latest-circle.png">
-                                <button class="btn btn-primary">VIEW MORE</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4"></div>
+            </section>
+    <!--------------->
+    <!-- <div class="container"> -->
+            
+            <section class="section-best-selling">
+                <div class="section__intro">
+                    <div class="section-title">
+                        BEST SELLING
+                    </div>
+                    <div class="section-description">
+                        Include all items updated are the most customer choice of the week!
                     </div>
                 </div>
-            </div>
-        </section>
-<!------------------------>
-        <section class="section-featured">
-            <div class="section__intro">
-                <div class="section-title">
-                    FEATURED PRODUCTS
-                </div>
-                <div class="section-description">
-                    Our collection hover on a look you like to shop the items featured
-                </div>
-            </div>
-            <br>
-            <div class="featured__list">
-                <div class="row">
-                    <div class="featured__item col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                <br>
+                <div class="best-selling__list">
+                    <div class="slider" id="best-selling_item">
                         <div class="products__item">
-                            <div class="products__item__image">
+                            <div class="products__item__image" >
                                 <a href="#">
-                                    <img src="images/featured-product-1.png" alt="">
+                                    <img src="images/best-selling-1.png" alt="" data-src="images/best-selling-1.png">
                                 </a>
                                 <ul class="products__item__image__bottom">
-                                    <li class="bottom__item active" data-src="images/featured-product-1.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                    <li class="bottom__item active" data-src="images/best-selling-1.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
                                     </li>
-                                    <li class="bottom__item" data-src="images/featured-product-2.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                    <li class="bottom__item" data-src="images/best-selling-2.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
                                     </li>
-                                    <li class="bottom__item" data-src="images/featured-product-4.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                    <li class="bottom__item" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
                                     </li>
                                 </ul>
-                                <div class="box-label">
-                                    <button class="btn btn-default">SALE</button>
-                                </div>
                             </div>
                             <div class="products__item__info">
                                 <div class="products__item__name">
@@ -856,28 +596,29 @@
                                 <span>
                                     <a href="#"><i class="far fa-heart"></i></a>
                                     <button class="btn btn-primary">ADD TO CART</button>
-                                    <a href="#"><img src="images/Comapre.png" alt=""></a>
+                                    <a href="#"><img src="images/Comapre.png" alt="" ></a>
                                 </span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 featured__item">
                         <div class="products__item">
                             <div class="products__item__image">
                                 <a href="#">
-                                    <img src="images/featured-product-2.png" alt="">
+                                    <img src="images/best-selling-2.png" alt="">
                                 </a>
                                 <ul class="products__item__image__bottom">
-                                    <li class="bottom__item active" data-src="images/featured-product-2.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                    <li class="bottom__item active" data-src="images/best-selling-2.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
                                     </li>
-                                    <li class="bottom__item" data-src="images/featured-product-4.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                    <li class="bottom__item" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
                                     </li>
-                                    <li class="bottom__item" data-src="images/featured-product-1.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                    <li class="bottom__item" data-src="images/best-selling-4.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
                                     </li>
                                 </ul>
+                                <div class="box-label">
+                                    <button class="btn btn-label">NEW</button>
+                                </div>
                             </div>
                             <div class="products__item__info">
                                 <div class="products__item__name">
@@ -901,27 +642,22 @@
                                 </span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 featured__item">
                         <div class="products__item">
                             <div class="products__item__image">
                                 <a href="#">
-                                    <img src="images/featured-product-3.png" alt="">
+                                    <img src="images/best-selling-3.png" alt="">
                                 </a>
                                 <ul class="products__item__image__bottom">
-                                    <li class="bottom__item active" data-src="images/featured-product-3.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                    <li class="bottom__item active" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
                                     </li>
-                                    <li class="bottom__item" data-src="images/featured-product-2.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                    <li class="bottom__item" data-src="images/best-selling-4.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
                                     </li>
-                                    <li class="bottom__item" data-src="images/featured-product-4.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                    <li class="bottom__item" data-src="images/best-selling-2.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
                                     </li>
                                 </ul>
-                                <div class="box-label">
-                                    <button class="btn btn-default">NEW</button>
-                                </div>
                             </div>
                             <div class="products__item__info">
                                 <div class="products__item__name">
@@ -942,24 +678,25 @@
                                 </span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 featured__item">
                         <div class="products__item">
                             <div class="products__item__image">
                                 <a href="#">
-                                    <img src="images/featured-product-4.png" alt="">
+                                    <img src="images/best-selling-4.png" alt="">
                                 </a>
                                 <ul class="products__item__image__bottom">
-                                    <li class="bottom__item active" data-src="images/featured-product-4.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                    <li class="bottom__item active" data-src="images/best-selling-4.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
                                     </li>
-                                    <li class="bottom__item" data-src="images/featured-product-1.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                    <li class="bottom__item" data-src="images/best-selling-2.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
                                     </li>
-                                    <li class="bottom__item" data-src="images/featured-product-3.png">
-                                        <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                    <li class="bottom__item" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
                                     </li>
                                 </ul>
+                                <div class="box-label">
+                                    <button class="btn btn-default">SALE</button>
+                                </div>
                             </div>
                             <div class="products__item__info">
                                 <div class="products__item__name">
@@ -980,137 +717,404 @@
                                 </span>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!---------------->
-        <section class="section-company">
-            <div class="company__list">
-                <div class="slider" id="company_items">     
-                    <div class="company__item__image">
-                        <img src="images/company-1.png" alt="">
-                    </div>
-                    <div class="company__item__image">
-                        <img src="images/company-2.png" alt="">
-                    </div>
-                    <div class="company__item__image">
-                        <img src="images/company-3.png" alt="">
-                    </div>
-                    <div class="company__item__image">
-                        <img src="images/company-4.png" alt="">
-                    </div>
-                    <div class="company__item__image">
-                        <img src="images/company-5.png" alt="">
-                    </div>
-                    <div class="company__item__image">
-                        <img src="images/company-6.png" alt="">
-                    </div>
-                    <div class="company__item__image">
-                        <img src="images/company-4.png" alt="">
-                    </div>
-                    <div class="company__item__image">
-                        <img src="images/company-5.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-<!----------------->
-        <section class="section-blog">
-            <div class="section__intro">
-                <div class="section-title">
-                    OUT BLOG POST
-                </div>
-                <div class="section-description">
-                    All out post are the latest updates from furniture and decor world
-                </div>
-            </div>
-            <br>
-            <div class="blog__list">
-                <div class="slider" id="multiple_items">
-                    <div class="blog__item">
-                        <div class="blog__item__image">
-                            <a href="#">
-                                <img src="images/blog-1.png" alt="">
-                            </a>
-                        </div>
-                        <div class="blog__item__info">
-                            <div class="blog__item__title">
-                                <a href="#">Fusce Congue Vestibulum Tortor Suscipit</a>
+                        <div class="products__item">
+                            <div class="products__item__image">
+                                <a href="#">
+                                    <img src="images/best-selling-2.png" alt="">
+                                </a>
+                                <ul class="products__item__image__bottom">
+                                    <li class="bottom__item active" data-src="images/best-selling-2.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-1.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-3.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-2.png"></i>
+                                    </li>
+                                    <li class="bottom__item" data-src="images/best-selling-4.png">
+                                        <i class="fas fa-circle" data-src="images/best-selling-3.png"></i>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="blog__item__dated">
-                                Posted: 20th May / 7 Views / 0 Comment
+                            <div class="products__item__info">
+                                <div class="products__item__name">
+                                    <a href="#">Quisque Elementum Posuere</a>
+                                </div>
+                                <div class="products__item__type">
+                                    <a href="#">Decor</a>
+                                </div>
+                                <div class="products__item__price">
+                                    $169.00
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="blog__item">
-                        <div class="blog__item__image">
-                            <a href="#">
-                                <img src="images/blog-2.png" alt="">
-                            </a>
-                        </div>
-                        <div class="blog__item__info">
-                            <div class="blog__item__title">
-                                <a href="#">Salt Pepper Grinders In Higashiazabu</a>                    
-                            </div>
-                            <div class="blog__item__dated">
-                                Posted: 24th May / 5 Views / 0 Comment
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog__item">
-                        <div class="blog__item__image">
-                            <a href="#">
-                                <img src="images/blog-3.png" alt="">
-                            </a>
-                        </div>
-                        <div class="blog__item__info">
-                            <div class="blog__item__title">
-                                <a href="#">Ballaring Retreat By Branch Studio</a>                     
-                            </div>
-                            <div class="blog__item__dated">
-                                Posted: 20th May / 7 Views / 0 Comment
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog__item">
-                        <div class="blog__item__image">
-                            <a href="#">
-                                <img src="images/blog-2.png" alt="">
-                            </a>
-                        </div>
-                        <div class="blog__item__info">
-                            <div class="blog__item__title">
-                                <a href="#">Salt Pepper Grinders In Higashiazabu</a>                    
-                            </div>
-                            <div class="blog__item__dated">
-                                Posted: 24th May / 5 Views / 0 Comment
-                            </div>
-                        </div>
-                    </div>
-                    <div class="blog__item">
-                        <div class="blog__item__image">
-                            <a href="">
-                                <img src="images/blog-3.png" alt="">
-                            </a>
-                        </div>
-                        <div class="blog__item__info">
-                            <div class="blog__item__title">
-                                <a href="#">Salt Pepper Grinders In Higashiazabu</a>                    
-                            </div>
-                            <div class="blog__item__dated">
-                                Posted: 24th May / 5 Views / 0 Comment
+                            <div class="products__item__add">
+                                <span>
+                                    <a href="#"><i class="far fa-heart"></i></a>
+                                    <button class="btn btn-primary">ADD TO CART</button>
+                                    <a href="#"><img src="images/Comapre.png" alt=""></a>
+                                </span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+                <div class="latest-collection">
+                    <div class="latest-collection__list">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="latest-collection__item" id="1">
+                                    <div class="latest-collection__item__image">
+                                        <a href="#">
+                                            <img src="images/latest-1.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="latest-collection__item" id="2">
+                                    <div class="latest-collection__item__image">
+                                        <a href="#">
+                                            <img src="images/latest-2.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="latest-collection__item" id="3">
+                                    <div class="latest-collection__item__image">
+                                        <a href="#">
+                                            <img src="images/latest-3.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="latest-collection__item" id="4">
+                                    <div class="latest-collection__item__image">
+                                        <a href="#">
+                                            <img src="images/latest-4.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="latest-collection__box">
+                        <div class="row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-4">
+                                <div class="latest-collection__box__item">
+                                    <img src="images/latest-circle.png">
+                                    <button class="btn btn-primary">VIEW MORE</button>
+                                </div>
+                            </div>
+                            <div class="col-md-4"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <!------------------------>
+            <section class="section-featured">
+                <div class="section__intro">
+                    <div class="section-title">
+                        FEATURED PRODUCTS
+                    </div>
+                    <div class="section-description">
+                        Our collection hover on a look you like to shop the items featured
+                    </div>
+                </div>
+                <br>
+                <div class="featured__list">
+                    <div class="row">
+                        <div class="featured__item col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12">
+                            <div class="products__item">
+                                <div class="products__item__image">
+                                    <a href="#">
+                                        <img src="images/featured-product-1.png" alt="">
+                                    </a>
+                                    <ul class="products__item__image__bottom">
+                                        <li class="bottom__item active" data-src="images/featured-product-1.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-2.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-4.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="box-label">
+                                        <button class="btn btn-default">SALE</button>
+                                    </div>
+                                </div>
+                                <div class="products__item__info">
+                                    <div class="products__item__name">
+                                        <a href="#">Convallis Venenatis Metus</a>
+                                    </div>
+                                    <div class="products__item__type">
+                                        <a href="#">Essentials</a>
+                                    </div>
+                                    <div class="products__item__price">
+                                        $124.00
+                                    </div>
+                                </div>
+                                <div class="products__item__add">
+                                    <span>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <button class="btn btn-primary">ADD TO CART</button>
+                                        <a href="#"><img src="images/Comapre.png" alt=""></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 featured__item">
+                            <div class="products__item">
+                                <div class="products__item__image">
+                                    <a href="#">
+                                        <img src="images/featured-product-2.png" alt="">
+                                    </a>
+                                    <ul class="products__item__image__bottom">
+                                        <li class="bottom__item active" data-src="images/featured-product-2.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-4.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-1.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__item__info">
+                                    <div class="products__item__name">
+                                        <a href="#">Quisque Elementum Posuere</a>
+                                    </div>
+                                    <div class="products__item__type">
+                                        <a href="#">Decor</a>
+                                    </div>
+                                    <div class="products__item__price">
+                                        <span class="old-price">
+                                            <del>$199.00</del>
+                                        </span>
+                                        $169.00
+                                    </div>
+                                </div>
+                                <div class="products__item__add">
+                                    <span>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <button class="btn btn-primary">ADD TO CART</button>
+                                        <a href="#"><img src="images/Comapre.png" alt=""></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 featured__item">
+                            <div class="products__item">
+                                <div class="products__item__image">
+                                    <a href="#">
+                                        <img src="images/featured-product-3.png" alt="">
+                                    </a>
+                                    <ul class="products__item__image__bottom">
+                                        <li class="bottom__item active" data-src="images/featured-product-3.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-2.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-4.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                        </li>
+                                    </ul>
+                                    <div class="box-label">
+                                        <button class="btn btn-default">NEW</button>
+                                    </div>
+                                </div>
+                                <div class="products__item__info">
+                                    <div class="products__item__name">
+                                        <a href="#">Lorem Ipsum Lodor Amet</a>
+                                    </div>
+                                    <div class="products__item__type">
+                                        <a href="#">Furniture</a>
+                                    </div>
+                                    <div class="products__item__price">
+                                        $119.00
+                                    </div>
+                                </div>
+                                <div class="products__item__add">
+                                    <span>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <button class="btn btn-primary">ADD TO CART</button>
+                                        <a href="#"><img src="images/Comapre.png" alt=""></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 featured__item">
+                            <div class="products__item">
+                                <div class="products__item__image">
+                                    <a href="#">
+                                        <img src="images/featured-product-4.png" alt="">
+                                    </a>
+                                    <ul class="products__item__image__bottom">
+                                        <li class="bottom__item active" data-src="images/featured-product-4.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-1.png"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-1.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-2.png"></i>
+                                        </li>
+                                        <li class="bottom__item" data-src="images/featured-product-3.png">
+                                            <i class="fas fa-circle" data-src="images/featured-product-4.png"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="products__item__info">
+                                    <div class="products__item__name">
+                                        <a href="#">Hicamus Venenatis Eleifend</a>
+                                    </div>
+                                    <div class="products__item__type">
+                                        <a href="#">Essentials</a>
+                                    </div>
+                                    <div class="products__item__price">
+                                        $107.00
+                                    </div>
+                                </div>
+                                <div class="products__item__add">
+                                    <span>
+                                        <a href="#"><i class="far fa-heart"></i></a>
+                                        <button class="btn btn-primary">ADD TO CART</button>
+                                        <a href="#"><img src="images/Comapre.png" alt=""></a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <!---------------->
+            <section class="section-company">
+                <div class="company__list">
+                    <div class="slider" id="company_items">     
+                        <div class="company__item__image">
+                            <img src="images/company-1.png" alt="">
+                        </div>
+                        <div class="company__item__image">
+                            <img src="images/company-2.png" alt="">
+                        </div>
+                        <div class="company__item__image">
+                            <img src="images/company-3.png" alt="">
+                        </div>
+                        <div class="company__item__image">
+                            <img src="images/company-4.png" alt="">
+                        </div>
+                        <div class="company__item__image">
+                            <img src="images/company-5.png" alt="">
+                        </div>
+                        <div class="company__item__image">
+                            <img src="images/company-6.png" alt="">
+                        </div>
+                        <div class="company__item__image">
+                            <img src="images/company-4.png" alt="">
+                        </div>
+                        <div class="company__item__image">
+                            <img src="images/company-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+    <!----------------->
+            <section class="section-blog">
+                <div class="section__intro">
+                    <div class="section-title">
+                        OUT BLOG POST
+                    </div>
+                    <div class="section-description">
+                        All out post are the latest updates from furniture and decor world
+                    </div>
+                </div>
+                <br>
+                <div class="blog__list">
+                    <div class="slider" id="multiple_items">
+                        <div class="blog__item">
+                            <div class="blog__item__image">
+                                <a href="#">
+                                    <img src="images/blog-1.png" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__item__info">
+                                <div class="blog__item__title">
+                                    <a href="#">Fusce Congue Vestibulum Tortor Suscipit</a>
+                                </div>
+                                <div class="blog__item__dated">
+                                    Posted: 20th May / 7 Views / 0 Comment
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item__image">
+                                <a href="#">
+                                    <img src="images/blog-2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__item__info">
+                                <div class="blog__item__title">
+                                    <a href="#">Salt Pepper Grinders In Higashiazabu</a>                    
+                                </div>
+                                <div class="blog__item__dated">
+                                    Posted: 24th May / 5 Views / 0 Comment
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item__image">
+                                <a href="#">
+                                    <img src="images/blog-3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__item__info">
+                                <div class="blog__item__title">
+                                    <a href="#">Ballaring Retreat By Branch Studio</a>                     
+                                </div>
+                                <div class="blog__item__dated">
+                                    Posted: 20th May / 7 Views / 0 Comment
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item__image">
+                                <a href="#">
+                                    <img src="images/blog-2.png" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__item__info">
+                                <div class="blog__item__title">
+                                    <a href="#">Salt Pepper Grinders In Higashiazabu</a>                    
+                                </div>
+                                <div class="blog__item__dated">
+                                    Posted: 24th May / 5 Views / 0 Comment
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog__item">
+                            <div class="blog__item__image">
+                                <a href="">
+                                    <img src="images/blog-3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="blog__item__info">
+                                <div class="blog__item__title">
+                                    <a href="#">Salt Pepper Grinders In Higashiazabu</a>                    
+                                </div>
+                                <div class="blog__item__dated">
+                                    Posted: 24th May / 5 Views / 0 Comment
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 <!--------------------->
         <div class="space"></div>
         <section class="section-newsletter">
             <div class="newsletter">
-                <div class="newsletter__content">
+                <div class="newsletter__content container">
                     <div class="newsletter__info">
                         <div class="newsletter__info__signup">
                             SIGN UP NEWSLETTER
@@ -1130,165 +1134,168 @@
             </div>
         </section>
 <!----------->
-       <div class="space"></div>
-        <section class="section-footer">           
-            <div class="footer__top">
-                <div class="row">
-                    <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 col-12">
-                        <div class="footer__top__list">
-                            <div class="top__list__title">
-                                <div class="top__list__logo">
-                                    <a href="#">
-                                        <img src = "images/logo.png" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="top__list__item">
-                                <div class="top__list__item__content">
-                                    Lorem ipsum dolor amet conseter adipis pulvinar fermentum. Praliquet molest justo eleifend haretra lacus pretiur lacinia nulla.
-                                </div>
-                                <div class="top__list__item__contact">
-                                    <div class="item__contact item__contact__address">
-                                        <span>
-                                            <i class="fas fa-location-arrow"></i>
-                                            Add: No. 1203 Jonh Rhjn Suite 120, NY 77101.
-                                        </span>
+        <div class="space"></div>
+        <div class="container">
+            <section class="section-footer">           
+                <div class="footer__top">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 col-12">
+                            <div class="footer__top__list">
+                                <div class="top__list__title">
+                                    <div class="top__list__logo">
+                                        <a href="#">
+                                            <img src = "images/logo.png" alt="">
+                                        </a>
                                     </div>
-                                    <div class="item__contact item__contact__phone">
-                                        <span>
-                                            <i class="fas fa-phone"></i>
-                                                Call Us: +1 (230) 2 4466 - 4468
-                                        </span>
+                                </div>
+                                <div class="top__list__item">
+                                    <div class="top__list__item__content">
+                                        Lorem ipsum dolor amet conseter adipis pulvinar fermentum. Praliquet molest justo eleifend haretra lacus pretiur lacinia nulla.
                                     </div>
-                                    <div class="item__contact item__contact__email">
-                                        <span>
-                                            <i class="fas fa-envelope"></i>
-                                            Email: Care247@demo.com
-                                        </span>
+                                    <div class="top__list__item__contact">
+                                        <div class="item__contact item__contact__address">
+                                            <span>
+                                                <i class="fas fa-location-arrow"></i>
+                                                Add: No. 1203 Jonh Rhjn Suite 120, NY 77101.
+                                            </span>
+                                        </div>
+                                        <div class="item__contact item__contact__phone">
+                                            <span>
+                                                <i class="fas fa-phone"></i>
+                                                    Call Us: +1 (230) 2 4466 - 4468
+                                            </span>
+                                        </div>
+                                        <div class="item__contact item__contact__email">
+                                            <span>
+                                                <i class="fas fa-envelope"></i>
+                                                Email: Care247@demo.com
+                                            </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
-                        <div class="footer__top__list">
-                            <div class="top__list__title">
-                                INFORMATION
-                            </div>
-                            <div class="top__list__item">
-                                <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Returns & Refunds</a></li>
-                                    <li><a href="#">Shipping Guide</a></li>
-                                    <li><a href="#">Term & Conditions</a></li>
-                                    <li><a href="#">My Wishlist</a></li>
-                                    <li><a href="#">Top Research</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
-                        <div class="footer__top__list">
-                            <div class="top__list__title">
-                                NEED HELP
-                            </div>
-                            <div class="top__list__item">
-                                <ul>
-                                    <li><a href="#">Discount Info</a></li>
-                                    <li><a href="#">Privacy Policy</a></li>
-                                    <li><a href="#">Payment & Returns</a></li>
-                                    <li><a href="#">Site Guide</a></li>
-                                    <li><a href="#">Product Care</a></li>
-                                    <li><a href="#">Customer Services</a></li>
-                                </ul>
+                        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6 col-12">
+                            <div class="footer__top__list">
+                                <div class="top__list__title">
+                                    INFORMATION
+                                </div>
+                                <div class="top__list__item">
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Returns & Refunds</a></li>
+                                        <li><a href="#">Shipping Guide</a></li>
+                                        <li><a href="#">Term & Conditions</a></li>
+                                        <li><a href="#">My Wishlist</a></li>
+                                        <li><a href="#">Top Research</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-8 col-11">
-                        <div class="footer__top__list footer-insta">
-                            <div class="top__list__title">
-                                INSTAGRAM
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-12">
+                            <div class="footer__top__list">
+                                <div class="top__list__title">
+                                    NEED HELP
+                                </div>
+                                <div class="top__list__item">
+                                    <ul>
+                                        <li><a href="#">Discount Info</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Payment & Returns</a></li>
+                                        <li><a href="#">Site Guide</a></li>
+                                        <li><a href="#">Product Care</a></li>
+                                        <li><a href="#">Customer Services</a></li>
+                                    </ul>
+                                </div>
                             </div>
-                            <div class="top__list__item">
-                                <div class="row">
-                                    <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                        <div class="item__image">
-                                            <a href="#">
-                                                <img src="images/instagram-1.png" alt="">
-                                            </a>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-xs-8 col-11">
+                            <div class="footer__top__list footer-insta">
+                                <div class="top__list__title">
+                                    INSTAGRAM
+                                </div>
+                                <div class="top__list__item">
+                                    <div class="row">
+                                        <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                            <div class="item__image">
+                                                <a href="#">
+                                                    <img src="images/instagram-1.png" alt="">
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                        <div class="item__image">
-                                            <a href="#">
-                                                <img src="images/instagram-2.png" alt="">
-                                            </a>
+                                        <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                            <div class="item__image">
+                                                <a href="#">
+                                                    <img src="images/instagram-2.png" alt="">
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                        <div class="item__image">
-                                            <a href="#">
-                                                <img src="images/instagram-3.png" alt="">
-                                            </a>
+                                        <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                            <div class="item__image">
+                                                <a href="#">
+                                                    <img src="images/instagram-3.png" alt="">
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                        <div class="item__image">
-                                            <a href="#">
-                                                <img src="images/instagram-4.png" alt="">
-                                            </a>
+                                        <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                            <div class="item__image">
+                                                <a href="#">
+                                                    <img src="images/instagram-4.png" alt="">
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                        <div class="item__image">
-                                            <a href="#">
-                                                <img src="images/instagram-5.png" alt="">
-                                            </a>
+                                        <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                            <div class="item__image">
+                                                <a href="#">
+                                                    <img src="images/instagram-5.png" alt="">
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                        <div class="item__image">
-                                            <a href="#">
-                                                <img src="images/instagram-6.png" alt="">
-                                            </a>
+                                        <div class="item-image col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
+                                            <div class="item__image">
+                                                <a href="#">
+                                                    <img src="images/instagram-6.png" alt="">
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                
                             </div>
-                              
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer__bottom">
-                <div class="footer__bottom__left">
-                    &copy;2018 All rights reserved. Design by<a href="#"> <span> Joommasters.com</span></a>
+                <div class="footer__bottom">
+                    <div class="footer__bottom__left">
+                        &copy;2018 All rights reserved. Design by<a href="#"> <span> Joommasters.com</span></a>
+                    </div>
+                    <div class="footer__bottom__right">
+                        <ul>
+                            Follow Us: 
+                            <li>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-google"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="clear: both;"></div>
                 </div>
-                <div class="footer__bottom__right">
-                    <ul>
-                        Follow Us: 
-                        <li>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-google"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-pinterest"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <div style="clear: both;"></div>
-            </div>
-        </section>
+            </section>
+        </div>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
         <script language="javascript" src="scripts/slider.js"></script>
+        <script language="javascript" src="scripts/common.js"></script>
     </body>
 </html>

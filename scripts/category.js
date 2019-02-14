@@ -13,6 +13,9 @@ buttonGrid.on('click', function(e) {
     buttonList.removeClass('active');
     productList.removeClass('product-view-list');
     productList.addClass('product-view-grid');
+    $('.item').removeClass('collumn');
+    $('.item').addClass('col-xl-4 col-lg-6 col-md-4 col-sm-6 col-xs-6');
+    
 });
 
 buttonList.on('click', function(e) {
@@ -26,7 +29,7 @@ buttonList.on('click', function(e) {
 });
 
 $(function() {
-    $("#price-range").slider({range: true, min: 0.00, max: 500.00, values: [0.00, 500.00], slide: function(event, ui) {$("#priceRange").val("$" + ui.values[0] + " - $" + ui.values[1]);}
+    $("#price-range").slider({range: true, min: 0.00, max: 500.00, values: [0.00, 500.00], slide: function(event, ui) {$("#priceRange").val("$" + ui.values[0] + ".00" + " - $" + ui.values[1] + ".00" );}
     });
-    $("#priceRange").val("$" + $("#price-range").slider("values", 0) + " - $" + $("#price-range").slider("values", 1));
-  });
+    $("#priceRange").val("$" + $("#price-range").slider("values", 0) + ".00" + " - $" + $("#price-range").slider("values", 1)+ ".00" );
+});
