@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $('.nav__setting .dropdown .dropbtn').on('click', function(e){
         $(this).parent().find('.dropdown-content').toggle(250);
-        $(this).parents().siblings().find('.dropdown-content').slideUp(100);
+        $(this).parents().siblings().find('.dropdown-content.setting').slideUp(100);
     });
 
     window.onscroll = function() {scrollFunction()};

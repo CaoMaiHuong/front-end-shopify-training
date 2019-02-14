@@ -531,7 +531,7 @@ hr{
     position: absolute;
     top: 13px;
     left: 13px;
-    z-index: 1;
+    z-index: 0;
     
 }
 
